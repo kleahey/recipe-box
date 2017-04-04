@@ -1,0 +1,10 @@
+Started GET "/" for ::1 at 2017-04-04 11:37:10 -0400
+Started GET "/" for ::1 at 2017-04-04 11:37:11 -0400
+Started GET "/" for ::1 at 2017-04-04 11:37:59 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.4.0@global/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.4.0@global/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb (5.4ms)
+Completed 200 OK in 29ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
