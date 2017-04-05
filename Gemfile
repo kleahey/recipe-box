@@ -60,3 +60,6 @@ gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 
 # SimpleForm for forms
 gem 'simple_form'
+
+# Integrate Bootstrap 4 CSS into the app
+gem 'bootstrap', '~> 4.0.0.alpha6'

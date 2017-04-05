@@ -1256,3 +1256,281 @@ Processing by RecipesController#index as HTML
 Completed 200 OK in 88ms (Views: 84.3ms | ActiveRecord: 1.2ms)
 
 
+Started GET "/" for ::1 at 2017-04-05 08:37:33 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (6.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (32.7ms)
+Started GET "/" for ::1 at 2017-04-05 08:37:38 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 7560ms (Views: 7532.9ms | ActiveRecord: 8.8ms)
+
+
+Completed 200 OK in 3576ms (Views: 3573.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recipes/2" for ::1 at 2017-04-05 08:37:47 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 62ms (Views: 54.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 08:37:53 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 63ms (Views: 59.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/2" for ::1 at 2017-04-05 08:54:51 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (8.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 136ms (Views: 101.8ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 08:54:53 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 109ms (Views: 105.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/recipes/3" for ::1 at 2017-04-05 08:54:54 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 115ms (Views: 110.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 10:13:57 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (45.2ms)
+Completed 200 OK in 207ms (Views: 192.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 11:01:45 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (32.5ms)
+Started GET "/recipes/new" for ::1 at 2017-04-05 11:01:47 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (248.4ms)
+  Rendered recipes/new.html.erb within layouts/application (251.1ms)
+Completed 200 OK in 7140ms (Views: 7136.3ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 9213ms (Views: 9191.3ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-04-05 11:02:01 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (13.4ms)
+  Rendered recipes/new.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 94ms (Views: 91.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/recipes" for ::1 at 2017-04-05 11:06:09 -0400
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t+oijPGW12pkMGSrd79z2RZC/ZVnpWOsSlta2XUFnGiBY9kHi71Z5qdz0oJnpQWqhQqDVdqBGwUX7bv0SBsM/Q==", "recipe"=>{"title"=>"Haemul Kalguksu (Seafood Knife Noodles)", "ingredients"=>"<h6>Noodles:</h6><ul><li>1 1/2 cups all-purpose flour, plus more for sprinkling</li><li>1 1/2 teaspoons toasted sesame oil</li><li>1 large egg</li><li>Kosher salt</li></ul><h6>Sauce:</h6><ul><li>1/4 cup soy sauce</li><li>1 tablespoon fish sauce</li><li>1 tablespoon gochugaru (Korean red chile pepper flakes)</li><li>1 tablespoon sesame seeds</li><li>1 1/2 teaspoons toasted sesame oil</li><li>1/2 teaspoon finely chopped ginger</li><li>3 cloves garlic, minced (about 1 tablespoon)</li><li>1 scallion, thinly sliced</li></ul><h6>Broth:</h6><ul><li>1/2 cup dried anchovies</li><li>1/4 cup dried shrimp</li><li>5 cloves garlic</li><li>5 dried shiitake mushrooms (about 2 ounces)</li><li>Two 2-inch pieces kombu</li><li>One 2-inch piece daikon radish</li><li>1/2 large yellow onion</li></ul><h6>Seafood and Toppings:</h6><ul><li>2 to 3 pounds seafood, such as clams, cockles, mussels and head-on shrimp</li><li>3 cups julienned zucchini (from 1 medium zucchini)</li><li>2 large eggs, lightly beaten</li><li>Kosher salt and freshly ground black pepper</li><li>Thinly sliced scallions, for garnish</li></ul>", "directions"=>"For the noodles: Mix together the flour, sesame oil, egg, 1 teaspoon salt and 1/3 cup warm water in a large bowl. Knead until a dough forms, about 10 minutes. Cover with plastic wrap and refrigerate for at least 1 hour and up to overnight.<p>For the sauce: Combine the soy sauce, fish sauce, gochugaru, sesame seeds, sesame oil, ginger, garlic and scallions in a small bowl. Whisk to combine, cover with plastic wrap and set aside for at least 1 hour.</p><p>Roll out the dough using a rolling pin until it is 1/8 to 1/16 inch thick. Starting at one end, roll the dough into a cylinder, then use a sharp knife to cut it into 1/8-inch-thick noodles. Put the noodles on a parchment-lined baking sheet sprinkled with additional flour, making sure that you use your fingers to separate the noodles so they do not stick together; set aside.</p><p>For the broth: Put the dried anchovies, dried shrimp, garlic, mushrooms, kombu, daikon, onion and 3 quarts water in a medium saucepan. Bring to a boil over medium-high heat, then reduce to a simmer and cook for 20 to 30 minutes. Strain into another medium saucepan and discard the solids. </p><p>For the seafood and toppings: Bring the broth back to a boil and add the seafood. Cover with a lid and cook until the shellfish is open and the shrimp is just cooked through, about 5 minutes. Remove the cooked seafood to a medium bowl and reserve. </p><p>Add the cut noodles and zucchini to the broth and cook until the noodles are just tender, a few minutes. Stir in the eggs and 2 teaspoons salt. Remove from the heat and divide among 4 bowls. Top evenly with the seafood, drizzle with half the sauce and garnish with sliced scallions and some black pepper. Serve immediately with the remaining sauce on the side.</p>", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fcc0450b658 @tempfile=#<Tempfile:/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/RackMultipart20170405-67677-5wg4w3.jpeg>, @original_filename="noodles.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"recipe[image]\"; filename=\"noodles.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "_wysihtml5_mode"=>"1", "commit"=>"Create Recipe"}
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/RackMultipart20170405-67677-5wg4w3.jpeg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/d7eba311421bbc9d3ada44709dd6153420170405-67677-l7a4e9.jpeg
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/d7eba311421bbc9d3ada44709dd6153420170405-67677-l7a4e9.jpeg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/d7eba311421bbc9d3ada44709dd6153420170405-67677-1or3rns.jpeg
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/d7eba311421bbc9d3ada44709dd6153420170405-67677-1or3rns.jpeg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/d7eba311421bbc9d3ada44709dd6153420170405-67677-l7a4e9.jpeg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/d7eba311421bbc9d3ada44709dd6153420170405-67677-l7a4e9.jpeg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/d7eba311421bbc9d3ada44709dd6153420170405-67677-l7a4e9.jpeg[0]' -auto-orient -resize "x400" -crop "400x400+66+0" +repage '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/0d5617c24c610e3642699a90fcb9504c20170405-67677-17dcgok'
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/0d5617c24c610e3642699a90fcb9504c20170405-67677-17dcgok to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/0906d172098e3c1899600abe0c16fe6b20170405-67677-35vk6p
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/d7eba311421bbc9d3ada44709dd6153420170405-67677-l7a4e9.jpeg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/d7eba311421bbc9d3ada44709dd6153420170405-67677-l7a4e9.jpeg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/d7eba311421bbc9d3ada44709dd6153420170405-67677-l7a4e9.jpeg[0]' -auto-orient -resize "x150" -crop "150x150+25+0" +repage '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/0d5617c24c610e3642699a90fcb9504c20170405-67677-1oau5sk'
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/0d5617c24c610e3642699a90fcb9504c20170405-67677-1oau5sk to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/8e5145465910dfeed839782b091d89ce20170405-67677-cjlsk2
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/d7eba311421bbc9d3ada44709dd6153420170405-67677-l7a4e9.jpeg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/d7eba311421bbc9d3ada44709dd6153420170405-67677-1akb483.jpeg
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/d7eba311421bbc9d3ada44709dd6153420170405-67677-1akb483.jpeg'
+  [1m[35mSQL (9.4ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "ingredients", "directions", "created_at", "updated_at", "image_file_name", "image_content_type", "image_file_size", "image_updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Haemul Kalguksu (Seafood Knife Noodles)"], ["ingredients", "<h6>Noodles:</h6><ul><li>1 1/2 cups all-purpose flour, plus more for sprinkling</li><li>1 1/2 teaspoons toasted sesame oil</li><li>1 large egg</li><li>Kosher salt</li></ul><h6>Sauce:</h6><ul><li>1/4 cup soy sauce</li><li>1 tablespoon fish sauce</li><li>1 tablespoon gochugaru (Korean red chile pepper flakes)</li><li>1 tablespoon sesame seeds</li><li>1 1/2 teaspoons toasted sesame oil</li><li>1/2 teaspoon finely chopped ginger</li><li>3 cloves garlic, minced (about 1 tablespoon)</li><li>1 scallion, thinly sliced</li></ul><h6>Broth:</h6><ul><li>1/2 cup dried anchovies</li><li>1/4 cup dried shrimp</li><li>5 cloves garlic</li><li>5 dried shiitake mushrooms (about 2 ounces)</li><li>Two 2-inch pieces kombu</li><li>One 2-inch piece daikon radish</li><li>1/2 large yellow onion</li></ul><h6>Seafood and Toppings:</h6><ul><li>2 to 3 pounds seafood, such as clams, cockles, mussels and head-on shrimp</li><li>3 cups julienned zucchini (from 1 medium zucchini)</li><li>2 large eggs, lightly beaten</li><li>Kosher salt and freshly ground black pepper</li><li>Thinly sliced scallions, for garnish</li></ul>"], ["directions", "For the noodles: Mix together the flour, sesame oil, egg, 1 teaspoon salt and 1/3 cup warm water in a large bowl. Knead until a dough forms, about 10 minutes. Cover with plastic wrap and refrigerate for at least 1 hour and up to overnight.<p>For the sauce: Combine the soy sauce, fish sauce, gochugaru, sesame seeds, sesame oil, ginger, garlic and scallions in a small bowl. Whisk to combine, cover with plastic wrap and set aside for at least 1 hour.</p><p>Roll out the dough using a rolling pin until it is 1/8 to 1/16 inch thick. Starting at one end, roll the dough into a cylinder, then use a sharp knife to cut it into 1/8-inch-thick noodles. Put the noodles on a parchment-lined baking sheet sprinkled with additional flour, making sure that you use your fingers to separate the noodles so they do not stick together; set aside.</p><p>For the broth: Put the dried anchovies, dried shrimp, garlic, mushrooms, kombu, daikon, onion and 3 quarts water in a medium saucepan. Bring to a boil over medium-high heat, then reduce to a simmer and cook for 20 to 30 minutes. Strain into another medium saucepan and discard the solids. </p><p>For the seafood and toppings: Bring the broth back to a boil and add the seafood. Cover with a lid and cook until the shellfish is open and the shrimp is just cooked through, about 5 minutes. Remove the cooked seafood to a medium bowl and reserve. </p><p>Add the cut noodles and zucchini to the broth and cook until the noodles are just tender, a few minutes. Stir in the eggs and 2 teaspoons salt. Remove from the heat and divide among 4 bowls. Top evenly with the seafood, drizzle with half the sauce and garnish with sliced scallions and some black pepper. Serve immediately with the remaining sauce on the side.</p>"], ["created_at", 2017-04-05 15:06:09 UTC], ["updated_at", 2017-04-05 15:06:09 UTC], ["image_file_name", "noodles.jpeg"], ["image_content_type", "image/jpeg"], ["image_file_size", 71291], ["image_updated_at", 2017-04-05 15:06:09 UTC]]
+  [1m[35m (136.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/recipes/4
+Completed 302 Found in 456ms (ActiveRecord: 146.2ms)
+
+
+Started GET "/recipes/4" for ::1 at 2017-04-05 11:06:09 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 57ms (Views: 48.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/recipes/4" for ::1 at 2017-04-05 11:12:23 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRecipe Load (15.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 188ms (Views: 139.6ms | ActiveRecord: 15.4ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 11:12:36 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (4.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 97ms (Views: 89.0ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/recipes/2" for ::1 at 2017-04-05 11:12:39 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (2.0ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 69ms (Views: 64.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 11:13:20 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 124ms (Views: 119.5ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/recipes/1" for ::1 at 2017-04-05 11:13:23 -0400
+Processing by RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+9Oug9+c4Xz4MeJvJD2Vs9WIEGHva1Fq2pFSxIJY/ka06/lDeAt/F1Or+t4F7WqVGdxiHdu+HQoXU/mrFctdOA==", "id"=>"1"}
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.8ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 1]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/recipes
+Completed 302 Found in 20ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 11:13:23 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 64ms (Views: 61.4ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/recipes/2" for ::1 at 2017-04-05 11:13:25 -0400
+Processing by RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Bh72jtUiA8HZpF3A2xivnDrIg8KPH464qfl3ojHfqxhJJqFOcrWdqnI+RXH6yFC69pzxvrvKwthkO9zNpkwIZg==", "id"=>"2"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 2]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+[paperclip] deleting /Users/kleahey/Git/recipe-box/public/system/recipes/images/000/000/002/original/scampi.jpeg
+[paperclip] deleting /Users/kleahey/Git/recipe-box/public/system/recipes/images/000/000/002/medium/scampi.jpeg
+[paperclip] deleting /Users/kleahey/Git/recipe-box/public/system/recipes/images/000/000/002/thumb/scampi.jpeg
+Redirected to http://localhost:3000/recipes
+Completed 302 Found in 25ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 11:13:25 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 54ms (Views: 51.0ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/recipes/3" for ::1 at 2017-04-05 11:13:28 -0400
+Processing by RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NBqYo+a+DYkhQMmj4e3k9DhC0AHba7/vGKQCjascUhZ7Is9jQSmT4ora0RLAPRvS9Baife++84/VZqniPI/xaA==", "id"=>"3"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 3]]
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+[paperclip] deleting /Users/kleahey/Git/recipe-box/public/system/recipes/images/000/000/003/original/pancakes.jpeg
+[paperclip] deleting /Users/kleahey/Git/recipe-box/public/system/recipes/images/000/000/003/medium/pancakes.jpeg
+[paperclip] deleting /Users/kleahey/Git/recipe-box/public/system/recipes/images/000/000/003/thumb/pancakes.jpeg
+Redirected to http://localhost:3000/recipes
+Completed 302 Found in 27ms (ActiveRecord: 8.6ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 11:13:28 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 60ms (Views: 57.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-04-05 11:13:32 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (33.3ms)
+  Rendered recipes/new.html.erb within layouts/application (37.6ms)
+Completed 200 OK in 93ms (Views: 90.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-04-05 11:27:58 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (17.2ms)
+  Rendered recipes/new.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 156ms (Views: 143.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-04-05 11:28:04 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (7.7ms)
+  Rendered recipes/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 52ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-04-05 11:28:24 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (8.7ms)
+  Rendered recipes/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 75ms (Views: 71.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-04-05 11:31:18 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (9.3ms)
+  Rendered recipes/new.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 250ms (Views: 247.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-04-05 11:31:21 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (9.3ms)
+  Rendered recipes/new.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 55ms (Views: 53.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-04-05 11:31:29 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (8.6ms)
+  Rendered recipes/new.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 73ms (Views: 70.1ms | ActiveRecord: 0.0ms)
+
+

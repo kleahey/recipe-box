@@ -1,24 +1,21 @@
-# README
+# RecipeBox
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**RecipeBox** is a personal project that I started from scratch to help me solidify my knowledge of Ruby on Rails.
 
-Things you may want to cover:
+The Wiki is available as a guide for the entire build of the project.
 
-* Ruby version
+Some current features of **RecipeBox**:
 
-* System dependencies
+* Bootstrap 4 Integration
 
-* Configuration
+* SimpleForm gem utilized for forms
 
-* Database creation
+* PaperClip gem utilized for attaching images of Recipes
 
-* Database initialization
+Future features I plan to incorporate:
 
-* How to run the test suite
+* WYSYWIG text entry for a Recipe's Ingredients and Directions
 
-* Services (job queues, cache servers, search engines, etc.)
+* Amazon S3 file storage for storing
 
-* Deployment instructions
-
-* ...
+* ...and more to come!
