@@ -1534,3 +1534,544 @@ Processing by RecipesController#new as HTML
 Completed 200 OK in 73ms (Views: 70.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/recipes/new" for ::1 at 2017-04-05 11:38:23 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (71.1ms)
+  Rendered recipes/new.html.erb within layouts/application (74.4ms)
+Completed 200 OK in 434ms (Views: 393.6ms | ActiveRecord: 7.5ms)
+
+
+Started POST "/recipes" for ::1 at 2017-04-05 11:40:14 -0400
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dmeU1qnVa6DBY567Zman5PXO3JyjrnjxbWQlcvxEEvw5X8MWDkL1y2r5hgpHtljCOZqu4Jd7NJGgpo4da9exgg==", "recipe"=>{"title"=>"15-Minute Grilled Skirt Steak with Pesto Butter", "ingredients"=>"1 1/2 pounds skirt steak\r\n3 tablespoons canola oil\r\nKosher salt and freshly ground black pepper\r\n1/4 cup store-bought basil pesto \r\n4 tablespoons unsalted butter, softened\r\n1 pound thin asparagus (see Cook's Note)", "directions"=>"Special equipment: a large cast-iron grill pan\r\n\r\nPreheat a large cast-iron grill pan over high heat for 2 minutes. Cut the skirt steak into 4 even pieces, rub with half of the oil and sprinkle liberally with salt and pepper. Cook, turning once, until charred on both sides and at the desired doneness, 6 to 10 minutes for medium-rare (depending on thickness).\r\n\r\nMeanwhile, whisk together the pesto, butter and a pinch of salt and pepper in a small bowl. \r\n\r\nTrim the ends of the asparagus. Toss the asparagus with the remaining oil and a large pinch of salt and pepper. Transfer the steaks to a cutting board to rest for a few minutes. Working in batches if necessary, place the asparagus in a single layer on the grill pan and cook, turning once, until charred in spots and crisp-tender, about 2 minutes.\r\n\r\nDivide the steaks and asparagus among 4 plates; top each steak with a dollop of the pesto butter. Serve immediately.", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fbac7434840 @tempfile=#<Tempfile:/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/RackMultipart20170405-68642-191cids.jpeg>, @original_filename="steak.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"recipe[image]\"; filename=\"steak.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Recipe"}
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/RackMultipart20170405-68642-191cids.jpeg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/35e244830bde1d967298fb9a585854f720170405-68642-9qx734.jpeg
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/35e244830bde1d967298fb9a585854f720170405-68642-9qx734.jpeg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/35e244830bde1d967298fb9a585854f720170405-68642-1myuk8m.jpeg
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/35e244830bde1d967298fb9a585854f720170405-68642-1myuk8m.jpeg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/35e244830bde1d967298fb9a585854f720170405-68642-9qx734.jpeg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/35e244830bde1d967298fb9a585854f720170405-68642-9qx734.jpeg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/35e244830bde1d967298fb9a585854f720170405-68642-9qx734.jpeg[0]' -auto-orient -resize "x400" -crop "400x400+66+0" +repage '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/d3e159261d88463da560a176e38dc18120170405-68642-sytr9d'
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/d3e159261d88463da560a176e38dc18120170405-68642-sytr9d to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/45a746b779bcac4ff13cc667bdc6440920170405-68642-1fnq42f
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/35e244830bde1d967298fb9a585854f720170405-68642-9qx734.jpeg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/35e244830bde1d967298fb9a585854f720170405-68642-9qx734.jpeg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/35e244830bde1d967298fb9a585854f720170405-68642-9qx734.jpeg[0]' -auto-orient -resize "x150" -crop "150x150+25+0" +repage '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/d3e159261d88463da560a176e38dc18120170405-68642-huzf9x'
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/d3e159261d88463da560a176e38dc18120170405-68642-huzf9x to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/50546206e0a50850dc89f1eb0d14a71c20170405-68642-1wvtapz
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/35e244830bde1d967298fb9a585854f720170405-68642-9qx734.jpeg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/35e244830bde1d967298fb9a585854f720170405-68642-pkn5kr.jpeg
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/35e244830bde1d967298fb9a585854f720170405-68642-pkn5kr.jpeg'
+  [1m[35mSQL (8.4ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "ingredients", "directions", "created_at", "updated_at", "image_file_name", "image_content_type", "image_file_size", "image_updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "15-Minute Grilled Skirt Steak with Pesto Butter"], ["ingredients", "1 1/2 pounds skirt steak\r\n3 tablespoons canola oil\r\nKosher salt and freshly ground black pepper\r\n1/4 cup store-bought basil pesto \r\n4 tablespoons unsalted butter, softened\r\n1 pound thin asparagus (see Cook's Note)"], ["directions", "Special equipment: a large cast-iron grill pan\r\n\r\nPreheat a large cast-iron grill pan over high heat for 2 minutes. Cut the skirt steak into 4 even pieces, rub with half of the oil and sprinkle liberally with salt and pepper. Cook, turning once, until charred on both sides and at the desired doneness, 6 to 10 minutes for medium-rare (depending on thickness).\r\n\r\nMeanwhile, whisk together the pesto, butter and a pinch of salt and pepper in a small bowl. \r\n\r\nTrim the ends of the asparagus. Toss the asparagus with the remaining oil and a large pinch of salt and pepper. Transfer the steaks to a cutting board to rest for a few minutes. Working in batches if necessary, place the asparagus in a single layer on the grill pan and cook, turning once, until charred in spots and crisp-tender, about 2 minutes.\r\n\r\nDivide the steaks and asparagus among 4 plates; top each steak with a dollop of the pesto butter. Serve immediately."], ["created_at", 2017-04-05 15:40:14 UTC], ["updated_at", 2017-04-05 15:40:14 UTC], ["image_file_name", "steak.jpeg"], ["image_content_type", "image/jpeg"], ["image_file_size", 52766], ["image_updated_at", 2017-04-05 15:40:14 UTC]]
+  [1m[35m (138.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/recipes/5
+Completed 302 Found in 506ms (ActiveRecord: 146.9ms)
+
+
+Started GET "/recipes/5" for ::1 at 2017-04-05 11:40:15 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 79ms (Views: 58.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 11:41:04 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 66ms (Views: 62.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 11:41:40 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 85ms (Views: 81.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 11:42:30 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 47ms (Views: 44.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-04-05 11:42:46 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (17.8ms)
+  Rendered recipes/new.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 67ms (Views: 64.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-05 11:58:59 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (29.8ms)
+Completed 200 OK in 203ms (Views: 192.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-04-05 11:59:24 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_navbar.html.erb (12.7ms)
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"recipes"} missing required keys: [:id]):
+    2:   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    3:     <span class="navbar-toggler-icon"></span>
+    4:   </button>
+    5:   <%= link_to "RecipeBox", recipe_path, class: "navbar-brand" %>
+    6: 
+    7:   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    8:     <ul class="navbar-nav mr-auto">
+  
+app/views/layouts/_navbar.html.erb:5:in `_app_views_layouts__navbar_html_erb__920805539227279451_70220091729100'
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__1975102789683315926_70220090566300'
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (94.5ms)
+Started GET "/" for ::1 at 2017-04-05 13:15:04 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (35.6ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 354ms (Views: 329.4ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-05 13:15:27 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 55ms (Views: 51.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-04-05 13:15:30 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (95.8ms)
+  Rendered recipes/new.html.erb within layouts/application (98.7ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+Completed 200 OK in 136ms (Views: 131.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 13:15:32 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+Completed 200 OK in 65ms (Views: 61.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/recipes/4" for ::1 at 2017-04-05 13:18:27 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 91ms (Views: 78.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 13:18:29 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+Completed 200 OK in 91ms (Views: 84.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-04-05 13:18:35 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (20.0ms)
+  Rendered recipes/new.html.erb within layouts/application (24.1ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+Completed 200 OK in 82ms (Views: 79.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 13:18:36 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 102ms (Views: 99.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/4" for ::1 at 2017-04-05 13:20:38 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRecipe Load (2.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 120ms (Views: 113.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/recipes/4" for ::1 at 2017-04-05 13:21:15 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+Completed 200 OK in 63ms (Views: 59.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/4" for ::1 at 2017-04-05 13:21:21 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 44ms (Views: 41.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 13:21:25 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (3.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 59ms (Views: 53.7ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 15:02:36 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (457.0ms)
+Completed 500 Internal Server Error in 475ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `recipe' for #<#<Class:0x007fbb9d1da690>:0x007fbba0ae8ab8>
+Did you mean?  recipe_url
+               @recipes):
+     5: <div class="container">
+     6:   <div class="col-md-*">
+     7:     <div class="card" style="width: 20em;">
+     8:       <%= link_to (image_tag recipe.image.url(:thumb)), recipe, class: "card-img-top" %>
+     9:       <div class="card-block">
+    10:         <h4 class="card-title"><%= recipe.title %></h4>
+    11:       </div>
+  
+app/views/recipes/index.html.erb:8:in `_app_views_recipes_index_html_erb___536552685983574108_70221915703880'
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.8ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (89.5ms)
+Started GET "/recipes" for ::1 at 2017-04-05 15:03:18 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kleahey/Git/recipe-box/app/views/recipes/index.html.erb:8: syntax error, unexpected '='
+...thumb)), recipe, html: { class="card-img-top" } );@output_bu...
+...                               ^
+/Users/kleahey/Git/recipe-box/app/views/recipes/index.html.erb:8: syntax error, unexpected '}', expecting ')'
+... html: { class="card-img-top" } );@output_buffer.safe_append...
+...                               ^
+/Users/kleahey/Git/recipe-box/app/views/recipes/index.html.erb:19: syntax error, unexpected keyword_do_block, expecting ')'
+'.freeze;     @recipes.each do |recipe| 
+                              ^
+/Users/kleahey/Git/recipe-box/app/views/recipes/index.html.erb:31: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;     end 
+                 ^
+/Users/kleahey/Git/recipe-box/app/views/recipes/index.html.erb:39: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/kleahey/Git/recipe-box/app/views/recipes/index.html.erb:41: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/recipes/index.html.erb:8: syntax error, unexpected '='
+app/views/recipes/index.html.erb:8: syntax error, unexpected '}', expecting ')'
+app/views/recipes/index.html.erb:19: syntax error, unexpected keyword_do_block, expecting ')'
+app/views/recipes/index.html.erb:31: syntax error, unexpected keyword_end, expecting ')'
+app/views/recipes/index.html.erb:39: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/recipes/index.html.erb:41: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.8ms)
+Started GET "/recipes" for ::1 at 2017-04-05 15:03:51 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kleahey/Git/recipe-box/app/views/recipes/index.html.erb:8: syntax error, unexpected ')', expecting =>
+...class: "card-img-top", recipe );@output_buffer.safe_append='
+...                               ^
+/Users/kleahey/Git/recipe-box/app/views/recipes/index.html.erb:19: syntax error, unexpected keyword_do_block, expecting ')'
+'.freeze;     @recipes.each do |recipe| 
+                              ^
+/Users/kleahey/Git/recipe-box/app/views/recipes/index.html.erb:31: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;     end 
+                 ^
+/Users/kleahey/Git/recipe-box/app/views/recipes/index.html.erb:39: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/kleahey/Git/recipe-box/app/views/recipes/index.html.erb:41: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/recipes/index.html.erb:8: syntax error, unexpected ')', expecting =>
+app/views/recipes/index.html.erb:19: syntax error, unexpected keyword_do_block, expecting ')'
+app/views/recipes/index.html.erb:31: syntax error, unexpected keyword_end, expecting ')'
+app/views/recipes/index.html.erb:39: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/recipes/index.html.erb:41: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.6ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (90.4ms)
+Started GET "/recipes" for ::1 at 2017-04-05 15:04:51 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kleahey/Git/recipe-box/app/views/recipes/index.html.erb:10: syntax error, unexpected ')', expecting =>
+...class: "card-img-top", recipe );@output_buffer.safe_append='
+...                               ^
+/Users/kleahey/Git/recipe-box/app/views/recipes/index.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/Users/kleahey/Git/recipe-box/app/views/recipes/index.html.erb:23: syntax error, unexpected keyword_do_block, expecting ')'
+'.freeze;     @recipes.each do |recipe| 
+                              ^
+/Users/kleahey/Git/recipe-box/app/views/recipes/index.html.erb:35: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;     end 
+                 ^
+/Users/kleahey/Git/recipe-box/app/views/recipes/index.html.erb:43: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/kleahey/Git/recipe-box/app/views/recipes/index.html.erb:45: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/recipes/index.html.erb:10: syntax error, unexpected ')', expecting =>
+app/views/recipes/index.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+app/views/recipes/index.html.erb:23: syntax error, unexpected keyword_do_block, expecting ')'
+app/views/recipes/index.html.erb:35: syntax error, unexpected keyword_end, expecting ')'
+app/views/recipes/index.html.erb:43: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/recipes/index.html.erb:45: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.4ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (92.3ms)
+Started GET "/recipes" for ::1 at 2017-04-05 15:05:09 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (2.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (9.1ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 78ms (Views: 72.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 15:06:05 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (12.9ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 67ms (Views: 62.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 15:06:21 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (9.6ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 63ms (Views: 58.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 15:09:55 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (17.2ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 59ms (Views: 48.3ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 15:10:01 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 69ms (Views: 62.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 15:12:03 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 39ms (Views: 36.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 15:12:41 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 49ms (Views: 43.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 15:13:48 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+Completed 200 OK in 4234ms (Views: 4231.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 15:13:55 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 46ms (Views: 43.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 15:14:25 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 3553ms (Views: 3548.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 15:14:32 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+Completed 200 OK in 63ms (Views: 57.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-04-05 15:15:11 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (19.1ms)
+  Rendered recipes/new.html.erb within layouts/application (22.3ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 66ms (Views: 62.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/recipes" for ::1 at 2017-04-05 15:18:30 -0400
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6pat018TYByv0D4yqdTLK7YzJNfWk/ptDVjlts186KTcH1ZYJTjukGyTiBu5zr1YJXtaF2u3gsRQ7gSb8GJ4MQ==", "recipe"=>{"title"=>"Chicken or Steak with Balsamic BBQ Sauce", "ingredients"=>"For the Balsamic BBQ sauce:\r\n\r\n1 cup balsamic vinegar\r\n3/4 cup ketchup\r\n1/3 cup brown sugar\r\n1 garlic clove, minced\r\n1 tablespoon Worcestershire sauce\r\n1 tablespoon Dijon mustard\r\n1/2 teaspoon salt\r\n1/2 teaspoon freshly ground black pepper\r\n\r\nFor the chicken or steak:\r\n\r\n4 pieces chicken (any combination of breast or leg-and-thigh pieces) or 4 pieces of New York strip or Club strip steak\r\nSalt and freshly ground pepper", "directions"=>"For the BBQ sauce:\r\nCombine all the ingredients in a small saucepan and stir until all the ingredients are incorporated and the mixture is smooth. Simmer over medium heat until reduced by 1/3, about 15 to 20 minutes.;\r\n\r\nFor the chicken or steak:\r\nPlace a grill pan over medium heat or preheat a gas or charcoal grill. Season the meat with salt and pepper. Lightly coat with some of the BBQ sauce using a pastry brush. Place the meat on the grill. Place the remaining BBQ sauce, still in the small saucepan, over low heat or on the edge of a gas or charcoal grill and allow to gently simmer while the meat cooks.\r\n\r\nCook the chicken about 8 minutes per side. Cook the steaks starting at about 4 minutes per side until a meat thermometer reads the desired temperature, 120 degrees F for medium rare, 135 degrees F for medium (about 6 minutes per side), 155 degrees F for well done (about 9 minutes per side). Continually brush the meat with BBQ sauce every few minutes. Remove the meat from the grill and let rest for at least 5 minutes. Serve with the heated BBQ sauce alongside.\r\n\r\nAlternately, the chicken can be baked in the oven. Preheat the oven to 375 degrees F. Place the chicken skin side up in a baking dish and bake for 25 minutes. Remove the baking dish from the oven and spoon the BBQ sauce all over the top of the chicken. Return the baking dish to the oven and bake for another 15 minutes.", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fbb9b561b30 @tempfile=#<Tempfile:/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/RackMultipart20170405-70862-18v4b4h.jpeg>, @original_filename="chicken.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"recipe[image]\"; filename=\"chicken.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Recipe"}
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/RackMultipart20170405-70862-18v4b4h.jpeg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/742929dcb631403d7c1c1efad2ca270020170405-70862-1dcn3xs.jpeg
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/742929dcb631403d7c1c1efad2ca270020170405-70862-1dcn3xs.jpeg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/742929dcb631403d7c1c1efad2ca270020170405-70862-h1m915.jpeg
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/742929dcb631403d7c1c1efad2ca270020170405-70862-h1m915.jpeg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/742929dcb631403d7c1c1efad2ca270020170405-70862-1dcn3xs.jpeg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/742929dcb631403d7c1c1efad2ca270020170405-70862-1dcn3xs.jpeg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/742929dcb631403d7c1c1efad2ca270020170405-70862-1dcn3xs.jpeg[0]' -auto-orient -resize "x400" -crop "400x400+66+0" +repage '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/cc6d2b886470cec1f73f0792e457b81a20170405-70862-190hvc8'
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/cc6d2b886470cec1f73f0792e457b81a20170405-70862-190hvc8 to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/0fd76b4d77eada13f94fd2f23f51bbd020170405-70862-8vkmrk
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/742929dcb631403d7c1c1efad2ca270020170405-70862-1dcn3xs.jpeg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/742929dcb631403d7c1c1efad2ca270020170405-70862-1dcn3xs.jpeg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/742929dcb631403d7c1c1efad2ca270020170405-70862-1dcn3xs.jpeg[0]' -auto-orient -resize "300x" -crop "300x200+0+12" +repage '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/cc6d2b886470cec1f73f0792e457b81a20170405-70862-10ft8jf'
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/cc6d2b886470cec1f73f0792e457b81a20170405-70862-10ft8jf to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/863bb853f8cb293db8731653cb364a0720170405-70862-1h06mol
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/742929dcb631403d7c1c1efad2ca270020170405-70862-1dcn3xs.jpeg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/742929dcb631403d7c1c1efad2ca270020170405-70862-1g0cb74.jpeg
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/742929dcb631403d7c1c1efad2ca270020170405-70862-1g0cb74.jpeg'
+  [1m[35mSQL (7.4ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "ingredients", "directions", "created_at", "updated_at", "image_file_name", "image_content_type", "image_file_size", "image_updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Chicken or Steak with Balsamic BBQ Sauce"], ["ingredients", "For the Balsamic BBQ sauce:\r\n\r\n1 cup balsamic vinegar\r\n3/4 cup ketchup\r\n1/3 cup brown sugar\r\n1 garlic clove, minced\r\n1 tablespoon Worcestershire sauce\r\n1 tablespoon Dijon mustard\r\n1/2 teaspoon salt\r\n1/2 teaspoon freshly ground black pepper\r\n\r\nFor the chicken or steak:\r\n\r\n4 pieces chicken (any combination of breast or leg-and-thigh pieces) or 4 pieces of New York strip or Club strip steak\r\nSalt and freshly ground pepper"], ["directions", "For the BBQ sauce:\r\nCombine all the ingredients in a small saucepan and stir until all the ingredients are incorporated and the mixture is smooth. Simmer over medium heat until reduced by 1/3, about 15 to 20 minutes.;\r\n\r\nFor the chicken or steak:\r\nPlace a grill pan over medium heat or preheat a gas or charcoal grill. Season the meat with salt and pepper. Lightly coat with some of the BBQ sauce using a pastry brush. Place the meat on the grill. Place the remaining BBQ sauce, still in the small saucepan, over low heat or on the edge of a gas or charcoal grill and allow to gently simmer while the meat cooks.\r\n\r\nCook the chicken about 8 minutes per side. Cook the steaks starting at about 4 minutes per side until a meat thermometer reads the desired temperature, 120 degrees F for medium rare, 135 degrees F for medium (about 6 minutes per side), 155 degrees F for well done (about 9 minutes per side). Continually brush the meat with BBQ sauce every few minutes. Remove the meat from the grill and let rest for at least 5 minutes. Serve with the heated BBQ sauce alongside.\r\n\r\nAlternately, the chicken can be baked in the oven. Preheat the oven to 375 degrees F. Place the chicken skin side up in a baking dish and bake for 25 minutes. Remove the baking dish from the oven and spoon the BBQ sauce all over the top of the chicken. Return the baking dish to the oven and bake for another 15 minutes."], ["created_at", 2017-04-05 19:18:31 UTC], ["updated_at", 2017-04-05 19:18:31 UTC], ["image_file_name", "chicken.jpeg"], ["image_content_type", "image/jpeg"], ["image_file_size", 39197], ["image_updated_at", 2017-04-05 19:18:30 UTC]]
+  [1m[35m (131.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/recipes/6
+Completed 302 Found in 503ms (ActiveRecord: 139.6ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-04-05 15:18:31 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+Completed 200 OK in 74ms (Views: 66.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 15:18:36 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+Completed 200 OK in 63ms (Views: 60.0ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/recipes/5" for ::1 at 2017-04-05 15:18:42 -0400
+Processing by RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tUq6WY03KFqzOkCMzYW/1eE1JiIkcev059O4B6BY50T6cu2ZKqC2MRigWD3sVUDzLWFUXhCkp5QqERNoN8tEOg==", "id"=>"5"}
+  [1m[36mRecipe Load (1.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.2ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+[paperclip] deleting /Users/kleahey/Git/recipe-box/public/system/recipes/images/000/000/005/original/steak.jpeg
+[paperclip] deleting /Users/kleahey/Git/recipe-box/public/system/recipes/images/000/000/005/medium/steak.jpeg
+[paperclip] deleting /Users/kleahey/Git/recipe-box/public/system/recipes/images/000/000/005/thumb/steak.jpeg
+Redirected to http://localhost:3000/recipes
+Completed 302 Found in 23ms (ActiveRecord: 5.3ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 15:18:42 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_navbar.html.erb (63.1ms)
+Completed 200 OK in 134ms (Views: 131.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 15:37:31 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (25.9ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 177ms (Views: 167.0ms | ActiveRecord: 1.0ms)
+
+
