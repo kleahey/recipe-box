@@ -63,3 +63,6 @@ gem 'simple_form'
 
 # Integrate Bootstrap 4 CSS into the app
 gem 'bootstrap', '~> 4.0.0.alpha6'
+
+# Masonry for creating auto-card layout
+gem 'masonry-rails'

@@ -2,18 +2,17 @@
 
 <h1 class="container">My Recipes</h1></br>
 
-<% @recipes.each do |recipe| %>
-
-<div class="container recipe-card">
-  <div class="col-md-*">
-    <div class="card" style="width: 300px;">
-      <%= link_to (image_tag recipe.image.url(:thumb)), recipe, class: "card-img-top" %>
-      <div class="card-block">
-        <h4 class="card-title"><%= recipe.title %></h4>
-        <p class="card-text"><%= link_to 'Edit', edit_recipe_path(recipe) %> | <%= link_to 'Delete', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+<div class="container-fluid">
+<div id="recipe" class="transitions-enabled centered clearfix masonry">
+  <% @recipes.each do |recipe| %>
+      <div class="box card" style="width: 300px;">
+        <%= link_to (image_tag recipe.image.url(:thumb)), recipe, class: "card-img-top" %>
+        <div class="card-block">
+          <h4 class="card-title"><%= recipe.title %></h4>
+          <p class="card-text"><%= link_to 'Edit', edit_recipe_path(recipe) %> | <%= link_to 'Delete', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
 
-<% end %>
+  <% end %>
+</div>
+</div>

@@ -13,5 +13,30 @@
 //= require jquery
 //= require bootstrap
 //= require jquery_ujs
+//= require masonry/jquery.masonry
+//= require masonry/jquery.event-drag
+//= require masonry/jquery.imagesloaded.min
+//= require masonry/jquery.infinitescroll.min
+//= require masonry/modernizr-transitions
+//= require masonry/box-maker
+//= require masonry/jquery.loremimages.min
 //= require turbolinks
 //= require_tree .
+
+$('#recipe').masonry({
+  itemSelector: '.box',
+  // set columnWidth a fraction of the container width
+  columnWidth: function( containerWidth ) {
+    return containerWidth / 5;
+  }
+});
+
+$(function(){
+  $('#masonry-container').masonry({
+    itemSelector: '.box',
+    columnWidth: 200,
+    isAnimated: !Modernizr.csstransitions,
+    isFitWidth: true
+  });
+
+});
