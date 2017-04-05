@@ -6,6 +6,10 @@
 </p>
 
 <p>
+  <%= image_tag @recipe.image.url(:medium) %>
+</p>
+
+<p>
   <strong>Ingredients:</strong>
   <%= @recipe.ingredients %>
 </p>

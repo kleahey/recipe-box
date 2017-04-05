@@ -174,3 +174,1085 @@ Processing by RecipesController#index as HTML
 Completed 200 OK in 114ms (Views: 72.2ms | ActiveRecord: 11.2ms)
 
 
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2636335094792765940);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (6.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddAttachmentImageToRecipes (20170405053546)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class AddAttachmentImageToRecipes < ActiveRecord::Migration[4.2] (called from block in execute_migration_in_transaction at /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/activerecord-5.0.2/lib/active_record/migration.rb:1214)
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "recipes" ADD "image_file_name" character varying[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "recipes" ADD "image_content_type" character varying[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "recipes" ADD "image_file_size" integer[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "recipes" ADD "image_updated_at" timestamp[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170405053546"]]
+  [1m[35m (12.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2636335094792765940)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2636335094792765940);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to RemoveFieldFromRecipes (20170405053835)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (24.8ms)[0m  [1m[35mALTER TABLE "recipes" DROP "main_image"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "recipes" DROP "thumb_image"[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170405053835"]]
+  [1m[35m (106.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(2636335094792765940)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for ::1 at 2017-04-05 01:48:34 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (25.9ms)
+Started GET "/" for ::1 at 2017-04-05 01:48:35 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 568ms (Views: 544.8ms | ActiveRecord: 9.1ms)
+
+
+Completed 200 OK in 168ms (Views: 163.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-04-05 01:48:38 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (1.1ms)
+  Rendered recipes/new.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kleahey/Git/recipe-box/app/views/recipes/_form.html.erb:1: syntax error, unexpected tLABEL
+...  simple_form_for(recipe), url: recipes_path do |form| @outp...
+...                               ^):
+  
+app/views/recipes/_form.html.erb:1: syntax error, unexpected tLABEL
+app/views/recipes/new.html.erb:3:in `_app_views_recipes_new_html_erb__1746898445492100596_70240749036440'
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.6ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (103.8ms)
+Started GET "/recipes/new" for ::1 at 2017-04-05 01:49:20 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (305.0ms)
+  Rendered recipes/new.html.erb within layouts/application (306.9ms)
+Completed 500 Internal Server Error in 315ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `directions' for #<#<Class:0x007fc4661fdc18>:0x007fc4660528f0>):
+    1: <%= simple_form_for(recipe) do |form| %>
+    2:   <%= form.input :title %>
+    3:   <%= form.input :ingredients %>
+    4:   <%= form.input directions %>
+    5:   <%= form.input :avatar, as: :file %>
+    6:   <%= form.button :submit %>
+    7: <% end %>
+  
+app/views/recipes/_form.html.erb:4:in `block in _app_views_recipes__form_html_erb___4155179039300158253_70240746882040'
+app/views/recipes/_form.html.erb:1:in `_app_views_recipes__form_html_erb___4155179039300158253_70240746882040'
+app/views/recipes/new.html.erb:3:in `_app_views_recipes_new_html_erb__1746898445492100596_70240750995920'
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.9ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (86.8ms)
+Started GET "/recipes/new" for ::1 at 2017-04-05 01:49:29 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (9.9ms)
+  Rendered recipes/new.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 32ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-04-05 01:49:50 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (8.3ms)
+  Rendered recipes/new.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 37ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-04-05 01:58:36 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (0.8ms)
+  Rendered recipes/new.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kleahey/Git/recipe-box/app/views/recipes/_form.html.erb:1: syntax error, unexpected tLABEL
+...  simple_form_for(recipe), url: recipes_path do |form| @outp...
+...                               ^):
+  
+app/views/recipes/_form.html.erb:1: syntax error, unexpected tLABEL
+app/views/recipes/new.html.erb:3:in `_app_views_recipes_new_html_erb__1746898445492100596_70240776401920'
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.0ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (97.9ms)
+Started GET "/recipes/new" for ::1 at 2017-04-05 01:59:51 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (10.7ms)
+  Rendered recipes/new.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 50ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/recipes" for ::1 at 2017-04-05 02:20:27 -0400
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NKgNsfoYjFRXakWmMdgMp8hfKW334CLKHgwRBFWYtNV7kFpxXY8SP/zwXRcQCPOBBAtbEcM1bqrTzrprwgsXqw==", "recipe"=>{"title"=>"Baked Shrimp Scampi", "ingredients"=>"2 pounds (12 to 15 per pound) shrimp in the shell\r\n3 tablespoons good olive oil\r\n2 tablespoons dry white wine\r\nKosher salt and freshly ground black pepper\r\n12 tablespoons (1 1/2 sticks) unsalted butter, at room temperature\r\n4 teaspoons minced garlic (4 cloves)\r\n1/4 cup minced shallots\r\n3 tablespoons minced fresh parsley leaves\r\n1 teaspoon minced fresh rosemary leaves\r\n1/4 teaspoon crushed red pepper flakes\r\n1 teaspoon grated lemon zest\r\n2 tablespoons freshly squeezed lemon juice\r\n1 extra-large egg yolk\r\n2/3 cup panko (Japanese dried bread flakes)\r\nLemon wedges, for serving", "directions"=>"Preheat the oven to 425 degrees F.\r\n\r\n\r\nPeel, devein, and butterfly the shrimp, leaving the tails on. Place the shrimp in a mixing bowl and toss gently with the olive oil, wine, 2 teaspoons salt, and 1 teaspoon pepper. Allow to sit at room temperature while you make the butter and garlic mixture.\r\n\r\n\r\nIn a small bowl, mash the softened butter with the garlic, shallots, parsley, rosemary, red pepper flakes, lemon zest, lemon juice, egg yolk, panko, 1/2 teaspoon salt, and 1/4 teaspoon of pepper until combined.\r\n\r\n\r\nStarting from the outer edge of a 14-inch oval gratin dish, arrange the shrimp in a single layer cut side down with the tails curling up and towards the center of the dish. Pour the remaining marinade over the shrimp. Spread the butter mixture evenly over the shrimp. Bake for 10 to 12 minutes until hot and bubbly. If you like the top browned, place under a broiler for 1 minute. Serve with lemon wedges.\r\n", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fc466477e08 @tempfile=#<Tempfile:/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/RackMultipart20170405-61868-179ylp8.jpeg>, @original_filename="scampi.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"recipe[image]\"; filename=\"scampi.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Recipe"}
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/RackMultipart20170405-61868-179ylp8.jpeg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/e2a157a9a075b66019c9ac828d1c414a20170405-61868-o942vr.jpeg
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/e2a157a9a075b66019c9ac828d1c414a20170405-61868-o942vr.jpeg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/e2a157a9a075b66019c9ac828d1c414a20170405-61868-1bngqva.jpeg
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/e2a157a9a075b66019c9ac828d1c414a20170405-61868-1bngqva.jpeg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/e2a157a9a075b66019c9ac828d1c414a20170405-61868-o942vr.jpeg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/e2a157a9a075b66019c9ac828d1c414a20170405-61868-o942vr.jpeg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/e2a157a9a075b66019c9ac828d1c414a20170405-61868-o942vr.jpeg[0]' -auto-orient -resize "x500" -crop "500x500+83+0" +repage '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/f5dad6ea4e0e901c5f60383bda42926520170405-61868-3nodv7'
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/f5dad6ea4e0e901c5f60383bda42926520170405-61868-3nodv7 to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/befd27bd9fc4815a3ef622e33ba90a4820170405-61868-1k7dsd6
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/e2a157a9a075b66019c9ac828d1c414a20170405-61868-o942vr.jpeg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/e2a157a9a075b66019c9ac828d1c414a20170405-61868-o942vr.jpeg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/e2a157a9a075b66019c9ac828d1c414a20170405-61868-o942vr.jpeg[0]' -auto-orient -resize "x100" -crop "100x100+16+0" +repage '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/f5dad6ea4e0e901c5f60383bda42926520170405-61868-1rmzekl'
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/f5dad6ea4e0e901c5f60383bda42926520170405-61868-1rmzekl to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/54db7c27da1c4e853c76a6b6b6e06e7020170405-61868-1jeri2n
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/e2a157a9a075b66019c9ac828d1c414a20170405-61868-o942vr.jpeg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/e2a157a9a075b66019c9ac828d1c414a20170405-61868-jemftx.jpeg
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/e2a157a9a075b66019c9ac828d1c414a20170405-61868-jemftx.jpeg'
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "ingredients", "directions", "created_at", "updated_at", "image_file_name", "image_content_type", "image_file_size", "image_updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Baked Shrimp Scampi"], ["ingredients", "2 pounds (12 to 15 per pound) shrimp in the shell\r\n3 tablespoons good olive oil\r\n2 tablespoons dry white wine\r\nKosher salt and freshly ground black pepper\r\n12 tablespoons (1 1/2 sticks) unsalted butter, at room temperature\r\n4 teaspoons minced garlic (4 cloves)\r\n1/4 cup minced shallots\r\n3 tablespoons minced fresh parsley leaves\r\n1 teaspoon minced fresh rosemary leaves\r\n1/4 teaspoon crushed red pepper flakes\r\n1 teaspoon grated lemon zest\r\n2 tablespoons freshly squeezed lemon juice\r\n1 extra-large egg yolk\r\n2/3 cup panko (Japanese dried bread flakes)\r\nLemon wedges, for serving"], ["directions", "Preheat the oven to 425 degrees F.\r\n\r\n\r\nPeel, devein, and butterfly the shrimp, leaving the tails on. Place the shrimp in a mixing bowl and toss gently with the olive oil, wine, 2 teaspoons salt, and 1 teaspoon pepper. Allow to sit at room temperature while you make the butter and garlic mixture.\r\n\r\n\r\nIn a small bowl, mash the softened butter with the garlic, shallots, parsley, rosemary, red pepper flakes, lemon zest, lemon juice, egg yolk, panko, 1/2 teaspoon salt, and 1/4 teaspoon of pepper until combined.\r\n\r\n\r\nStarting from the outer edge of a 14-inch oval gratin dish, arrange the shrimp in a single layer cut side down with the tails curling up and towards the center of the dish. Pour the remaining marinade over the shrimp. Spread the butter mixture evenly over the shrimp. Bake for 10 to 12 minutes until hot and bubbly. If you like the top browned, place under a broiler for 1 minute. Serve with lemon wedges.\r\n"], ["created_at", 2017-04-05 06:20:27 UTC], ["updated_at", 2017-04-05 06:20:27 UTC], ["image_file_name", "scampi.jpeg"], ["image_content_type", "image/jpeg"], ["image_file_size", 107163], ["image_updated_at", 2017-04-05 06:20:27 UTC]]
+  [1m[35m (12.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/recipes/2
+Completed 302 Found in 437ms (ActiveRecord: 14.0ms)
+
+
+Started GET "/recipes/2" for ::1 at 2017-04-05 02:20:27 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 37ms (Views: 27.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 02:20:34 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 48ms (Views: 44.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/images/thumb/missing.png" for ::1 at 2017-04-05 02:20:34 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered collection of /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (6.0ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.6ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (128.2ms)
+Started GET "/recipes/2" for ::1 at 2017-04-05 02:21:57 -0400
+Started GET "/images/thumb/missing.png" for ::1 at 2017-04-05 02:21:57 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (1.8ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 163ms (Views: 151.2ms | ActiveRecord: 3.9ms)
+
+
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered collection of /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (20.7ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (269.9ms)
+Started GET "/recipes/2" for ::1 at 2017-04-05 02:22:51 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 50ms (Views: 33.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 02:22:54 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 74ms (Views: 71.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/images/thumb/missing.png" for ::1 at 2017-04-05 02:22:54 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered collection of /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (2.8ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (118.4ms)
+Started GET "/recipes" for ::1 at 2017-04-05 02:22:55 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 30ms (Views: 27.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/images/thumb/missing.png" for ::1 at 2017-04-05 02:22:55 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered collection of /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (14.2ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (219.0ms)
+Started GET "/recipes/2" for ::1 at 2017-04-05 02:22:59 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 61ms (Views: 54.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/images/thumb/missing.png" for ::1 at 2017-04-05 02:22:59 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered collection of /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (5.5ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (119.2ms)
+Started GET "/recipes" for ::1 at 2017-04-05 02:23:42 -0400
+Processing by RecipesController#index as HTML
+Started GET "/images/thumb/missing.png" for ::1 at 2017-04-05 02:23:42 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (37.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (106.8ms)
+Completed 200 OK in 160ms (Views: 119.1ms | ActiveRecord: 37.9ms)
+
+
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered collection of /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (8.1ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (127.3ms)
+Started GET "/recipes/new" for ::1 at 2017-04-05 02:23:43 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (22.5ms)
+  Rendered recipes/new.html.erb within layouts/application (27.4ms)
+Completed 200 OK in 82ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/thumb/missing.png" for ::1 at 2017-04-05 02:23:43 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered collection of /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (6.3ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (122.6ms)
+Started POST "/recipes" for ::1 at 2017-04-05 02:24:20 -0400
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"adMl/KkTi95lowMVtYhLheDjw1E7jqLoWCputRAQGzdfWt530zgFUqbgtTylkj32c6u9kYaq2kEFnI+YLQ6Log==", "recipe"=>{"title"=>"Banana Sour Cream Pancakes", "ingredients"=>"1 1/2 cups flour\r\n3 tablespoons sugar\r\n2 teaspoons baking powder\r\n1 1/2 teaspoons kosher salt\r\n1/2 cup sour cream\r\n3/4 cup plus 1 tablespoon milk\r\n2 extra-large eggs\r\n1 teaspoon pure vanilla extract\r\n1 teaspoon grated lemon zest\r\nUnsalted butter\r\n2 ripe bananas, diced, plus extra for serving\r\nPure maple syrup\r\n", "directions"=>"Sift together the flour, sugar, baking powder, and salt. In a separate bowl, whisk together the sour cream, milk, eggs, vanilla, and lemon zest. Add the wet ingredients to the dry ones, mixing only until combined.\r\n\r\nMelt 1 tablespoon of butter in a large skillet over medium-low heat until it bubbles. Ladle the pancake batter into the pan to make 3 or 4 pancakes. Distribute a rounded tablespoon of bananas on each pancake. Cook for 2 to 3 minutes, until bubbles appear on top and the underside is nicely browned. Flip the pancakes and then cook for another minute until browned. Wipe out the pan with a paper towel, add more butter to the pan, and continue cooking pancakes until all the batter is used. Serve with sliced bananas, butter and maple syrup.", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fc46b851588 @tempfile=#<Tempfile:/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/RackMultipart20170405-61868-9pd8om.jpeg>, @original_filename="pancakes.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"recipe[image]\"; filename=\"pancakes.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Recipe"}
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/RackMultipart20170405-61868-9pd8om.jpeg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/d1833805515fc34b46c2b9de553f599d20170405-61868-1g7gxgh.jpeg
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/d1833805515fc34b46c2b9de553f599d20170405-61868-1g7gxgh.jpeg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/d1833805515fc34b46c2b9de553f599d20170405-61868-hg0nle.jpeg
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/d1833805515fc34b46c2b9de553f599d20170405-61868-hg0nle.jpeg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/d1833805515fc34b46c2b9de553f599d20170405-61868-1g7gxgh.jpeg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/d1833805515fc34b46c2b9de553f599d20170405-61868-1g7gxgh.jpeg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/d1833805515fc34b46c2b9de553f599d20170405-61868-1g7gxgh.jpeg[0]' -auto-orient -resize "x400" -crop "400x400+66+0" +repage '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/61244171955ac8784acc4a2f56b40a7d20170405-61868-11g35m1'
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/61244171955ac8784acc4a2f56b40a7d20170405-61868-11g35m1 to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/875bd62840b3f9d90a797e86d1ed4b8020170405-61868-1d65y98
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/d1833805515fc34b46c2b9de553f599d20170405-61868-1g7gxgh.jpeg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/d1833805515fc34b46c2b9de553f599d20170405-61868-1g7gxgh.jpeg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/d1833805515fc34b46c2b9de553f599d20170405-61868-1g7gxgh.jpeg[0]' -auto-orient -resize "x150" -crop "150x150+25+0" +repage '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/61244171955ac8784acc4a2f56b40a7d20170405-61868-ruoyr7'
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/61244171955ac8784acc4a2f56b40a7d20170405-61868-ruoyr7 to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/e43995a41f726aeaf65698474383007e20170405-61868-1kshaw0
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/d1833805515fc34b46c2b9de553f599d20170405-61868-1g7gxgh.jpeg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/d1833805515fc34b46c2b9de553f599d20170405-61868-1wvoobx.jpeg
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/d1833805515fc34b46c2b9de553f599d20170405-61868-1wvoobx.jpeg'
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "ingredients", "directions", "created_at", "updated_at", "image_file_name", "image_content_type", "image_file_size", "image_updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Banana Sour Cream Pancakes"], ["ingredients", "1 1/2 cups flour\r\n3 tablespoons sugar\r\n2 teaspoons baking powder\r\n1 1/2 teaspoons kosher salt\r\n1/2 cup sour cream\r\n3/4 cup plus 1 tablespoon milk\r\n2 extra-large eggs\r\n1 teaspoon pure vanilla extract\r\n1 teaspoon grated lemon zest\r\nUnsalted butter\r\n2 ripe bananas, diced, plus extra for serving\r\nPure maple syrup\r\n"], ["directions", "Sift together the flour, sugar, baking powder, and salt. In a separate bowl, whisk together the sour cream, milk, eggs, vanilla, and lemon zest. Add the wet ingredients to the dry ones, mixing only until combined.\r\n\r\nMelt 1 tablespoon of butter in a large skillet over medium-low heat until it bubbles. Ladle the pancake batter into the pan to make 3 or 4 pancakes. Distribute a rounded tablespoon of bananas on each pancake. Cook for 2 to 3 minutes, until bubbles appear on top and the underside is nicely browned. Flip the pancakes and then cook for another minute until browned. Wipe out the pan with a paper towel, add more butter to the pan, and continue cooking pancakes until all the batter is used. Serve with sliced bananas, butter and maple syrup."], ["created_at", 2017-04-05 06:24:20 UTC], ["updated_at", 2017-04-05 06:24:20 UTC], ["image_file_name", "pancakes.jpeg"], ["image_content_type", "image/jpeg"], ["image_file_size", 33331], ["image_updated_at", 2017-04-05 06:24:20 UTC]]
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/recipes/3
+Completed 302 Found in 323ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/recipes/3" for ::1 at 2017-04-05 02:24:20 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 56ms (Views: 49.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 02:24:47 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 73ms (Views: 69.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/images/thumb/missing.png" for ::1 at 2017-04-05 02:24:47 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered collection of /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (5.1ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (120.8ms)
+Started GET "/recipes" for ::1 at 2017-04-05 02:26:26 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 48ms (Views: 45.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/images/thumb/missing.png" for ::1 at 2017-04-05 02:26:26 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered collection of /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (7.3ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.1ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.9ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (219.0ms)
+Started GET "/recipes/1" for ::1 at 2017-04-05 02:26:31 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 49ms (Views: 45.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/images/medium/missing.png" for ::1 at 2017-04-05 02:26:31 -0400
+Started GET "/images/thumb/missing.png" for ::1 at 2017-04-05 02:26:31 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/medium/missing.png"):
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered collection of /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (3.7ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (124.4ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered collection of /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (3.0ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (141.8ms)
+Started GET "/recipes/1" for ::1 at 2017-04-05 02:29:34 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 38ms (Views: 34.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/images/medium/missing.png" for ::1 at 2017-04-05 02:29:34 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/medium/missing.png"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered collection of /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (8.1ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.3ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (14.0ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (228.2ms)
+Started GET "/recipes" for ::1 at 2017-04-05 02:29:37 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 55ms (Views: 51.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/images/thumb/missing.png" for ::1 at 2017-04-05 02:29:37 -0400
+Started GET "/images/medium/missing.png" for ::1 at 2017-04-05 02:29:37 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/images/medium/missing.png"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered collection of /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (2.6ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (148.0ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered collection of /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (2.6ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (257.7ms)
+Started GET "/recipes/3" for ::1 at 2017-04-05 02:29:39 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 40ms (Views: 36.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/images/thumb/missing.png" for ::1 at 2017-04-05 02:29:39 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered collection of /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (2.6ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (109.8ms)
+Started GET "/recipes" for ::1 at 2017-04-05 02:29:40 -0400
+Started GET "/images/thumb/missing.png" for ::1 at 2017-04-05 02:29:40 -0400
+Processing by RecipesController#index as HTML
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+  Rendering recipes/index.html.erb within layouts/application
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[36mRecipe Load (8.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 82ms (Views: 70.0ms | ActiveRecord: 8.9ms)
+
+
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered collection of /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (3.4ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (122.8ms)
+Started GET "/recipes" for ::1 at 2017-04-05 02:30:38 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `exists?' for "/images/thumb/missing.png":String):
+    15:   <tbody>
+    16:     <% @recipes.each do |recipe| %>
+    17:       <tr>
+    18:         <% if recipe.image.url(:thumb).exists? %>
+    19:         <td><%= link_to (image_tag recipe.image.url(:thumb)), recipe %></td>
+    20:         <% end %>
+    21:         <td><%= recipe.title %></td>
+  
+app/views/recipes/index.html.erb:18:in `block in _app_views_recipes_index_html_erb___2337426435884136083_70240797866820'
+app/views/recipes/index.html.erb:16:in `_app_views_recipes_index_html_erb___2337426435884136083_70240797866820'
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.1ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (93.1ms)
+Started GET "/recipes" for ::1 at 2017-04-05 02:30:51 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 36ms (Views: 33.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 02:31:13 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 02:32:00 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 34ms (Views: 31.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 02:32:17 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 37ms (Views: 32.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes/2" for ::1 at 2017-04-05 02:32:26 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 67ms (Views: 64.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 02:32:30 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 71ms (Views: 68.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 02:32:54 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 30ms (Views: 27.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/3/edit" for ::1 at 2017-04-05 02:32:58 -0400
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (12.0ms)
+  Rendered recipes/edit.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 65ms (Views: 59.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 02:33:00 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 100ms (Views: 95.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/recipes/2" for ::1 at 2017-04-05 02:33:04 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 56ms (Views: 52.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 02:33:09 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 79ms (Views: 74.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/3" for ::1 at 2017-04-05 02:33:10 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 59ms (Views: 55.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-05 02:34:06 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 88ms (Views: 84.3ms | ActiveRecord: 1.2ms)
+
+
