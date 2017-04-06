@@ -1,11 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<h1 class="container">My Recipes</h1></br>
-
 <div class="container-fluid">
 <div id="recipe" class="transitions-enabled centered clearfix masonry">
   <% @recipes.each do |recipe| %>
-      <div class="box card" style="width: 300px;">
+      <div class="box col4">
         <%= link_to (image_tag recipe.image.url(:thumb)), recipe, class: "card-img-top" %>
         <div class="card-block">
           <h4 class="card-title"><%= recipe.title %></h4>

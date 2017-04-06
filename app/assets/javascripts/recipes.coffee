@@ -3,8 +3,9 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $ ->
-  $('#recipe').masonry
-    itemSelector: '.box'
-    columnWidth: 200
-    isAnimated: !Modernizr.csstransitions
-    isFitWidth: true
+  $('#recipe').imagesLoaded ->
+    $('#recipe').masonry
+      itemSelector: '.box'
+      columnWidth: 200
+      isAnimated: !Modernizr.csstransitions
+      isFitWidth: true

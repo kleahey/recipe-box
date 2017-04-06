@@ -62,7 +62,21 @@ gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 gem 'simple_form'
 
 # Integrate Bootstrap 4 CSS into the app
-gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'bootstrap', '~> 4.0.0.alpha3'
 
 # Masonry for creating auto-card layout
 gem 'masonry-rails'
+
+# WYSIWYG editor
+gem 'bootsy', git: "https://github.com/volmer/bootsy.git", branch: "bootstrap-4"
+
+# Font-awesome gem
+gem 'font-awesome-rails'
+
+# Attempt at fixing an error
+gem 'jquery-turbolinks'
+
+# Tether for Bootstrap 4
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.3.3'
+end
