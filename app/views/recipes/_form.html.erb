@@ -1,9 +1,20 @@
-<div class="form-wrapper">
-    <%= simple_form_for(recipe) do |form| %>
-      <%= form.input :title %>
-      <%= form.input :ingredients, as: :bootsy, editor_options: { image: false }, input_html: { rows: 10, cols: 80 } %>
-      <%= form.input :directions, as: :bootsy, editor_options: { image: false }, input_html: { rows: 10, cols: 80 } %>
-      <%= form.input :image, as: :file %>
-      <%= form.button :submit %>
-    <% end %>
+<div class="card" style="width: 44rem;">
+    <div class="card-block">
+      <h4 class="card-title">New Recipe Entry</h4>
+      <p class="card-text">
+        <%= simple_form_for(recipe) do |form| %>
+        <div class="form-group">
+          <%= form.input :title, label: false, placeholder: "Recipe Title" %></br>
+          <%= form.input :ingredients, as: :bootsy, label: false, editor_options: { image: false }, input_html: { rows: 10, cols: 80 }, placeholder: "List Ingredients Here" %>
+          <%= form.input :directions, as: :bootsy, label: false, editor_options: { image: false }, input_html: { rows: 10, cols: 80 }, placeholder: "List Directions Here" %>
+          <%= form.input :image, as: :file %></br>
+          <div class="row">
+            <%= form.button :submit, class: "btn btn-primary" %>
+            <%= link_to "Cancel", recipes_path , class: "btn" %>
+          </div>
+        </div>
+        <% end %>
+      </p>
+    </div>
+  </div>
 </div>

@@ -23,6 +23,16 @@
 @import "font-awesome";
 @import "bootsy";
 
+.card {
+        margin: 0 auto;
+        float: none;
+        margin-top: 10px;
+        margin-bottom: 10px;
+  .btn-primary {
+    margin-left: 15px;
+  }
+}
+
 #recipe {
   background: #FFF;
   padding: 5px;
@@ -33,7 +43,3 @@
      -moz-border-radius: 5px;
           border-radius: 5px;
 }
-
-.clearfix:before, .clearfix:after { content: ""; display: table; }
-.clearfix:after { clear: both; }
-.clearfix { zoom: 1; }
