@@ -11,7 +11,6 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery.turbolinks
 //= require jquery_ujs
 //= require tether
 //= require bootstrap-sprockets
@@ -24,4 +23,5 @@
 //= require masonry/box-maker
 //= require masonry/jquery.loremimages.min
 //= require turbolinks
+//= require typekit
 //= require_tree .

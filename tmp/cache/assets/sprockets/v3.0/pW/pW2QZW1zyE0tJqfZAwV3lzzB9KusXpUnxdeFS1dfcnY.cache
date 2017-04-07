@@ -1,0 +1,7 @@
+I"T(function() {
+  try {
+    Typekit.load();
+  } catch (error) {}
+
+}).call(this);
+:ET

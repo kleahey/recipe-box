@@ -73,8 +73,8 @@ gem 'bootsy', git: "https://github.com/volmer/bootsy.git", branch: "bootstrap-4"
 # Font-awesome gem
 gem 'font-awesome-rails'
 
-# Attempt at fixing an error
-gem 'jquery-turbolinks'
+# Adobe Typekit
+gem 'typekit-rails'
 
 # Tether for Bootstrap 4
 source 'https://rails-assets.org' do

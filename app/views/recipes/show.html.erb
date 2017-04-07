@@ -1,23 +1,62 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @recipe.title %>
-</p>
+<div class="container" id="title-div">
+  <div class="row">
+    <div class="col text-center">
+      <div class="recipe-image">
+        <p><%= image_tag @recipe.image.url(:medium) %></p>
+      </div>
+    </div>
+    <div class="col text-center">
+      <div class="recipe-title">
+        <p><%= @recipe.title %></p>
+      </div>
+    </div>
+  </div>
+</div>
 
-<p>
-  <%= image_tag @recipe.image.url(:medium) %>
-</p>
+<div class="container" id="ingredients-div">
+  <div class="row">
+    <div class="col text-center">
+      <div class="ingredients-label">
+        <span>Ingredients</span>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="ingredients-text">
+        <%= @recipe.ingredients.html_safe %>
+      </div>
+    </div>
+  </div>
+</div>
 
-<p>
-  <strong>Ingredients:</strong>
-  <%= @recipe.ingredients.html_safe %>
-</p>
 
-<p>
-  <strong>Directions:</strong>
-  <%= @recipe.directions.html_safe %>
-</p>
+<div class="container" id="directions-div">
+  <div class="row">
+    <div class="col text-center">
+      <div class="directions-label">
+        <span>Directions</span>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="directions-text">
+        <%= @recipe.directions.html_safe %>
+      </div>
+    </div>
+  </div>
+</div>
 
-<%= link_to 'Edit', edit_recipe_path(@recipe) %> |
-<%= link_to 'Back', recipes_path %>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="recipe-footer text-center">
+        <%= link_to 'Edit', edit_recipe_path(@recipe) %> |
+        <%= link_to 'Back', recipes_path %>
+      </div>
+    </div>
+  </div>
+</div>

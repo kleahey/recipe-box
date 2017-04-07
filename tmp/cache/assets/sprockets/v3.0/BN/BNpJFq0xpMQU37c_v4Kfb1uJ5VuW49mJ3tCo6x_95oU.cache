@@ -1,0 +1,14 @@
+I"(function() {
+  $(function() {
+    return $('#recipe').imagesLoaded(function() {
+      return $('#recipe').masonry({
+        itemSelector: '.box',
+        columnWidth: 200,
+        isAnimated: !Modernizr.csstransitions,
+        isFitWidth: true
+      });
+    });
+  });
+
+}).call(this);
+:ET
