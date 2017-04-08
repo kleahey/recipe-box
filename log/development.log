@@ -9649,3 +9649,640 @@ Processing by RecipesController#index as HTML
 Completed 200 OK in 204ms (Views: 199.5ms | ActiveRecord: 0.8ms)
 
 
+Started GET "/recipes" for ::1 at 2017-04-08 10:57:31 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (31.0ms)
+Started GET "/" for ::1 at 2017-04-08 10:57:32 -0400
+  Rendered layouts/_navbar.html.erb (1.1ms)
+Completed 200 OK in 885ms (Views: 854.1ms | ActiveRecord: 7.7ms)
+
+
+Processing by RecipesController#index as HTML
+Started GET "/" for ::1 at 2017-04-08 10:57:33 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (5.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mRecipe Load (9.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (70.8ms)
+  Rendered recipes/index.html.erb within layouts/application (92.0ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+Completed 200 OK in 629ms (Views: 394.3ms | ActiveRecord: 85.3ms)
+
+
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 464ms (Views: 416.4ms | ActiveRecord: 44.2ms)
+
+
+Started GET "/" for ::1 at 2017-04-08 10:58:06 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+Completed 200 OK in 136ms (Views: 133.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-04-08 10:58:24 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 130ms (Views: 118.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-04-08 11:03:18 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (75.9ms)
+  Rendered recipes/new.html.erb within layouts/application (78.9ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+Completed 200 OK in 221ms (Views: 218.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/recipes" for ::1 at 2017-04-08 11:04:58 -0400
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Nx/6wkoi4HUUNok33vTRukQ80tfeu9XJIN9gJBe5stp4J60C7bV+Hr+skYb/JC6ciGigq+pumantHctLgCoRpA==", "recipe"=>{"title"=>"Savory \"Carrot Cake\" Bruschetta", "ingredients"=>"<ul><li>8 ounces Happy Farms Onion &amp; Chive Soft Spread Cream Cheese</li><li>3 tablespoons Friendly Farms Sour Cream</li><li>4 tablespoons Countryside Creamery Unsalted Butter</li><li>1 tablespoon Stonemill Minced Garlic in Water</li><li>4 cups diced carrots</li><li>2 teaspoons Stonemill Iodized Salt</li><li>2 teaspoons Stonemill Ground Black Pepper</li><li>1 teaspoon Stonemill Ground Ginger*</li><li>1 teaspoon Stonemill Ground Cinnamon</li><li>½ teaspoon Stonemill Crushed Red Pepper</li><li>¼ cup spiced rum</li><li>3 tablespoons SimplyNature Organic Wildflower Honey</li><li>12 ounces Specially Selected French Baguette, sliced diagonally into 1-inch pieces</li><li>3 tablespoons Carlini Extra Virgin Olive Oil</li><li>2 tablespoons chopped parsley</li><li>2 tablespoons Southern Grove Sliced Almonds, chopped</li></ul>", "directions"=>"<div>Heat grill to medium heat.</div><div><br></div><div>In a small bowl, combine cream cheese and sour cream with an electric mixer. Reserve.</div><div><br></div><div>In a medium sauté pan on medium heat, melt butter then add garlic. Sauté until golden brown and add carrots. Season with salt, pepper, ginger, cinnamon and crushed red pepper. Sauté until almost completely cooked.</div><div><br></div><div>Stir rum into carrot mixture and allow alcohol to burn off. Add honey and toss until carrots are well coated and honey begins to caramelize. Remove from heat and reserve, keeping carrots warm.</div><div><br></div><div>Brush baguette slices with olive oil, and grill for 2 minutes on each side, or until grill marks appear on bread.</div><div><br></div><div>To assemble, spread cream cheese mixture onto bread slices. Top with carrot mixture then sprinkle with parsley and almonds. Serve immediately.</div>", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fbec484d480 @tempfile=#<Tempfile:/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/RackMultipart20170408-12395-cmghne.jpeg>, @original_filename="bruschetta.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"recipe[image]\"; filename=\"bruschetta.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "_wysihtml5_mode"=>"1", "commit"=>"Create Recipe"}
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/RackMultipart20170408-12395-cmghne.jpeg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-12395-n8m8r6.jpeg
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-12395-n8m8r6.jpeg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-12395-19zpxg9.jpeg
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-12395-19zpxg9.jpeg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-12395-n8m8r6.jpeg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-12395-n8m8r6.jpeg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-12395-n8m8r6.jpeg[0]' -auto-orient -resize "x400" -crop "400x400+66+0" +repage '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/e44e8fcf2e610617da903ad61fe353ce20170408-12395-47t4wt'
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/e44e8fcf2e610617da903ad61fe353ce20170408-12395-47t4wt to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/ddf882279afc89ef830300c8557736c620170408-12395-1o9m5xs
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-12395-n8m8r6.jpeg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-12395-n8m8r6.jpeg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-12395-n8m8r6.jpeg[0]' -auto-orient -resize "300x" -crop "300x200+0+12" +repage '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/e44e8fcf2e610617da903ad61fe353ce20170408-12395-121fcl3'
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/e44e8fcf2e610617da903ad61fe353ce20170408-12395-121fcl3 to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/22c49204f2d3186b01249368f21913f020170408-12395-14lax4a
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-12395-n8m8r6.jpeg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-12395-r1t304.jpeg
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-12395-r1t304.jpeg'
+  [1m[35mSQL (7.6ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "ingredients", "directions", "created_at", "updated_at", "image_file_name", "image_content_type", "image_file_size", "image_updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Savory \"Carrot Cake\" Bruschetta"], ["ingredients", "<ul><li>8 ounces Happy Farms Onion &amp; Chive Soft Spread Cream Cheese</li><li>3 tablespoons Friendly Farms Sour Cream</li><li>4 tablespoons Countryside Creamery Unsalted Butter</li><li>1 tablespoon Stonemill Minced Garlic in Water</li><li>4 cups diced carrots</li><li>2 teaspoons Stonemill Iodized Salt</li><li>2 teaspoons Stonemill Ground Black Pepper</li><li>1 teaspoon Stonemill Ground Ginger*</li><li>1 teaspoon Stonemill Ground Cinnamon</li><li>½ teaspoon Stonemill Crushed Red Pepper</li><li>¼ cup spiced rum</li><li>3 tablespoons SimplyNature Organic Wildflower Honey</li><li>12 ounces Specially Selected French Baguette, sliced diagonally into 1-inch pieces</li><li>3 tablespoons Carlini Extra Virgin Olive Oil</li><li>2 tablespoons chopped parsley</li><li>2 tablespoons Southern Grove Sliced Almonds, chopped</li></ul>"], ["directions", "<div>Heat grill to medium heat.</div><div><br></div><div>In a small bowl, combine cream cheese and sour cream with an electric mixer. Reserve.</div><div><br></div><div>In a medium sauté pan on medium heat, melt butter then add garlic. Sauté until golden brown and add carrots. Season with salt, pepper, ginger, cinnamon and crushed red pepper. Sauté until almost completely cooked.</div><div><br></div><div>Stir rum into carrot mixture and allow alcohol to burn off. Add honey and toss until carrots are well coated and honey begins to caramelize. Remove from heat and reserve, keeping carrots warm.</div><div><br></div><div>Brush baguette slices with olive oil, and grill for 2 minutes on each side, or until grill marks appear on bread.</div><div><br></div><div>To assemble, spread cream cheese mixture onto bread slices. Top with carrot mixture then sprinkle with parsley and almonds. Serve immediately.</div>"], ["created_at", 2017-04-08 15:04:58 UTC], ["updated_at", 2017-04-08 15:04:58 UTC], ["image_file_name", "bruschetta.jpeg"], ["image_content_type", "image/jpeg"], ["image_file_size", 32320], ["image_updated_at", 2017-04-08 15:04:58 UTC]]
+  [1m[35m (116.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/recipes/12
+Completed 406 Not Acceptable in 426ms (ActiveRecord: 124.6ms)
+
+
+  
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  
+app/controllers/recipes_controller.rb:29:in `create'
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.5ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (97.9ms)
+Started POST "/recipes" for ::1 at 2017-04-08 11:10:36 -0400
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Nx/6wkoi4HUUNok33vTRukQ80tfeu9XJIN9gJBe5stp4J60C7bV+Hr+skYb/JC6ciGigq+pumantHctLgCoRpA==", "recipe"=>{"title"=>"Savory \"Carrot Cake\" Bruschetta", "ingredients"=>"<ul><li>8 ounces Happy Farms Onion &amp; Chive Soft Spread Cream Cheese</li><li>3 tablespoons Friendly Farms Sour Cream</li><li>4 tablespoons Countryside Creamery Unsalted Butter</li><li>1 tablespoon Stonemill Minced Garlic in Water</li><li>4 cups diced carrots</li><li>2 teaspoons Stonemill Iodized Salt</li><li>2 teaspoons Stonemill Ground Black Pepper</li><li>1 teaspoon Stonemill Ground Ginger*</li><li>1 teaspoon Stonemill Ground Cinnamon</li><li>½ teaspoon Stonemill Crushed Red Pepper</li><li>¼ cup spiced rum</li><li>3 tablespoons SimplyNature Organic Wildflower Honey</li><li>12 ounces Specially Selected French Baguette, sliced diagonally into 1-inch pieces</li><li>3 tablespoons Carlini Extra Virgin Olive Oil</li><li>2 tablespoons chopped parsley</li><li>2 tablespoons Southern Grove Sliced Almonds, chopped</li></ul>", "directions"=>"<div>Heat grill to medium heat.</div><div><br></div><div>In a small bowl, combine cream cheese and sour cream with an electric mixer. Reserve.</div><div><br></div><div>In a medium sauté pan on medium heat, melt butter then add garlic. Sauté until golden brown and add carrots. Season with salt, pepper, ginger, cinnamon and crushed red pepper. Sauté until almost completely cooked.</div><div><br></div><div>Stir rum into carrot mixture and allow alcohol to burn off. Add honey and toss until carrots are well coated and honey begins to caramelize. Remove from heat and reserve, keeping carrots warm.</div><div><br></div><div>Brush baguette slices with olive oil, and grill for 2 minutes on each side, or until grill marks appear on bread.</div><div><br></div><div>To assemble, spread cream cheese mixture onto bread slices. Top with carrot mixture then sprinkle with parsley and almonds. Serve immediately.</div>", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fbec0dc0d58 @tempfile=#<Tempfile:/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/RackMultipart20170408-12395-xxw7uy.jpeg>, @original_filename="bruschetta.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"recipe[image]\"; filename=\"bruschetta.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "_wysihtml5_mode"=>"1", "commit"=>"Create Recipe"}
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/RackMultipart20170408-12395-xxw7uy.jpeg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-12395-ehh4jq.jpeg
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-12395-ehh4jq.jpeg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-12395-13anw5x.jpeg
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-12395-13anw5x.jpeg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-12395-ehh4jq.jpeg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-12395-ehh4jq.jpeg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-12395-ehh4jq.jpeg[0]' -auto-orient -resize "x400" -crop "400x400+66+0" +repage '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/1cdd43cc584a4a8eece32f062d08309f20170408-12395-fq3x11'
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/1cdd43cc584a4a8eece32f062d08309f20170408-12395-fq3x11 to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/aeb81491a5e66a818b1fdb80824653f720170408-12395-1ugjgs3
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-12395-ehh4jq.jpeg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-12395-ehh4jq.jpeg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-12395-ehh4jq.jpeg[0]' -auto-orient -resize "300x" -crop "300x200+0+12" +repage '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/1cdd43cc584a4a8eece32f062d08309f20170408-12395-14noc3j'
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/1cdd43cc584a4a8eece32f062d08309f20170408-12395-14noc3j to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/6f7dcae9f940bc66d38f6c2ff312ef1e20170408-12395-ta21ys
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-12395-ehh4jq.jpeg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-12395-pa8aif.jpeg
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-12395-pa8aif.jpeg'
+  [1m[35mSQL (3.9ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "ingredients", "directions", "created_at", "updated_at", "image_file_name", "image_content_type", "image_file_size", "image_updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Savory \"Carrot Cake\" Bruschetta"], ["ingredients", "<ul><li>8 ounces Happy Farms Onion &amp; Chive Soft Spread Cream Cheese</li><li>3 tablespoons Friendly Farms Sour Cream</li><li>4 tablespoons Countryside Creamery Unsalted Butter</li><li>1 tablespoon Stonemill Minced Garlic in Water</li><li>4 cups diced carrots</li><li>2 teaspoons Stonemill Iodized Salt</li><li>2 teaspoons Stonemill Ground Black Pepper</li><li>1 teaspoon Stonemill Ground Ginger*</li><li>1 teaspoon Stonemill Ground Cinnamon</li><li>½ teaspoon Stonemill Crushed Red Pepper</li><li>¼ cup spiced rum</li><li>3 tablespoons SimplyNature Organic Wildflower Honey</li><li>12 ounces Specially Selected French Baguette, sliced diagonally into 1-inch pieces</li><li>3 tablespoons Carlini Extra Virgin Olive Oil</li><li>2 tablespoons chopped parsley</li><li>2 tablespoons Southern Grove Sliced Almonds, chopped</li></ul>"], ["directions", "<div>Heat grill to medium heat.</div><div><br></div><div>In a small bowl, combine cream cheese and sour cream with an electric mixer. Reserve.</div><div><br></div><div>In a medium sauté pan on medium heat, melt butter then add garlic. Sauté until golden brown and add carrots. Season with salt, pepper, ginger, cinnamon and crushed red pepper. Sauté until almost completely cooked.</div><div><br></div><div>Stir rum into carrot mixture and allow alcohol to burn off. Add honey and toss until carrots are well coated and honey begins to caramelize. Remove from heat and reserve, keeping carrots warm.</div><div><br></div><div>Brush baguette slices with olive oil, and grill for 2 minutes on each side, or until grill marks appear on bread.</div><div><br></div><div>To assemble, spread cream cheese mixture onto bread slices. Top with carrot mixture then sprinkle with parsley and almonds. Serve immediately.</div>"], ["created_at", 2017-04-08 15:10:36 UTC], ["updated_at", 2017-04-08 15:10:36 UTC], ["image_file_name", "bruschetta.jpeg"], ["image_content_type", "image/jpeg"], ["image_file_size", 32320], ["image_updated_at", 2017-04-08 15:10:36 UTC]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/recipes/13
+Completed 302 Found in 313ms (ActiveRecord: 10.1ms)
+
+
+Started GET "/recipes/13" for ::1 at 2017-04-08 11:10:36 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 179ms (Views: 173.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 11:10:52 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+Completed 200 OK in 131ms (Views: 126.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/recipes/13" for ::1 at 2017-04-08 11:10:55 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 120ms (Views: 115.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-04-08 11:14:53 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (8.2ms)
+  Rendered recipes/new.html.erb within layouts/application (10.6ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 5519ms (Views: 5516.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/recipes" for ::1 at 2017-04-08 11:16:23 -0400
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gwIuHjGlMoBVljZNc3IQQxiistRkYIPqL4oPBKC7tQrMOnneljKs6/4MLvxSou9l1PbAqFC1z4riSKRrNygWdA==", "recipe"=>{"title"=>"Baked Ham with Brown Sugar Mustard Glaze", "ingredients"=>"<ul><li>1 (12-pound) shankless skinless smoked cured ham</li><li>Whole cloves for studding ham</li><li>1 cup firmly packed light brown sugar</li><li>1/4 cup prepared mustard</li><li>2 tablespoons cider vinegar</li><li>Variation: GLAZED HAM STEAK WITH BROWN SUGAR MUSTARD GLAZE</li><li>1 to 2-inch Ham Steak</li><li>1/2 teaspoon ground cloves</li></ul>", "directions"=>"<div>Preheat oven to 350 degrees</div><div><br></div><div>Score top of ham into diamonds and stud center of each diamond with a clove. Place ham on a rack in a roasting pan and bake for 1 1/2 hours. In a bowl combine the sugar, mustard and vinegar and spread glaze evenly over ham. Bake for another 35 minutes Transfer ham to a platter and let stand 15 minutes before carving.</div><div><br></div><div>Preheat oven to 350 degrees</div><div><br></div><div>Combine cloves, sugar and mustard and brush over Ham Steak. Bake in baking dish in 350 degree oven for 15 minutes until heated through.</div>", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fbec0e65ec0 @tempfile=#<Tempfile:/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/RackMultipart20170408-12395-wn3ps2.jpeg>, @original_filename="ham.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"recipe[image]\"; filename=\"ham.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "_wysihtml5_mode"=>"1", "commit"=>"Create Recipe"}
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/RackMultipart20170408-12395-wn3ps2.jpeg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/79af0c177db2ee64b7301af6e1d5363420170408-12395-2m3s32.jpeg
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/79af0c177db2ee64b7301af6e1d5363420170408-12395-2m3s32.jpeg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/79af0c177db2ee64b7301af6e1d5363420170408-12395-1qiuwiw.jpeg
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/79af0c177db2ee64b7301af6e1d5363420170408-12395-1qiuwiw.jpeg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/79af0c177db2ee64b7301af6e1d5363420170408-12395-2m3s32.jpeg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/79af0c177db2ee64b7301af6e1d5363420170408-12395-2m3s32.jpeg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/79af0c177db2ee64b7301af6e1d5363420170408-12395-2m3s32.jpeg[0]' -auto-orient -resize "x400" -crop "400x400+66+0" +repage '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/dfa87a39121d85a59af1052f1ca9e81520170408-12395-1rsfd1g'
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/dfa87a39121d85a59af1052f1ca9e81520170408-12395-1rsfd1g to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/428e10965b7d9ad1ef32f04bbf62373120170408-12395-1xlgj6r
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/79af0c177db2ee64b7301af6e1d5363420170408-12395-2m3s32.jpeg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/79af0c177db2ee64b7301af6e1d5363420170408-12395-2m3s32.jpeg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/79af0c177db2ee64b7301af6e1d5363420170408-12395-2m3s32.jpeg[0]' -auto-orient -resize "300x" -crop "300x200+0+12" +repage '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/dfa87a39121d85a59af1052f1ca9e81520170408-12395-7c30f6'
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/dfa87a39121d85a59af1052f1ca9e81520170408-12395-7c30f6 to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/b2c601e5d6d3339284a575775fe1728820170408-12395-i8m83l
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/79af0c177db2ee64b7301af6e1d5363420170408-12395-2m3s32.jpeg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/79af0c177db2ee64b7301af6e1d5363420170408-12395-wbt867.jpeg
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/79af0c177db2ee64b7301af6e1d5363420170408-12395-wbt867.jpeg'
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "ingredients", "directions", "created_at", "updated_at", "image_file_name", "image_content_type", "image_file_size", "image_updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Baked Ham with Brown Sugar Mustard Glaze"], ["ingredients", "<ul><li>1 (12-pound) shankless skinless smoked cured ham</li><li>Whole cloves for studding ham</li><li>1 cup firmly packed light brown sugar</li><li>1/4 cup prepared mustard</li><li>2 tablespoons cider vinegar</li><li>Variation: GLAZED HAM STEAK WITH BROWN SUGAR MUSTARD GLAZE</li><li>1 to 2-inch Ham Steak</li><li>1/2 teaspoon ground cloves</li></ul>"], ["directions", "<div>Preheat oven to 350 degrees</div><div><br></div><div>Score top of ham into diamonds and stud center of each diamond with a clove. Place ham on a rack in a roasting pan and bake for 1 1/2 hours. In a bowl combine the sugar, mustard and vinegar and spread glaze evenly over ham. Bake for another 35 minutes Transfer ham to a platter and let stand 15 minutes before carving.</div><div><br></div><div>Preheat oven to 350 degrees</div><div><br></div><div>Combine cloves, sugar and mustard and brush over Ham Steak. Bake in baking dish in 350 degree oven for 15 minutes until heated through.</div>"], ["created_at", 2017-04-08 15:16:23 UTC], ["updated_at", 2017-04-08 15:16:23 UTC], ["image_file_name", "ham.jpeg"], ["image_content_type", "image/jpeg"], ["image_file_size", 55583], ["image_updated_at", 2017-04-08 15:16:23 UTC]]
+  [1m[35m (11.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/recipes/14
+Completed 302 Found in 310ms (ActiveRecord: 13.2ms)
+
+
+Started GET "/recipes/14" for ::1 at 2017-04-08 11:16:23 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+Completed 200 OK in 222ms (Views: 217.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 11:24:38 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (21.3ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+Completed 200 OK in 182ms (Views: 174.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/recipes/7/edit" for ::1 at 2017-04-08 11:24:41 -0400
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (7.0ms)
+  Rendered recipes/edit.html.erb within layouts/application (10.0ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+Completed 200 OK in 168ms (Views: 162.0ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/recipes/7" for ::1 at 2017-04-08 11:24:44 -0400
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OdHCVusriVKyQefxRCAZizQ9kJFm7ETW6vBEOwgxqAR26ZWWTLwXORnb/0Bl8Oat+Gni7VI5CLYnMu9Un6ILeg==", "recipe"=>{"title"=>"Chicken Parmesan", "ingredients"=>"1/4 cup extra-virgin olive oil, plus 3 tablespoons\r\n1 medium onion, chopped\r\n2 garlic cloves, minced\r\n2 bay leaves\r\n1/2 cup kalamata olives, pitted\r\n1/2 bunch fresh basil leaves\r\n2 (28-ounce) cans whole peeled tomatoes, drained and hand-crushed\r\nPinch sugar\r\nKosher salt and freshly ground black pepper\r\n4 skinless, boneless, chicken breasts (about 1 1/2 pounds)\r\n1/2 cup all-purpose flour\r\n2 large eggs, lightly beaten\r\n1 tablespoon water\r\n1 cup dried bread crumbs\r\n1 (8-ounce) ball fresh buffalo mozzarella, water drained\r\nFreshly grated Parmesan\r\n1 pound spaghetti pasta, cooked al dente", "directions"=>"Coat a saute pan with olive oil and place over medium heat. When the oil gets hazy, add the onions, garlic, and bay leaves; cook and stir for 5 minutes until fragrant and soft. Add the olives and some hand-torn basil. Carefully add the tomatoes (nothing splashes like tomatoes), cook and stir until the liquid is cooked down and the sauce is thick, about 15 minutes; season with sugar, salt and pepper. Lower the heat, cover, and keep warm.\r\n\r\nPreheat the oven to 450 degrees F.\r\n\r\nGet the ingredients together for the chicken so you have a little assembly line. Put the chicken breasts side by side on a cutting board and lay a piece of plastic wrap over them. Pound the chicken breasts with a flat meat mallet, until they are about 1/2-inch thick. Put the flour in a shallow platter and season with a fair amount of salt and pepper; mix with a fork to distribute evenly. In a wide bowl, combine the eggs and water, beat until frothy. Put the bread crumbs on a plate, season with salt and pepper.\r\n\r\nHeat 3 tablespoons of olive oil over medium-high flame in a large oven-proof skillet. Lightly dredge both sides of the chicken cutlets in the seasoned flour, and then dip them in the egg wash to coat completely, letting the excess drip off, then dredge in the bread crumbs. When the oil is nice and hot, add the cutlets and fry for 4 minutes on each side until golden and crusty, turning once.\r\n\r\nLadle the tomato-olive sauce over the chicken and sprinkle with mozzarella, Parmesan, and basil. Bake the Chicken Parmesan for 15 minutes or until the cheese is bubbly. Serve hot with spaghetti."}, "_wysihtml5_mode"=>"1", "commit"=>"Update Recipe", "id"=>"7"}
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/recipes/7
+Completed 302 Found in 10ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/recipes/7" for ::1 at 2017-04-08 11:24:44 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+Completed 200 OK in 168ms (Views: 163.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 11:24:51 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+Completed 200 OK in 150ms (Views: 146.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/recipes/7" for ::1 at 2017-04-08 11:25:05 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+Completed 200 OK in 138ms (Views: 134.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/recipes/7/edit" for ::1 at 2017-04-08 11:25:47 -0400
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (7.6ms)
+  Rendered recipes/edit.html.erb within layouts/application (10.4ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+Completed 200 OK in 153ms (Views: 148.7ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/recipes/7" for ::1 at 2017-04-08 11:25:53 -0400
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oEq5/QbfNXWuX0ZVOwoEzDKVTJgnoR7k1KFFg3b+NPHvcu49oUirHgXFXuQa2vvq/sE+5BN0UoQZY+7s4W2Xjw==", "recipe"=>{"title"=>"Chicken Parmesan", "ingredients"=>"1/4 cup extra-virgin olive oil, plus 3 tablespoons\r\n1 medium onion, chopped\r\n2 garlic cloves, minced\r\n2 bay leaves\r\n1/2 cup kalamata olives, pitted\r\n1/2 bunch fresh basil leaves\r\n2 (28-ounce) cans whole peeled tomatoes, drained and hand-crushed\r\nPinch sugar\r\nKosher salt and freshly ground black pepper\r\n4 skinless, boneless, chicken breasts (about 1 1/2 pounds)\r\n1/2 cup all-purpose flour\r\n2 large eggs, lightly beaten\r\n1 tablespoon water\r\n1 cup dried bread crumbs\r\n1 (8-ounce) ball fresh buffalo mozzarella, water drained\r\nFreshly grated Parmesan\r\n1 pound spaghetti pasta, cooked al dente", "directions"=>"Coat a saute pan with olive oil and place over medium heat. When the oil gets hazy, add the onions, garlic, and bay leaves; cook and stir for 5 minutes until fragrant and soft. Add the olives and some hand-torn basil. Carefully add the tomatoes (nothing splashes like tomatoes), cook and stir until the liquid is cooked down and the sauce is thick, about 15 minutes; season with sugar, salt and pepper. Lower the heat, cover, and keep warm.\r\n\r\nPreheat the oven to 450 degrees F.\r\n\r\nGet the ingredients together for the chicken so you have a little assembly line. Put the chicken breasts side by side on a cutting board and lay a piece of plastic wrap over them. Pound the chicken breasts with a flat meat mallet, until they are about 1/2-inch thick. Put the flour in a shallow platter and season with a fair amount of salt and pepper; mix with a fork to distribute evenly. In a wide bowl, combine the eggs and water, beat until frothy. Put the bread crumbs on a plate, season with salt and pepper.\r\n\r\nHeat 3 tablespoons of olive oil over medium-high flame in a large oven-proof skillet. Lightly dredge both sides of the chicken cutlets in the seasoned flour, and then dip them in the egg wash to coat completely, letting the excess drip off, then dredge in the bread crumbs. When the oil is nice and hot, add the cutlets and fry for 4 minutes on each side until golden and crusty, turning once.\r\n\r\nLadle the tomato-olive sauce over the chicken and sprinkle with mozzarella, Parmesan, and basil. Bake the Chicken Parmesan for 15 minutes or until the cheese is bubbly. Serve hot with spaghetti."}, "_wysihtml5_mode"=>"1", "commit"=>"Update Recipe", "id"=>"7"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/recipes/7
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes/7" for ::1 at 2017-04-08 11:25:53 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+Completed 200 OK in 156ms (Views: 150.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/recipes/7/edit" for ::1 at 2017-04-08 11:29:05 -0400
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (7.2ms)
+  Rendered recipes/edit.html.erb within layouts/application (10.2ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+Completed 200 OK in 153ms (Views: 132.6ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/recipes/7" for ::1 at 2017-04-08 11:29:07 -0400
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OVyn6nI1Xamxn2EjJShf+CAw9uyoC61mrfxJvx19pPV2ZPAq1aLDwhoFeZIE+KDe7GSEkJze4QZgPuLQiu4Hiw==", "recipe"=>{"title"=>"Chicken Parmesan", "ingredients"=>"1/4 cup extra-virgin olive oil, plus 3 tablespoons\r\n1 medium onion, chopped\r\n2 garlic cloves, minced\r\n2 bay leaves\r\n1/2 cup kalamata olives, pitted\r\n1/2 bunch fresh basil leaves\r\n2 (28-ounce) cans whole peeled tomatoes, drained and hand-crushed\r\nPinch sugar\r\nKosher salt and freshly ground black pepper\r\n4 skinless, boneless, chicken breasts (about 1 1/2 pounds)\r\n1/2 cup all-purpose flour\r\n2 large eggs, lightly beaten\r\n1 tablespoon water\r\n1 cup dried bread crumbs\r\n1 (8-ounce) ball fresh buffalo mozzarella, water drained\r\nFreshly grated Parmesan\r\n1 pound spaghetti pasta, cooked al dente", "directions"=>"Coat a saute pan with olive oil and place over medium heat. When the oil gets hazy, add the onions, garlic, and bay leaves; cook and stir for 5 minutes until fragrant and soft. Add the olives and some hand-torn basil. Carefully add the tomatoes (nothing splashes like tomatoes), cook and stir until the liquid is cooked down and the sauce is thick, about 15 minutes; season with sugar, salt and pepper. Lower the heat, cover, and keep warm.\r\n\r\nPreheat the oven to 450 degrees F.\r\n\r\nGet the ingredients together for the chicken so you have a little assembly line. Put the chicken breasts side by side on a cutting board and lay a piece of plastic wrap over them. Pound the chicken breasts with a flat meat mallet, until they are about 1/2-inch thick. Put the flour in a shallow platter and season with a fair amount of salt and pepper; mix with a fork to distribute evenly. In a wide bowl, combine the eggs and water, beat until frothy. Put the bread crumbs on a plate, season with salt and pepper.\r\n\r\nHeat 3 tablespoons of olive oil over medium-high flame in a large oven-proof skillet. Lightly dredge both sides of the chicken cutlets in the seasoned flour, and then dip them in the egg wash to coat completely, letting the excess drip off, then dredge in the bread crumbs. When the oil is nice and hot, add the cutlets and fry for 4 minutes on each side until golden and crusty, turning once.\r\n\r\nLadle the tomato-olive sauce over the chicken and sprinkle with mozzarella, Parmesan, and basil. Bake the Chicken Parmesan for 15 minutes or until the cheese is bubbly. Serve hot with spaghetti."}, "_wysihtml5_mode"=>"1", "commit"=>"Update Recipe", "id"=>"7"}
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/recipes/7
+Completed 302 Found in 11ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/recipes/7" for ::1 at 2017-04-08 11:29:07 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+Completed 200 OK in 165ms (Views: 160.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 11:29:11 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 141ms (Views: 135.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-04-08 11:29:14 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_navbar.html.erb (1.4ms)
+Completed 200 OK in 134ms (Views: 130.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/recipes/6/edit" for ::1 at 2017-04-08 11:29:17 -0400
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (8.8ms)
+  Rendered recipes/edit.html.erb within layouts/application (10.9ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+Completed 200 OK in 139ms (Views: 134.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 11:29:58 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (9.0ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+Completed 200 OK in 145ms (Views: 142.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes/6/edit" for ::1 at 2017-04-08 11:30:01 -0400
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (7.7ms)
+  Rendered recipes/edit.html.erb within layouts/application (10.2ms)
+  Rendered layouts/_navbar.html.erb (1.4ms)
+Completed 200 OK in 138ms (Views: 135.7ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/recipes/6" for ::1 at 2017-04-08 11:30:08 -0400
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BxIVT4HWVyW5r/ATNzqZ+5hZGEm0ZpCUSJPlrkmwb2NIKkKPJkHJThI16KIW6mbdVA1qNYCz3PSFUU7B3iPMHQ==", "recipe"=>{"title"=>"Chicken or Steak with Balsamic BBQ Sauce", "ingredients"=>"For the Balsamic BBQ sauce:\r\n<br><ul><li>1 cup balsamic vinegar&nbsp;</li><li>3/4 cup ketchup&nbsp;</li><li>1/3 cup brown sugar&nbsp;</li><li>1 garlic clove, minced&nbsp;</li><li>1 tablespoon Worcestershire sauce&nbsp;</li><li>1 tablespoon Dijon mustard&nbsp;</li><li>1/2 teaspoon salt&nbsp;</li><li>1/2 teaspoon freshly ground black pepper&nbsp;</li></ul>For the chicken or steak:\r\n<br><ul><li>4 pieces chicken (any combination of breast or leg-and-thigh pieces)</li><li>or 4 pieces of New York strip or Club strip steak&nbsp;</li><li>Salt and freshly ground pepper</li></ul>", "directions"=>"For the BBQ sauce:\r\nCombine all the ingredients in a small saucepan and stir until all the ingredients are incorporated and the mixture is smooth. Simmer over medium heat until reduced by 1/3, about 15 to 20 minutes.;\r\n\r\nFor the chicken or steak:\r\nPlace a grill pan over medium heat or preheat a gas or charcoal grill. Season the meat with salt and pepper. Lightly coat with some of the BBQ sauce using a pastry brush. Place the meat on the grill. Place the remaining BBQ sauce, still in the small saucepan, over low heat or on the edge of a gas or charcoal grill and allow to gently simmer while the meat cooks.\r\n\r\nCook the chicken about 8 minutes per side. Cook the steaks starting at about 4 minutes per side until a meat thermometer reads the desired temperature, 120 degrees F for medium rare, 135 degrees F for medium (about 6 minutes per side), 155 degrees F for well done (about 9 minutes per side). Continually brush the meat with BBQ sauce every few minutes. Remove the meat from the grill and let rest for at least 5 minutes. Serve with the heated BBQ sauce alongside.\r\n\r\nAlternately, the chicken can be baked in the oven. Preheat the oven to 375 degrees F. Place the chicken skin side up in a baking dish and bake for 25 minutes. Remove the baking dish from the oven and spoon the BBQ sauce all over the top of the chicken. Return the baking dish to the oven and bake for another 15 minutes."}, "_wysihtml5_mode"=>"1", "commit"=>"Update Recipe", "id"=>"6"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/recipes/6
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-04-08 11:30:08 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+Completed 200 OK in 150ms (Views: 146.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-04-08 11:34:30 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 634ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: [stdin]:15:24: unexpected :):
+    4:     <title>RecipeBox</title>
+    5:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    6:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    8:     <%= csrf_meta_tags %>
+    9:     <%= typekit 'kvx4wwc' %>
+   10:   </head>
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__2516509209429710758_70228622770200'
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.8ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (92.9ms)
+Started GET "/recipes/6" for ::1 at 2017-04-08 11:34:45 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+Completed 200 OK in 548ms (Views: 544.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes/6/edit" for ::1 at 2017-04-08 11:34:49 -0400
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (9.1ms)
+  Rendered recipes/edit.html.erb within layouts/application (12.4ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+Completed 200 OK in 161ms (Views: 157.7ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/recipes/6" for ::1 at 2017-04-08 11:34:51 -0400
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mJ7XFyWE88p8D0CoBhTMLyNdtosK4zGewSG2XlCJL6rXpoDXghNtodeVWBknxDMJ7wnE9z42ff4M4x0xxxqM1A==", "recipe"=>{"title"=>"Chicken or Steak with Balsamic BBQ Sauce", "ingredients"=>"For the Balsamic BBQ sauce:\r\n<br><ul><li>1 cup balsamic vinegar&nbsp;</li><li>3/4 cup ketchup&nbsp;</li><li>1/3 cup brown sugar&nbsp;</li><li>1 garlic clove, minced&nbsp;</li><li>1 tablespoon Worcestershire sauce&nbsp;</li><li>1 tablespoon Dijon mustard&nbsp;</li><li>1/2 teaspoon salt&nbsp;</li><li>1/2 teaspoon freshly ground black pepper&nbsp;</li></ul>For the chicken or steak:\r\n<br><ul><li>4 pieces chicken (any combination of breast or leg-and-thigh pieces)</li><li>or 4 pieces of New York strip or Club strip steak&nbsp;</li><li>Salt and freshly ground pepper</li></ul>", "directions"=>"For the BBQ sauce:\r\nCombine all the ingredients in a small saucepan and stir until all the ingredients are incorporated and the mixture is smooth. Simmer over medium heat until reduced by 1/3, about 15 to 20 minutes.;\r\n\r\nFor the chicken or steak:\r\nPlace a grill pan over medium heat or preheat a gas or charcoal grill. Season the meat with salt and pepper. Lightly coat with some of the BBQ sauce using a pastry brush. Place the meat on the grill. Place the remaining BBQ sauce, still in the small saucepan, over low heat or on the edge of a gas or charcoal grill and allow to gently simmer while the meat cooks.\r\n\r\nCook the chicken about 8 minutes per side. Cook the steaks starting at about 4 minutes per side until a meat thermometer reads the desired temperature, 120 degrees F for medium rare, 135 degrees F for medium (about 6 minutes per side), 155 degrees F for well done (about 9 minutes per side). Continually brush the meat with BBQ sauce every few minutes. Remove the meat from the grill and let rest for at least 5 minutes. Serve with the heated BBQ sauce alongside.\r\n\r\nAlternately, the chicken can be baked in the oven. Preheat the oven to 375 degrees F. Place the chicken skin side up in a baking dish and bake for 25 minutes. Remove the baking dish from the oven and spoon the BBQ sauce all over the top of the chicken. Return the baking dish to the oven and bake for another 15 minutes."}, "_wysihtml5_mode"=>"1", "commit"=>"Update Recipe", "id"=>"6"}
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/recipes/6
+Completed 302 Found in 7ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-04-08 11:34:51 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+Completed 200 OK in 209ms (Views: 203.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-04-08 11:35:36 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 495ms (Views: 492.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes/6/edit" for ::1 at 2017-04-08 11:35:40 -0400
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (7.3ms)
+  Rendered recipes/edit.html.erb within layouts/application (9.2ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+Completed 200 OK in 153ms (Views: 149.0ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/recipes/6" for ::1 at 2017-04-08 11:35:41 -0400
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/Q/24wj9tkBPomRc+QUgtA8Vj5y7mRZz7+aDfWl55qeyN6Ejr2ooK+Q4fO3Y1d+Sw0H94I9MWhMiJCgS/upF2Q==", "recipe"=>{"title"=>"Chicken or Steak with Balsamic BBQ Sauce", "ingredients"=>"For the Balsamic BBQ sauce:\r\n<br><ul><li>1 cup balsamic vinegar&nbsp;</li><li>3/4 cup ketchup&nbsp;</li><li>1/3 cup brown sugar&nbsp;</li><li>1 garlic clove, minced&nbsp;</li><li>1 tablespoon Worcestershire sauce&nbsp;</li><li>1 tablespoon Dijon mustard&nbsp;</li><li>1/2 teaspoon salt&nbsp;</li><li>1/2 teaspoon freshly ground black pepper&nbsp;</li></ul>For the chicken or steak:\r\n<br><ul><li>4 pieces chicken (any combination of breast or leg-and-thigh pieces)</li><li>or 4 pieces of New York strip or Club strip steak&nbsp;</li><li>Salt and freshly ground pepper</li></ul>", "directions"=>"For the BBQ sauce:\r\nCombine all the ingredients in a small saucepan and stir until all the ingredients are incorporated and the mixture is smooth. Simmer over medium heat until reduced by 1/3, about 15 to 20 minutes.;\r\n\r\nFor the chicken or steak:\r\nPlace a grill pan over medium heat or preheat a gas or charcoal grill. Season the meat with salt and pepper. Lightly coat with some of the BBQ sauce using a pastry brush. Place the meat on the grill. Place the remaining BBQ sauce, still in the small saucepan, over low heat or on the edge of a gas or charcoal grill and allow to gently simmer while the meat cooks.\r\n\r\nCook the chicken about 8 minutes per side. Cook the steaks starting at about 4 minutes per side until a meat thermometer reads the desired temperature, 120 degrees F for medium rare, 135 degrees F for medium (about 6 minutes per side), 155 degrees F for well done (about 9 minutes per side). Continually brush the meat with BBQ sauce every few minutes. Remove the meat from the grill and let rest for at least 5 minutes. Serve with the heated BBQ sauce alongside.\r\n\r\nAlternately, the chicken can be baked in the oven. Preheat the oven to 375 degrees F. Place the chicken skin side up in a baking dish and bake for 25 minutes. Remove the baking dish from the oven and spoon the BBQ sauce all over the top of the chicken. Return the baking dish to the oven and bake for another 15 minutes."}, "_wysihtml5_mode"=>"1", "commit"=>"Update Recipe", "id"=>"6"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/recipes/6
+Completed 302 Found in 5ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-04-08 11:35:41 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+Completed 200 OK in 181ms (Views: 177.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-04-08 11:36:31 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 626ms (Views: 623.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-04-08 11:36:36 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+Completed 200 OK in 134ms (Views: 131.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes/6/edit" for ::1 at 2017-04-08 11:36:39 -0400
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (7.4ms)
+  Rendered recipes/edit.html.erb within layouts/application (9.9ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+Completed 200 OK in 139ms (Views: 136.1ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/recipes/6" for ::1 at 2017-04-08 11:36:41 -0400
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wh4bnmNdIlsSEvVXGn/gw0aX9cyDhJ0MbhS4ol7tIPGNJkxexMq8MLmI7eY7rx/lisOHsLdR0Wyj1hPNyX6Djw==", "recipe"=>{"title"=>"Chicken or Steak with Balsamic BBQ Sauce", "ingredients"=>"For the Balsamic BBQ sauce:\r\n<br><ul><li>1 cup balsamic vinegar&nbsp;</li><li>3/4 cup ketchup&nbsp;</li><li>1/3 cup brown sugar&nbsp;</li><li>1 garlic clove, minced&nbsp;</li><li>1 tablespoon Worcestershire sauce&nbsp;</li><li>1 tablespoon Dijon mustard&nbsp;</li><li>1/2 teaspoon salt&nbsp;</li><li>1/2 teaspoon freshly ground black pepper&nbsp;</li></ul>For the chicken or steak:\r\n<br><ul><li>4 pieces chicken (any combination of breast or leg-and-thigh pieces)</li><li>or 4 pieces of New York strip or Club strip steak&nbsp;</li><li>Salt and freshly ground pepper</li></ul>", "directions"=>"For the BBQ sauce:\r\nCombine all the ingredients in a small saucepan and stir until all the ingredients are incorporated and the mixture is smooth. Simmer over medium heat until reduced by 1/3, about 15 to 20 minutes.;\r\n\r\nFor the chicken or steak:\r\nPlace a grill pan over medium heat or preheat a gas or charcoal grill. Season the meat with salt and pepper. Lightly coat with some of the BBQ sauce using a pastry brush. Place the meat on the grill. Place the remaining BBQ sauce, still in the small saucepan, over low heat or on the edge of a gas or charcoal grill and allow to gently simmer while the meat cooks.\r\n\r\nCook the chicken about 8 minutes per side. Cook the steaks starting at about 4 minutes per side until a meat thermometer reads the desired temperature, 120 degrees F for medium rare, 135 degrees F for medium (about 6 minutes per side), 155 degrees F for well done (about 9 minutes per side). Continually brush the meat with BBQ sauce every few minutes. Remove the meat from the grill and let rest for at least 5 minutes. Serve with the heated BBQ sauce alongside.\r\n\r\nAlternately, the chicken can be baked in the oven. Preheat the oven to 375 degrees F. Place the chicken skin side up in a baking dish and bake for 25 minutes. Remove the baking dish from the oven and spoon the BBQ sauce all over the top of the chicken. Return the baking dish to the oven and bake for another 15 minutes."}, "_wysihtml5_mode"=>"1", "commit"=>"Update Recipe", "id"=>"6"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/recipes/6
+Completed 302 Found in 5ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-04-08 11:36:41 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 171ms (Views: 166.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-04-08 11:37:12 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 282ms (Views: 277.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes/6/edit" for ::1 at 2017-04-08 11:37:16 -0400
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (6.2ms)
+  Rendered recipes/edit.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+Completed 200 OK in 139ms (Views: 136.3ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/recipes/6" for ::1 at 2017-04-08 11:37:18 -0400
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jJCZ4P8EIpqmR8pYi5+4+Waj1jf8GwNgq5Das6qi+lHDqM4gWJO88Q3d0umqT0ffqvekS8jOTwBmUnHcPTFZLw==", "recipe"=>{"title"=>"Chicken or Steak with Balsamic BBQ Sauce", "ingredients"=>"For the Balsamic BBQ sauce:\r\n<br><ul><li>1 cup balsamic vinegar&nbsp;</li><li>3/4 cup ketchup&nbsp;</li><li>1/3 cup brown sugar&nbsp;</li><li>1 garlic clove, minced&nbsp;</li><li>1 tablespoon Worcestershire sauce&nbsp;</li><li>1 tablespoon Dijon mustard&nbsp;</li><li>1/2 teaspoon salt&nbsp;</li><li>1/2 teaspoon freshly ground black pepper&nbsp;</li></ul>For the chicken or steak:\r\n<br><ul><li>4 pieces chicken (any combination of breast or leg-and-thigh pieces)</li><li>or 4 pieces of New York strip or Club strip steak&nbsp;</li><li>Salt and freshly ground pepper</li></ul>", "directions"=>"For the BBQ sauce:\r\nCombine all the ingredients in a small saucepan and stir until all the ingredients are incorporated and the mixture is smooth. Simmer over medium heat until reduced by 1/3, about 15 to 20 minutes.;\r\n\r\nFor the chicken or steak:\r\nPlace a grill pan over medium heat or preheat a gas or charcoal grill. Season the meat with salt and pepper. Lightly coat with some of the BBQ sauce using a pastry brush. Place the meat on the grill. Place the remaining BBQ sauce, still in the small saucepan, over low heat or on the edge of a gas or charcoal grill and allow to gently simmer while the meat cooks.\r\n\r\nCook the chicken about 8 minutes per side. Cook the steaks starting at about 4 minutes per side until a meat thermometer reads the desired temperature, 120 degrees F for medium rare, 135 degrees F for medium (about 6 minutes per side), 155 degrees F for well done (about 9 minutes per side). Continually brush the meat with BBQ sauce every few minutes. Remove the meat from the grill and let rest for at least 5 minutes. Serve with the heated BBQ sauce alongside.\r\n\r\nAlternately, the chicken can be baked in the oven. Preheat the oven to 375 degrees F. Place the chicken skin side up in a baking dish and bake for 25 minutes. Remove the baking dish from the oven and spoon the BBQ sauce all over the top of the chicken. Return the baking dish to the oven and bake for another 15 minutes."}, "_wysihtml5_mode"=>"1", "commit"=>"Update Recipe", "id"=>"6"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/recipes/6
+Completed 302 Found in 8ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-04-08 11:37:18 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+Completed 200 OK in 149ms (Views: 145.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes/6/edit" for ::1 at 2017-04-08 11:37:31 -0400
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (11.8ms)
+  Rendered recipes/edit.html.erb within layouts/application (14.5ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 337ms (Views: 333.1ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/recipes/6" for ::1 at 2017-04-08 11:37:35 -0400
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aEoZM2TkNXApUL26g2bb6f48e9/oC6dg9lW9kvPhIPYnck7zw3OrG4LKpQuitiTPMmgJo9ze6wA7lxb9ZHKDiA==", "recipe"=>{"title"=>"Chicken or Steak with Balsamic BBQ Sauce", "ingredients"=>"For the Balsamic BBQ sauce:\r\n<br><ul><li>1 cup balsamic vinegar&nbsp;</li><li>3/4 cup ketchup&nbsp;</li><li>1/3 cup brown sugar&nbsp;</li><li>1 garlic clove, minced&nbsp;</li><li>1 tablespoon Worcestershire sauce&nbsp;</li><li>1 tablespoon Dijon mustard&nbsp;</li><li>1/2 teaspoon salt&nbsp;</li><li>1/2 teaspoon freshly ground black pepper&nbsp;</li></ul>For the chicken or steak:\r\n<br><ul><li>4 pieces chicken (any combination of breast or leg-and-thigh pieces)</li><li>or 4 pieces of New York strip or Club strip steak&nbsp;</li><li>Salt and freshly ground pepper</li></ul>", "directions"=>"For the BBQ sauce:\r\nCombine all the ingredients in a small saucepan and stir until all the ingredients are incorporated and the mixture is smooth. Simmer over medium heat until reduced by 1/3, about 15 to 20 minutes.;\r\n\r\nFor the chicken or steak:\r\nPlace a grill pan over medium heat or preheat a gas or charcoal grill. Season the meat with salt and pepper. Lightly coat with some of the BBQ sauce using a pastry brush. Place the meat on the grill. Place the remaining BBQ sauce, still in the small saucepan, over low heat or on the edge of a gas or charcoal grill and allow to gently simmer while the meat cooks.\r\n\r\nCook the chicken about 8 minutes per side. Cook the steaks starting at about 4 minutes per side until a meat thermometer reads the desired temperature, 120 degrees F for medium rare, 135 degrees F for medium (about 6 minutes per side), 155 degrees F for well done (about 9 minutes per side). Continually brush the meat with BBQ sauce every few minutes. Remove the meat from the grill and let rest for at least 5 minutes. Serve with the heated BBQ sauce alongside.\r\n\r\nAlternately, the chicken can be baked in the oven. Preheat the oven to 375 degrees F. Place the chicken skin side up in a baking dish and bake for 25 minutes. Remove the baking dish from the oven and spoon the BBQ sauce all over the top of the chicken. Return the baking dish to the oven and bake for another 15 minutes."}, "_wysihtml5_mode"=>"1", "commit"=>"Update Recipe", "id"=>"6"}
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/recipes/6
+Completed 302 Found in 6ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-04-08 11:37:35 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+Completed 200 OK in 162ms (Views: 155.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 11:37:42 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 131ms (Views: 128.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/recipes/7" for ::1 at 2017-04-08 11:38:17 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+Completed 200 OK in 134ms (Views: 131.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 11:38:23 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 136ms (Views: 133.1ms | ActiveRecord: 0.7ms)
+
+

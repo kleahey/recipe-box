@@ -28,11 +28,13 @@ class RecipesController < ApplicationController
 
     respond_to do |format|
       if @recipe.save
-        format.html { redirect_to @recipe, notice: 'Recipe was successfully created.' }
+        format.html { flash[:success] = "Your recipe was added successfully!" }
         format.json { render :show, status: :created, location: @recipe }
+        redirect_to @recipe
       else
-        format.html { render :new }
+        format.html { flash[:alert] = "Your recipe could not be created. Please check the form and try again." }
         format.json { render json: @recipe.errors, status: :unprocessable_entity }
+        format.html { render :new }
       end
     end
   end
@@ -42,11 +44,13 @@ class RecipesController < ApplicationController
   def update
     respond_to do |format|
       if @recipe.update(recipe_params)
-        format.html { redirect_to @recipe, notice: 'Recipe was successfully updated.' }
+        format.html { flash[:success] = "Your recipe was updated successfully!" }
         format.json { render :show, status: :ok, location: @recipe }
+        redirect_to @recipe
       else
-        format.html { render :edit }
+        format.html { flash[:alert] = "Your recipe could not be updated. Please check the form and try again." }
         format.json { render json: @recipe.errors, status: :unprocessable_entity }
+        format.html { render :edit }
       end
     end
   end
@@ -56,8 +60,9 @@ class RecipesController < ApplicationController
   def destroy
     @recipe.destroy
     respond_to do |format|
-      format.html { redirect_to recipes_url, notice: 'Recipe was successfully destroyed.' }
+      format.html { flash[:success] = "Your recipe was deleted successfully." }
       format.json { head :no_content }
+      redirect_to recipes_url
     end
   end
 

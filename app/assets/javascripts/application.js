@@ -25,3 +25,9 @@
 //= require turbolinks
 //= require typekit
 //= require_tree .
+
+$('document').ready(function() {
+  setTimeout(function() {
+    $('#alerts').slideUp();
+  }, 2000);
+});

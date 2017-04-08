@@ -11,7 +11,12 @@
 
   <body data-turbolinks='false'>
     <%= render "layouts/navbar" %>
-
+    <div class="container" id="alerts">
+      <% flash.each do |key, value| %>
+        <div class="alert alert-dismissable alert-<%= key %> fade show"><%= value %></div>
+      <% end %>
+    </div>
     <%= yield %>
+    <%= debug(params) if Rails.env.development? %>
   </body>
 </html>
