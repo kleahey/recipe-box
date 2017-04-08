@@ -10286,3 +10286,1402 @@ Processing by RecipesController#index as HTML
 Completed 200 OK in 136ms (Views: 133.1ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/recipes" for ::1 at 2017-04-08 11:39:34 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (27.2ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+Completed 200 OK in 8922ms (Views: 8898.3ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/recipes/12" for ::1 at 2017-04-08 11:40:29 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 172ms (Views: 155.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 11:40:47 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 127ms (Views: 122.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/12" for ::1 at 2017-04-08 11:40:57 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+Completed 200 OK in 121ms (Views: 117.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 11:41:01 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+Completed 200 OK in 127ms (Views: 124.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/10" for ::1 at 2017-04-08 11:41:02 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+Completed 200 OK in 151ms (Views: 148.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 11:41:15 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+Completed 200 OK in 151ms (Views: 147.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/recipes/7" for ::1 at 2017-04-08 11:41:17 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 166ms (Views: 162.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 11:41:22 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 151ms (Views: 148.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/11" for ::1 at 2017-04-08 11:41:24 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+Completed 200 OK in 131ms (Views: 128.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes/11" for ::1 at 2017-04-08 11:42:48 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 130ms (Views: 127.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes/11/edit" for ::1 at 2017-04-08 11:42:54 -0400
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (82.7ms)
+  Rendered recipes/edit.html.erb within layouts/application (84.9ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+Completed 200 OK in 204ms (Views: 198.9ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/recipes/11" for ::1 at 2017-04-08 11:42:56 -0400
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w3LJFRA/GhD6/bI3UX4/NtzRIXz6YgWH6+JWoIASZISMSp7Vt6iEe1FnqoZwrsAQEIVTAM63SecmIP3PF4HH+g==", "recipe"=>{"title"=>"Simple Scalloped Potatoes", "ingredients"=>"<ul><li>1 1/2 tablespoons unsalted butter, cut into pieces, plus more for brushing</li><li>1/2 clove garlic</li><li>2 pounds russet potatoes, peeled and sliced 1/8-inch thick</li><li>Kosher salt and freshly ground pepper</li><li>1 1/4 cups low-sodium chicken broth</li><li>1/2 cup skim milk</li><li>1/4 teaspoon freshly grated nutmeg</li><li>4 fresh bay leaves</li><li>1/2 cup grated gruyere cheese (about 2 ounces)</li></ul>", "directions"=>"<div>Position a <b><span class=\"wysiwyg-color-red\">rack</span></b> in the upper third of the oven and<b><span class=\"wysiwyg-color-maroon\"> preheat to 425 degrees F</span></b>. Generously brush a <span class=\"wysiwyg-color-orange\">large skillet with butter</span>, then rub with the garlic. Heat the skillet over medium-high heat. Add half of the potatoes, sprinkle with <i>3/4 teaspoon salt, and pepper to taste</i>, then arrange the remaining potatoes on top. Sprinkle with 3/4 teaspoon salt, and pepper to taste. <span class=\"wysiwyg-color-green\">Pour the broth and milk over the potatoes</span>, then add the nutmeg and bay leaves; simmer 3 minutes.&nbsp;</div><div><br></div><div>Generously brush a shallow baking dish with butter and <span class=\"wysiwyg-color-purple\">slide the potatoes into the dish</span>; arrange with a fork, if desired. (If your skillet is ovenproof, you can skip this step and bake the potatoes right in the skillet.)&nbsp;</div><div><br></div><div>Dot the potatoes with the cut-up butter and sprinkle with the gruyere. Bake until golden, about 25 minutes. Let rest 5 minutes befo</div>"}, "_wysihtml5_mode"=>"1", "commit"=>"Update Recipe", "id"=>"11"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/recipes/11
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes/11" for ::1 at 2017-04-08 11:42:56 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+Completed 200 OK in 150ms (Views: 147.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 11:43:01 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (7.8ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 126ms (Views: 122.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 11:43:21 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 283ms (Views: 280.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes/13" for ::1 at 2017-04-08 11:43:32 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+Completed 200 OK in 126ms (Views: 124.0ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/742929dcb631403d7c1c1efad2ca270020170408-13949-11hla32.jpeg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/742929dcb631403d7c1c1efad2ca270020170408-13949-1lb994h.jpeg
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/742929dcb631403d7c1c1efad2ca270020170408-13949-1lb994h.jpeg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/742929dcb631403d7c1c1efad2ca270020170408-13949-11hla32.jpeg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/742929dcb631403d7c1c1efad2ca270020170408-13949-11hla32.jpeg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/742929dcb631403d7c1c1efad2ca270020170408-13949-11hla32.jpeg[0]' -auto-orient -resize "500x" -crop "500x350+0+12" +repage '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/7981c07ff72df21059492444447a3e8520170408-13949-tcneub'
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/7981c07ff72df21059492444447a3e8520170408-13949-tcneub to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/65bf6736435b2d67b67767a7969e480720170408-13949-1si4fqu
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/742929dcb631403d7c1c1efad2ca270020170408-13949-11hla32.jpeg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/742929dcb631403d7c1c1efad2ca270020170408-13949-11hla32.jpeg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/742929dcb631403d7c1c1efad2ca270020170408-13949-11hla32.jpeg[0]' -auto-orient -resize "300x" -crop "300x200+0+12" +repage '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/7981c07ff72df21059492444447a3e8520170408-13949-cl4424'
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/7981c07ff72df21059492444447a3e8520170408-13949-cl4424 to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/1fc84b887827b844d547c34db86a6f2620170408-13949-1ikrkf1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (19.4ms)[0m  [1m[33mUPDATE "recipes" SET "image_updated_at" = $1, "updated_at" = $2, "image_file_name" = $3 WHERE "recipes"."id" = $4[0m  [["image_updated_at", 2017-04-08 15:46:54 UTC], ["updated_at", 2017-04-08 15:46:54 UTC], ["image_file_name", "chicken.jpeg"], ["id", 6]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/968b11b2c259a728d4cd8a0347e9323020170408-13949-kx8rfo.jpeg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/968b11b2c259a728d4cd8a0347e9323020170408-13949-1binx2c.jpeg
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/968b11b2c259a728d4cd8a0347e9323020170408-13949-1binx2c.jpeg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/968b11b2c259a728d4cd8a0347e9323020170408-13949-kx8rfo.jpeg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/968b11b2c259a728d4cd8a0347e9323020170408-13949-kx8rfo.jpeg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/968b11b2c259a728d4cd8a0347e9323020170408-13949-kx8rfo.jpeg[0]' -auto-orient -resize "500x" -crop "500x350+0+12" +repage '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/7a69c646603b8628a6242c9cbbbb8b0120170408-13949-177p17i'
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/7a69c646603b8628a6242c9cbbbb8b0120170408-13949-177p17i to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/fb366f6c230f83247d6813a60bdc7abc20170408-13949-uejbes
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/968b11b2c259a728d4cd8a0347e9323020170408-13949-kx8rfo.jpeg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/968b11b2c259a728d4cd8a0347e9323020170408-13949-kx8rfo.jpeg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/968b11b2c259a728d4cd8a0347e9323020170408-13949-kx8rfo.jpeg[0]' -auto-orient -resize "300x" -crop "300x200+0+12" +repage '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/7a69c646603b8628a6242c9cbbbb8b0120170408-13949-qj2wnm'
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/7a69c646603b8628a6242c9cbbbb8b0120170408-13949-qj2wnm to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/ee47e7a5fb372149fdf80a789f09e37620170408-13949-3b7jez
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (23.8ms)[0m  [1m[33mUPDATE "recipes" SET "image_updated_at" = $1, "updated_at" = $2, "image_file_name" = $3 WHERE "recipes"."id" = $4[0m  [["image_updated_at", 2017-04-08 15:46:54 UTC], ["updated_at", 2017-04-08 15:46:55 UTC], ["image_file_name", "top10_chickenparmesan_s4x3.jpg.rend.hgtvcom.616.462.jpeg"], ["id", 7]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/cdc556e84b4209ec4ecd7dad0528225120170408-13949-wl6x9p.jpeg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/cdc556e84b4209ec4ecd7dad0528225120170408-13949-cdkzxm.jpeg
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/cdc556e84b4209ec4ecd7dad0528225120170408-13949-cdkzxm.jpeg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/cdc556e84b4209ec4ecd7dad0528225120170408-13949-wl6x9p.jpeg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/cdc556e84b4209ec4ecd7dad0528225120170408-13949-wl6x9p.jpeg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/cdc556e84b4209ec4ecd7dad0528225120170408-13949-wl6x9p.jpeg[0]' -auto-orient -resize "500x" -crop "500x350+0+12" +repage '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/6478971f82682d0be4aae49b09790d8120170408-13949-13wxn45'
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/6478971f82682d0be4aae49b09790d8120170408-13949-13wxn45 to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/d1088e515c7daf65dc11dbd3e8f7da7620170408-13949-gzzptn
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/cdc556e84b4209ec4ecd7dad0528225120170408-13949-wl6x9p.jpeg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/cdc556e84b4209ec4ecd7dad0528225120170408-13949-wl6x9p.jpeg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/cdc556e84b4209ec4ecd7dad0528225120170408-13949-wl6x9p.jpeg[0]' -auto-orient -resize "300x" -crop "300x200+0+12" +repage '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/6478971f82682d0be4aae49b09790d8120170408-13949-1anm38b'
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/6478971f82682d0be4aae49b09790d8120170408-13949-1anm38b to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/1cf6fd671c9df5dcdcdc899e4d19014320170408-13949-kqfzs9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "recipes" SET "image_updated_at" = $1, "updated_at" = $2, "image_file_name" = $3 WHERE "recipes"."id" = $4[0m  [["image_updated_at", 2017-04-08 15:46:55 UTC], ["updated_at", 2017-04-08 15:46:55 UTC], ["image_file_name", "stew.jpeg"], ["id", 8]]
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/140c1f12feeb2c52dfbeb2da6066a73a20170408-13949-1fg67nu.jpeg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/140c1f12feeb2c52dfbeb2da6066a73a20170408-13949-iy2jjk.jpeg
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/140c1f12feeb2c52dfbeb2da6066a73a20170408-13949-iy2jjk.jpeg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/140c1f12feeb2c52dfbeb2da6066a73a20170408-13949-1fg67nu.jpeg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/140c1f12feeb2c52dfbeb2da6066a73a20170408-13949-1fg67nu.jpeg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/140c1f12feeb2c52dfbeb2da6066a73a20170408-13949-1fg67nu.jpeg[0]' -auto-orient -resize "500x" -crop "500x350+0+12" +repage '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/831cefb7cb4295490ce8ecd66303cd7120170408-13949-1ddxsy2'
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/831cefb7cb4295490ce8ecd66303cd7120170408-13949-1ddxsy2 to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/ece7d394f1417693ce1cb41a0804b2d920170408-13949-1qp5u6b
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/140c1f12feeb2c52dfbeb2da6066a73a20170408-13949-1fg67nu.jpeg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/140c1f12feeb2c52dfbeb2da6066a73a20170408-13949-1fg67nu.jpeg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/140c1f12feeb2c52dfbeb2da6066a73a20170408-13949-1fg67nu.jpeg[0]' -auto-orient -resize "300x" -crop "300x200+0+12" +repage '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/831cefb7cb4295490ce8ecd66303cd7120170408-13949-ypi838'
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/831cefb7cb4295490ce8ecd66303cd7120170408-13949-ypi838 to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/8c785daae307579a2b96679954dab85520170408-13949-imkhir
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "recipes" SET "image_updated_at" = $1, "updated_at" = $2, "image_file_name" = $3 WHERE "recipes"."id" = $4[0m  [["image_updated_at", 2017-04-08 15:46:55 UTC], ["updated_at", 2017-04-08 15:46:55 UTC], ["image_file_name", "mac.jpeg"], ["id", 10]]
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/e1a1f0be30cefc7d857ea6408cd00a1220170408-13949-rkaedz.jpeg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/e1a1f0be30cefc7d857ea6408cd00a1220170408-13949-15mrmkq.jpeg
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/e1a1f0be30cefc7d857ea6408cd00a1220170408-13949-15mrmkq.jpeg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/e1a1f0be30cefc7d857ea6408cd00a1220170408-13949-rkaedz.jpeg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/e1a1f0be30cefc7d857ea6408cd00a1220170408-13949-rkaedz.jpeg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/e1a1f0be30cefc7d857ea6408cd00a1220170408-13949-rkaedz.jpeg[0]' -auto-orient -resize "500x" -crop "500x350+0+12" +repage '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/595430d52f1542c74a361f1872742d3d20170408-13949-1stqyv6'
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/595430d52f1542c74a361f1872742d3d20170408-13949-1stqyv6 to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/f5c0acfdb6e9bea840db7c9d4d52c12c20170408-13949-n5sd3w
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/e1a1f0be30cefc7d857ea6408cd00a1220170408-13949-rkaedz.jpeg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/e1a1f0be30cefc7d857ea6408cd00a1220170408-13949-rkaedz.jpeg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/e1a1f0be30cefc7d857ea6408cd00a1220170408-13949-rkaedz.jpeg[0]' -auto-orient -resize "300x" -crop "300x200+0+12" +repage '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/595430d52f1542c74a361f1872742d3d20170408-13949-to54tg'
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/595430d52f1542c74a361f1872742d3d20170408-13949-to54tg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/72070be54ed3f18b4f883e95b10de0e120170408-13949-1022gxj
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (7.5ms)[0m  [1m[33mUPDATE "recipes" SET "image_updated_at" = $1, "updated_at" = $2, "image_file_name" = $3 WHERE "recipes"."id" = $4[0m  [["image_updated_at", 2017-04-08 15:46:55 UTC], ["updated_at", 2017-04-08 15:46:55 UTC], ["image_file_name", "potatoes.jpeg"], ["id", 11]]
+  [1m[35m (5.1ms)[0m  [1m[35mCOMMIT[0m
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-13949-2w20mn.jpeg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-13949-1l9hh14.jpeg
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-13949-1l9hh14.jpeg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-13949-2w20mn.jpeg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-13949-2w20mn.jpeg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-13949-2w20mn.jpeg[0]' -auto-orient -resize "500x" -crop "500x350+0+12" +repage '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/f97aa012f00a02eb06843b9579b6c55720170408-13949-12uvvmx'
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/f97aa012f00a02eb06843b9579b6c55720170408-13949-12uvvmx to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/56fd90b19e4b5080dd567eef9828ed0d20170408-13949-1hmbeao
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-13949-2w20mn.jpeg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-13949-2w20mn.jpeg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-13949-2w20mn.jpeg[0]' -auto-orient -resize "300x" -crop "300x200+0+12" +repage '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/f97aa012f00a02eb06843b9579b6c55720170408-13949-9rpikh'
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/f97aa012f00a02eb06843b9579b6c55720170408-13949-9rpikh to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/2a44eac4ec1cf3f5a0443084beaf262320170408-13949-j43vw2
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (13.0ms)[0m  [1m[33mUPDATE "recipes" SET "image_updated_at" = $1, "updated_at" = $2, "image_file_name" = $3 WHERE "recipes"."id" = $4[0m  [["image_updated_at", 2017-04-08 15:46:56 UTC], ["updated_at", 2017-04-08 15:46:56 UTC], ["image_file_name", "bruschetta.jpeg"], ["id", 12]]
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-13949-1q4iz5s.jpeg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-13949-10flwhb.jpeg
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-13949-10flwhb.jpeg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-13949-1q4iz5s.jpeg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-13949-1q4iz5s.jpeg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-13949-1q4iz5s.jpeg[0]' -auto-orient -resize "500x" -crop "500x350+0+12" +repage '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/e0b72c4cfd5e7285b063223695976e9b20170408-13949-ie6kc8'
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/e0b72c4cfd5e7285b063223695976e9b20170408-13949-ie6kc8 to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/417f40ee6838493c8cdd5fa54ba2ba3420170408-13949-ev0ois
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-13949-1q4iz5s.jpeg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-13949-1q4iz5s.jpeg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/5f76719de1800912111c839c0540247420170408-13949-1q4iz5s.jpeg[0]' -auto-orient -resize "300x" -crop "300x200+0+12" +repage '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/e0b72c4cfd5e7285b063223695976e9b20170408-13949-h6lce9'
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/e0b72c4cfd5e7285b063223695976e9b20170408-13949-h6lce9 to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/ea93063edbdada5da1985b812f5a564e20170408-13949-1o1ha2o
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (7.0ms)[0m  [1m[33mUPDATE "recipes" SET "image_updated_at" = $1, "updated_at" = $2, "image_file_name" = $3 WHERE "recipes"."id" = $4[0m  [["image_updated_at", 2017-04-08 15:46:56 UTC], ["updated_at", 2017-04-08 15:46:56 UTC], ["image_file_name", "bruschetta.jpeg"], ["id", 13]]
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/79af0c177db2ee64b7301af6e1d5363420170408-13949-1xalo5d.jpeg to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/79af0c177db2ee64b7301af6e1d5363420170408-13949-w0wbo5.jpeg
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/79af0c177db2ee64b7301af6e1d5363420170408-13949-w0wbo5.jpeg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/79af0c177db2ee64b7301af6e1d5363420170408-13949-1xalo5d.jpeg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/79af0c177db2ee64b7301af6e1d5363420170408-13949-1xalo5d.jpeg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/79af0c177db2ee64b7301af6e1d5363420170408-13949-1xalo5d.jpeg[0]' -auto-orient -resize "500x" -crop "500x350+0+12" +repage '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/06b9e7451ec923be5af10bafa29713ac20170408-13949-4zrrcm'
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/06b9e7451ec923be5af10bafa29713ac20170408-13949-4zrrcm to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/b1626dd7d1c5242a73379780c3fd8c7420170408-13949-f6gsnh
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/79af0c177db2ee64b7301af6e1d5363420170408-13949-1xalo5d.jpeg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/79af0c177db2ee64b7301af6e1d5363420170408-13949-1xalo5d.jpeg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/79af0c177db2ee64b7301af6e1d5363420170408-13949-1xalo5d.jpeg[0]' -auto-orient -resize "300x" -crop "300x200+0+12" +repage '/var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/06b9e7451ec923be5af10bafa29713ac20170408-13949-kcipgn'
+[paperclip] Trying to link /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/06b9e7451ec923be5af10bafa29713ac20170408-13949-kcipgn to /var/folders/zt/md0z22fj4h3__4wyg3vvwxrh0000gn/T/443abadec0f7f81a08f61c73f7d1d86d20170408-13949-w85rj5
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "recipes" SET "image_updated_at" = $1, "updated_at" = $2, "image_file_name" = $3 WHERE "recipes"."id" = $4[0m  [["image_updated_at", 2017-04-08 15:46:56 UTC], ["updated_at", 2017-04-08 15:46:56 UTC], ["image_file_name", "ham.jpeg"], ["id", 14]]
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/recipes/13" for ::1 at 2017-04-08 11:47:19 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+Completed 200 OK in 781ms (Views: 744.8ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 11:47:25 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (9.7ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 154ms (Views: 148.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-04-08 11:47:26 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+Completed 200 OK in 136ms (Views: 132.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 11:47:33 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+Completed 200 OK in 168ms (Views: 164.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/8" for ::1 at 2017-04-08 11:47:34 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 125ms (Views: 121.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 11:47:40 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+Completed 200 OK in 122ms (Views: 118.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/11" for ::1 at 2017-04-08 11:47:41 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 134ms (Views: 129.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 11:47:46 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+Completed 200 OK in 133ms (Views: 130.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/recipes/13" for ::1 at 2017-04-08 11:47:47 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 128ms (Views: 125.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 11:48:22 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 151ms (Views: 148.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-04-08 11:55:10 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (8.1ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+Completed 200 OK in 272ms (Views: 258.9ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-04-08 11:57:38 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+Completed 200 OK in 5499ms (Views: 5495.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-04-08 11:58:49 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+Completed 200 OK in 183ms (Views: 179.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-04-08 11:58:54 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+Completed 200 OK in 168ms (Views: 164.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-04-08 11:59:18 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 1286ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: typekit.
+Load paths:
+  /Users/kleahey/Git/recipe-box/app/assets/config
+  /Users/kleahey/Git/recipe-box/app/assets/images
+  /Users/kleahey/Git/recipe-box/app/assets/javascripts
+  /Users/kleahey/Git/recipe-box/app/assets/stylesheets
+  /Users/kleahey/Git/recipe-box/vendor/assets/javascripts
+  /Users/kleahey/Git/recipe-box/vendor/assets/stylesheets
+  /Users/kleahey/.rvm/gems/ruby-2.3.3/gems/rails-assets-tether-1.4.0/app/assets/javascripts
+  /Users/kleahey/.rvm/gems/ruby-2.3.3/gems/rails-assets-tether-1.4.0/app/assets/stylesheets
+  /Users/kleahey/.rvm/gems/ruby-2.3.3/gems/typekit-rails-0.0.4/app/assets/javascripts
+  /Users/kleahey/.rvm/gems/ruby-2.3.3/gems/font-awesome-rails-4.7.0.1/app/assets/fonts
+  /Users/kleahey/.rvm/gems/ruby-2.3.3/gems/font-awesome-rails-4.7.0.1/app/assets/stylesheets
+  /Users/kleahey/.rvm/gems/ruby-2.3.3/bundler/gems/bootsy-e05d061c90a9/app/assets/javascripts
+  /Users/kleahey/.rvm/gems/ruby-2.3.3/bundler/gems/bootsy-e05d061c90a9/app/assets/stylesheets
+  /Users/kleahey/.rvm/gems/ruby-2.3.3/gems/masonry-rails-0.2.4/vendor/assets/images
+  /Users/kleahey/.rvm/gems/ruby-2.3.3/gems/masonry-rails-0.2.4/vendor/assets/javascripts
+  /Users/kleahey/.rvm/gems/ruby-2.3.3/gems/masonry-rails-0.2.4/vendor/assets/stylesheets
+  /Users/kleahey/.rvm/gems/ruby-2.3.3/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/kleahey/.rvm/gems/ruby-2.3.3/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /Users/kleahey/.rvm/rubies/ruby-2.3.3/lib/ruby/gems/2.3.0/gems/actioncable-5.0.2/lib/assets/compiled
+  /Users/kleahey/.rvm/gems/ruby-2.3.3/gems/turbolinks-source-5.0.0/lib/assets/javascripts
+  /Users/kleahey/.rvm/gems/ruby-2.3.3/gems/bootstrap-4.0.0.alpha6/assets/stylesheets
+  /Users/kleahey/.rvm/gems/ruby-2.3.3/gems/bootstrap-4.0.0.alpha6/assets/javascripts
+  /Users/kleahey/.rvm/gems/ruby-2.3.3/gems/bootstrap-4.0.0.alpha6/assets/stylesheets):
+    3:   <head>
+    4:     <title>RecipeBox</title>
+    5:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    6:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    8:     <%= csrf_meta_tags %>
+    9:     <%= typekit 'kvx4wwc' %>
+  
+app/assets/stylesheets/application.scss:27
+app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__1630907648810145817_70210310174800'
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.4ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (105.1ms)
+Started GET "/recipes/6" for ::1 at 2017-04-08 12:01:25 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+Completed 200 OK in 4397ms (Views: 4390.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-04-08 12:01:39 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+Completed 200 OK in 4233ms (Views: 4226.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-04-08 12:03:08 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_navbar.html.erb (1.6ms)
+Completed 200 OK in 4409ms (Views: 4405.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-04-08 12:04:16 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 179ms (Views: 175.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-04-08 12:04:19 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+Completed 200 OK in 143ms (Views: 139.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-04-08 12:04:30 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+Completed 200 OK in 4417ms (Views: 4413.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 12:04:37 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+Completed 200 OK in 125ms (Views: 120.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/recipes/10" for ::1 at 2017-04-08 12:04:38 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+Completed 200 OK in 143ms (Views: 140.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/recipes/10" for ::1 at 2017-04-08 12:06:36 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+Completed 200 OK in 4359ms (Views: 4356.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/recipes/10" for ::1 at 2017-04-08 12:06:53 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+Completed 200 OK in 125ms (Views: 121.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/recipes/10" for ::1 at 2017-04-08 12:06:59 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+Completed 200 OK in 117ms (Views: 114.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 12:07:26 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+Completed 200 OK in 159ms (Views: 156.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/recipes/8" for ::1 at 2017-04-08 12:07:28 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+Completed 200 OK in 144ms (Views: 140.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes/8" for ::1 at 2017-04-08 12:09:25 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+Completed 200 OK in 4508ms (Views: 4502.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 12:09:47 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (9.4ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 138ms (Views: 133.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/recipes/10" for ::1 at 2017-04-08 12:09:49 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+Completed 200 OK in 126ms (Views: 122.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 12:10:00 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 125ms (Views: 122.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-04-08 12:10:02 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+Completed 200 OK in 126ms (Views: 123.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-04-08 12:10:10 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+Completed 200 OK in 4370ms (Views: 4367.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 12:10:19 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (9.5ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+Completed 200 OK in 134ms (Views: 128.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/10" for ::1 at 2017-04-08 12:10:20 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 140ms (Views: 137.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 12:10:22 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (9.5ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 179ms (Views: 175.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes/8" for ::1 at 2017-04-08 12:10:23 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 145ms (Views: 142.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/recipes/8" for ::1 at 2017-04-08 12:10:31 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+Completed 200 OK in 4393ms (Views: 4388.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 12:10:38 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (9.2ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 128ms (Views: 124.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-04-08 12:10:39 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 129ms (Views: 126.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-04-08 12:10:49 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 4066ms (Views: 4063.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 12:12:10 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+Completed 200 OK in 151ms (Views: 147.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes/11" for ::1 at 2017-04-08 12:12:11 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+Completed 200 OK in 140ms (Views: 134.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes/11" for ::1 at 2017-04-08 12:13:11 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+Completed 200 OK in 4629ms (Views: 4626.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 12:16:08 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+Completed 200 OK in 138ms (Views: 134.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/13" for ::1 at 2017-04-08 12:16:13 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+Completed 200 OK in 119ms (Views: 116.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/recipes/13/edit" for ::1 at 2017-04-08 12:17:11 -0400
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (79.8ms)
+  Rendered recipes/edit.html.erb within layouts/application (81.9ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+Completed 200 OK in 199ms (Views: 192.3ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/recipes/13" for ::1 at 2017-04-08 12:19:04 -0400
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2YTkN0d14WbX2VaEnKwF4unhNz4grjhHid8STU1D2raWvLP34OJ/DXxDTjW9fPrEJbVFQhR7dCdEHbki2tB5yA==", "recipe"=>{"title"=>"Savory \"Carrot Cake\" Bruschetta", "ingredients"=>"<ul><li>8 ounces Happy Farms Onion &amp; Chive Soft Spread Cream Cheese</li><li>3 tablespoons Friendly Farms Sour Cream</li><li>4 tablespoons Countryside Creamery Unsalted Butter</li><li>1 tablespoon Stonemill Minced Garlic in Water</li><li>4 cups diced carrots</li><li>2 teaspoons Stonemill Iodized Salt</li><li>2 teaspoons Stonemill Ground Black Pepper</li><li>1 teaspoon Stonemill Ground Ginger*</li><li>1 teaspoon Stonemill Ground Cinnamon</li><li>½ teaspoon Stonemill Crushed Red Pepper</li><li>¼ cup spiced rum</li><li>3 tablespoons SimplyNature Organic Wildflower Honey</li><li>12 ounces Specially Selected French Baguette, sliced diagonally into 1-inch pieces</li><li>3 tablespoons Carlini Extra Virgin Olive Oil</li><li>2 tablespoons chopped parsley</li><li>2 tablespoons Southern Grove Sliced Almonds, chopped</li></ul>", "directions"=>"<div>Heat grill to medium heat.</div><div><br></div><div>In a small bowl, combine cream cheese and sour cream with an electric mixer. Reserve.</div><div><br></div><div>In a medium sauté pan on medium heat, melt butter then add garlic. Sauté until golden brown and add carrots. Season with salt, pepper, ginger, cinnamon and crushed red pepper. Sauté until almost completely cooked.</div><div><br></div><div>Stir rum into carrot mixture and allow alcohol to burn off. Add honey and toss until carrots are well coated and honey begins to caramelize. Remove from heat and reserve, keeping carrots warm.</div><div><br></div><div>Brush baguette slices with olive oil, and grill for 2 minutes on each side, or until grill marks appear on bread.</div><div><br></div><div>To assemble, spread cream cheese mixture onto bread slices. Top with carrot mixture then sprinkle with parsley and almonds. Serve immediately.</div>"}, "_wysihtml5_mode"=>"1", "commit"=>"Update Recipe", "id"=>"13"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/recipes/13
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/recipes/13" for ::1 at 2017-04-08 12:19:04 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+Completed 200 OK in 122ms (Views: 119.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 12:19:21 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+Completed 200 OK in 121ms (Views: 118.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 12:29:05 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (21.3ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+Completed 200 OK in 4944ms (Views: 4934.1ms | ActiveRecord: 0.9ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/RB.jpg"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.2) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.2) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.2) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.2) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/recipes" for ::1 at 2017-04-08 12:29:21 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (10.7ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 113ms (Views: 110.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/RB.jpg" for ::1 at 2017-04-08 12:29:22 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/RB.jpg"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered collection of /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [10 times] (6.2ms)
+  Rendered collection of /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (4.0ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (179.7ms)
+Started GET "/recipes" for ::1 at 2017-04-08 12:29:51 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+Completed 200 OK in 142ms (Views: 138.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/app/assets/images/RB.jpg" for ::1 at 2017-04-08 12:29:51 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/RB.jpg"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered collection of /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [10 times] (5.0ms)
+  Rendered collection of /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (2.1ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (172.6ms)
+Started GET "/recipes" for ::1 at 2017-04-08 12:29:58 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (12.0ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+Completed 200 OK in 122ms (Views: 119.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/app/assets/images/RB.jpg" for ::1 at 2017-04-08 12:29:58 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/RB.jpg"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered collection of /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [10 times] (3.8ms)
+  Rendered collection of /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (2.3ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (214.2ms)
+Started GET "/recipes" for ::1 at 2017-04-08 12:30:17 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 135ms (Views: 131.8ms | ActiveRecord: 1.1ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/RB.jpg"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.2) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.2) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.2) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.2) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/recipes" for ::1 at 2017-04-08 12:30:22 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 132ms (Views: 129.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/images/RB.jpg" for ::1 at 2017-04-08 12:30:22 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/RB.jpg"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered collection of /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [10 times] (3.4ms)
+  Rendered collection of /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (2.3ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (212.0ms)
+Started GET "/recipes" for ::1 at 2017-04-08 12:31:10 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_navbar.html.erb (254.8ms)
+Completed 200 OK in 388ms (Views: 385.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 12:31:44 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_navbar.html.erb (1.7ms)
+Completed 200 OK in 125ms (Views: 121.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 12:34:16 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (24.1ms)
+  Rendered layouts/_navbar.html.erb (7.0ms)
+Completed 200 OK in 304ms (Views: 293.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 12:34:23 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (8.7ms)
+  Rendered layouts/_navbar.html.erb (1.6ms)
+Completed 200 OK in 154ms (Views: 148.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 12:35:21 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_navbar.html.erb (1.7ms)
+Completed 200 OK in 5099ms (Views: 5096.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 12:36:02 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (8.6ms)
+  Rendered layouts/_navbar.html.erb (226.8ms)
+Completed 200 OK in 4718ms (Views: 4715.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 12:36:50 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_navbar.html.erb (1.5ms)
+Completed 200 OK in 109ms (Views: 105.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 12:37:25 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 101ms (Views: 98.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 12:39:38 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (8.5ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+Completed 200 OK in 107ms (Views: 104.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 12:39:57 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_navbar.html.erb (1.7ms)
+Completed 200 OK in 4339ms (Views: 4336.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 12:40:11 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_navbar.html.erb (2.0ms)
+Completed 200 OK in 4207ms (Views: 4204.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 12:40:57 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (11.2ms)
+  Rendered layouts/_navbar.html.erb (2.3ms)
+Completed 200 OK in 4394ms (Views: 4390.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 12:41:49 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_navbar.html.erb (1.9ms)
+Completed 200 OK in 153ms (Views: 150.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 12:41:51 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+Completed 200 OK in 296ms (Views: 293.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 12:41:57 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_navbar.html.erb (1.4ms)
+Completed 200 OK in 108ms (Views: 106.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-04-08 12:41:58 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (11.2ms)
+  Rendered recipes/new.html.erb within layouts/application (13.8ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+Completed 200 OK in 112ms (Views: 108.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 12:42:00 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (8.7ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+Completed 200 OK in 102ms (Views: 99.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 12:42:18 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+Completed 200 OK in 104ms (Views: 102.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-04-08 12:42:19 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+Completed 200 OK in 106ms (Views: 102.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-04-08 12:42:21 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 117ms (Views: 113.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-08 12:59:40 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (19.0ms)
+  Rendered layouts/_navbar.html.erb (1.7ms)
+Completed 200 OK in 158ms (Views: 153.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/10" for ::1 at 2017-04-08 12:59:43 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mRecipe Load (22.7ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_navbar.html.erb (1.5ms)
+Completed 200 OK in 139ms (Views: 112.5ms | ActiveRecord: 22.7ms)
+
+
+Started GET "/recipes/10/edit" for ::1 at 2017-04-08 13:02:00 -0400
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (7.7ms)
+  Rendered recipes/edit.html.erb within layouts/application (10.2ms)
+  Rendered layouts/_navbar.html.erb (1.9ms)
+Completed 200 OK in 135ms (Views: 130.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 13:02:46 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_navbar.html.erb (2.8ms)
+Completed 200 OK in 157ms (Views: 151.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 13:03:28 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_navbar.html.erb (2.3ms)
+Completed 200 OK in 4306ms (Views: 4301.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 13:04:12 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_navbar.html.erb (2.4ms)
+Completed 200 OK in 4378ms (Views: 4375.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 13:04:49 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (10.8ms)
+  Rendered layouts/_navbar.html.erb (2.3ms)
+Completed 200 OK in 4172ms (Views: 4169.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 13:05:00 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (13.0ms)
+  Rendered layouts/_navbar.html.erb (1.8ms)
+Completed 200 OK in 150ms (Views: 147.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-04-08 13:05:05 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (8.3ms)
+  Rendered layouts/_navbar.html.erb (1.5ms)
+Completed 200 OK in 319ms (Views: 316.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-04-08 13:05:15 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (5.9ms)
+  Rendered recipes/new.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 111ms (Views: 107.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-08 13:05:17 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 121ms (Views: 117.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/14" for ::1 at 2017-04-08 13:05:21 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 102ms (Views: 98.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-08 13:17:22 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_navbar.html.erb (1.8ms)
+Completed 200 OK in 121ms (Views: 118.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/13" for ::1 at 2017-04-08 13:17:27 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+Completed 200 OK in 102ms (Views: 99.5ms | ActiveRecord: 0.3ms)
+
+
