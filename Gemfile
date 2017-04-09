@@ -79,6 +79,9 @@ gem 'typekit-rails'
 # Devise for User Authentication
 gem 'devise', git: "https://github.com/plataformatec/devise.git"
 
+# Amazon S3 integration for PaperClip and Heroku
+gem 'aws-sdk'
+
 # Tether for Bootstrap 4
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
