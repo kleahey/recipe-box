@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <h4>Welcome, <%= current_user.first_name %>!</h4>
+  <div id="recipe" class="transitions-enabled centered clearfix masonry">
   <% if @recipes.count == 0  %>
     <div class="box col4">
       <div class="card-block">
@@ -7,10 +7,9 @@
       </div>
     </div>
   <% else %>
-    <div id="recipe" class="transitions-enabled centered clearfix masonry">
-      <% @recipes.each do |recipe| %>
-        <div class="box col4">
-          <%= link_to (image_tag recipe.image.url(:thumb)), recipe, class: "card-img-top" %>
+    <% @recipes.each do |recipe| %>
+      <div class="box col4">
+        <%= link_to (image_tag recipe.image.url(:thumb)), recipe, class: "card-img-top" %>
           <div class="card-block">
             <h4 class="card-title"><%= recipe.title %></h4>
             <p class="card-text"><%= link_to 'Edit', edit_recipe_path(recipe) %> | <%= link_to 'Delete', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></p>
