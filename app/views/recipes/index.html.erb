@@ -1,6 +1,6 @@
 <div class="container-fluid">
 <div id="recipe" class="transitions-enabled centered clearfix masonry">
-  <% if @recipes.each == nil %>
+  <% if @recipes.each == "#<ActiveRecord::Relation []>" %>
     <div class="box col4">
       <div class="card-block">
         <h4 class="card-title">You have no recipes!</h4>
