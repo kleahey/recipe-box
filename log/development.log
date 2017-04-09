@@ -15806,3 +15806,64 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 124ms (Views: 122.4ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2017-04-09 10:39:41 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (6.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (18.4ms)
+Started GET "/" for ::1 at 2017-04-09 10:39:41 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (7.2ms)
+Completed 200 OK in 15777ms (Views: 15775.4ms | ActiveRecord: 0.0ms)
+
+
+  Rendered layouts/_navbar.html.erb (7.1ms)
+Completed 200 OK in 16375ms (Views: 16351.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-04-09 10:40:01 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (108.8ms)
+  Rendered layouts/_navbar.html.erb (3.8ms)
+Completed 200 OK in 328ms (Views: 286.4ms | ActiveRecord: 21.6ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-04-09 10:40:12 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (22.6ms)
+  Rendered layouts/_navbar.html.erb (3.0ms)
+Completed 200 OK in 210ms (Views: 208.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-04-09 10:40:13 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (36.6ms)
+  Rendered layouts/_navbar.html.erb (2.1ms)
+Completed 200 OK in 167ms (Views: 161.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 10:40:14 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navbar.html.erb (1.9ms)
+Completed 200 OK in 143ms (Views: 140.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-04-09 10:40:16 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.1ms)
+  Rendered layouts/_navbar.html.erb (1.8ms)
+Completed 200 OK in 159ms (Views: 158.1ms | ActiveRecord: 0.0ms)
+
+
