@@ -14536,3 +14536,1002 @@ Processing by RecipesController#index as HTML
 Completed 200 OK in 162ms (Views: 155.8ms | ActiveRecord: 1.1ms)
 
 
+Started DELETE "/users/sign_out" for ::1 at 2017-04-09 06:29:09 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Y62Id3d06ntaFU/eThqI/A9X2xeIPVc/QhTgRr0rZf7Z3eEmKmqFi7ZKgHUoH3jwtIkY1TOIkVtHJSRwEGf2+w=="}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 64ms (ActiveRecord: 8.2ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 06:29:10 -0400
+Processing by RecipesController#index as HTML
+Completed 401 Unauthorized in 9ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-04-09 06:29:10 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (73.3ms)
+  Rendered layouts/_navbar.html.erb (3.8ms)
+Completed 200 OK in 9209ms (Views: 9206.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-04-09 06:29:28 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/RodG/epwq5AN5M0CKYgjB3JO3fTmU7Kke7noEvZM6xlCRMJ/UIUs+dQrl6P4S+AHqttk5c9FQuyoB+1oYlrag==", "user"=>{"email"=>"kleahey@me.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "kleahey@me.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (4.9ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", 2017-04-09 10:29:28 UTC], ["last_sign_in_at", 2017-04-09 01:15:04 UTC], ["sign_in_count", 9], ["updated_at", 2017-04-09 10:29:28 UTC], ["id", 1]]
+  [1m[35m (108.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 306ms (ActiveRecord: 119.8ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 06:29:28 -0400
+Processing by RecipesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered recipes/index.html.erb within layouts/application (22.3ms)
+  Rendered layouts/_navbar.html.erb (3.1ms)
+Completed 200 OK in 198ms (Views: 164.9ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-04-09 06:29:33 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_navbar.html.erb (2.3ms)
+Completed 200 OK in 141ms (Views: 129.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 06:29:52 -0400
+Processing by RecipesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered recipes/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_navbar.html.erb (1.8ms)
+Completed 200 OK in 134ms (Views: 128.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/recipes/15" for ::1 at 2017-04-09 06:30:03 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navbar.html.erb (3.1ms)
+Completed 200 OK in 129ms (Views: 121.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 06:30:09 -0400
+Processing by RecipesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered recipes/index.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_navbar.html.erb (2.2ms)
+Completed 200 OK in 138ms (Views: 132.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/recipes/13" for ::1 at 2017-04-09 06:30:11 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_navbar.html.erb (1.8ms)
+Completed 200 OK in 164ms (Views: 157.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 06:30:24 -0400
+Processing by RecipesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered recipes/index.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_navbar.html.erb (2.1ms)
+Completed 200 OK in 140ms (Views: 134.4ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-04-09 06:30:27 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"avWmuFfa264x0weNrrg8xvXicBNeJB+gqJoRFoogO2BiiJxV1SF/sKnZ9pI+vAv+dVo6rvim2V9gPKoLZ8yipQ=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 06:30:27 -0400
+Processing by RecipesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-04-09 06:30:27 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.3ms)
+  Rendered layouts/_navbar.html.erb (2.9ms)
+Completed 200 OK in 169ms (Views: 168.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-04-09 06:32:40 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.9ms)
+  Rendered layouts/_navbar.html.erb (1.8ms)
+Completed 200 OK in 138ms (Views: 136.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-04-09 06:32:47 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (17.6ms)
+  Rendered layouts/_navbar.html.erb (3.1ms)
+Completed 200 OK in 161ms (Views: 160.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-04-09 06:32:56 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.3ms)
+  Rendered layouts/_navbar.html.erb (2.7ms)
+Completed 200 OK in 143ms (Views: 142.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2017-04-09 07:31:55 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered collection of /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [25 times] (7.5ms)
+  Rendered collection of /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (2.1ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (15.4ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (11.3ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (215.4ms)
+Started GET "/" for ::1 at 2017-04-09 07:34:50 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navbar.html.erb (6.6ms)
+Completed 200 OK in 7774ms (Views: 7757.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-04-09 07:35:03 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (103.7ms)
+  Rendered layouts/_navbar.html.erb (3.8ms)
+Completed 200 OK in 309ms (Views: 278.7ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 07:35:07 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (3.5ms)
+Completed 200 OK in 147ms (Views: 144.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 07:36:53 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navbar.html.erb (4.3ms)
+Completed 200 OK in 164ms (Views: 162.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-04-09 07:36:55 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.8ms)
+  Rendered layouts/_navbar.html.erb (3.1ms)
+Completed 200 OK in 194ms (Views: 169.7ms | ActiveRecord: 6.5ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-04-09 07:37:00 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VWO2jO7xN2sZIMXFI2z+0huA3E3Z8slNsEuW8HRiMUiitFfMVrzr54Wf66BX32hGpGhz1V+gRg0t5j7c5RL8vg==", "user"=>{"email"=>"kleahey@commonapp.org", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "kleahey@commonapp.org"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (6.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", 2017-04-09 11:37:01 UTC], ["last_sign_in_at", 2017-04-09 01:15:14 UTC], ["sign_in_count", 9], ["updated_at", 2017-04-09 11:37:01 UTC], ["id", 2]]
+  [1m[35m (116.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/recipes
+Completed 302 Found in 326ms (ActiveRecord: 127.4ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-09 07:37:01 -0400
+Processing by RecipesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 2]]
+  Rendered recipes/index.html.erb within layouts/application (22.1ms)
+  Rendered layouts/_navbar.html.erb (3.0ms)
+Completed 200 OK in 202ms (Views: 164.3ms | ActiveRecord: 7.4ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-04-09 07:37:07 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wmBt4+3/mDMtA5qj0g0B0kDZNHgryg2Up0PBGSwTLcxRZvPvNuazHHK+HTfZHnkJZGLca3kz5KPdud4I4N5N0A=="}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 07:37:07 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (4.2ms)
+Completed 200 OK in 192ms (Views: 188.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-04-09 07:37:26 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_navbar.html.erb (2.4ms)
+Completed 200 OK in 174ms (Views: 172.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-04-09 07:37:31 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (21.6ms)
+  Rendered layouts/_navbar.html.erb (3.9ms)
+Completed 200 OK in 226ms (Views: 224.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-04-09 07:37:33 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (29.2ms)
+  Rendered layouts/_navbar.html.erb (3.5ms)
+Completed 200 OK in 222ms (Views: 220.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 07:37:34 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (2.7ms)
+Completed 200 OK in 203ms (Views: 201.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 07:44:48 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navbar.html.erb (2.6ms)
+Completed 200 OK in 5011ms (Views: 5009.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 07:45:30 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_navbar.html.erb (4.7ms)
+Completed 200 OK in 4819ms (Views: 4816.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-04-09 07:45:59 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (13.3ms)
+  Rendered layouts/_navbar.html.erb (3.1ms)
+Completed 200 OK in 195ms (Views: 193.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 07:46:03 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (3.7ms)
+Completed 200 OK in 152ms (Views: 149.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:00:58 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kleahey/Git/recipe-box/app/views/home/index.html.erb:11: syntax error, unexpected '='
+..._user_registration_path, class="btn btn-primary" );@output_b...
+...                               ^):
+  
+app/views/home/index.html.erb:11: syntax error, unexpected '='
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (116.8ms)
+Started GET "/" for ::1 at 2017-04-09 08:01:08 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navbar.html.erb (5.7ms)
+Completed 200 OK in 315ms (Views: 312.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:01:53 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navbar.html.erb (4.1ms)
+Completed 200 OK in 216ms (Views: 214.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:02:50 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navbar.html.erb (3.3ms)
+Completed 200 OK in 174ms (Views: 171.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:03:17 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navbar.html.erb (3.3ms)
+Completed 200 OK in 174ms (Views: 171.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:03:25 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navbar.html.erb (2.7ms)
+Completed 200 OK in 165ms (Views: 163.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:04:07 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navbar.html.erb (3.7ms)
+Completed 200 OK in 180ms (Views: 178.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:06:43 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "  margin-top: 50px": expected ";", was ":"):
+    3:   <head>
+    4:     <title>RecipeBox</title>
+    5:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    6:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    8:     <%= csrf_meta_tags %>
+    9:     <%= typekit 'gam7yrh' %>
+  
+app/assets/stylesheets/application.scss:44
+app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__182928586114174829_70221773485760'
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.7ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (90.7ms)
+Started GET "/" for ::1 at 2017-04-09 08:06:49 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (4.1ms)
+Completed 200 OK in 4862ms (Views: 4859.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:07:21 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (4.0ms)
+Completed 200 OK in 180ms (Views: 177.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:07:48 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (3.4ms)
+Completed 200 OK in 152ms (Views: 150.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:08:01 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (3.4ms)
+Completed 200 OK in 151ms (Views: 148.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:08:35 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (3.6ms)
+Completed 200 OK in 138ms (Views: 135.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-04-09 08:09:04 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (29.0ms)
+  Rendered layouts/_navbar.html.erb (3.3ms)
+Completed 200 OK in 207ms (Views: 205.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:11:31 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_navbar.html.erb (3.7ms)
+Completed 200 OK in 5147ms (Views: 5141.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:12:19 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navbar.html.erb (3.8ms)
+Completed 200 OK in 4765ms (Views: 4763.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:12:35 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navbar.html.erb (3.0ms)
+Completed 200 OK in 4478ms (Views: 4475.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:13:02 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navbar.html.erb (2.1ms)
+Completed 200 OK in 366ms (Views: 363.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:13:51 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (3.4ms)
+Completed 200 OK in 4681ms (Views: 4678.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:14:47 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navbar.html.erb (4.1ms)
+Completed 200 OK in 205ms (Views: 203.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:15:15 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_navbar.html.erb (3.3ms)
+Completed 200 OK in 156ms (Views: 154.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:15:30 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (3.5ms)
+Completed 200 OK in 171ms (Views: 168.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:16:28 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navbar.html.erb (3.7ms)
+Completed 200 OK in 159ms (Views: 157.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:17:00 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navbar.html.erb (2.7ms)
+Completed 200 OK in 152ms (Views: 149.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:17:16 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navbar.html.erb (3.7ms)
+Completed 200 OK in 161ms (Views: 159.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:17:30 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navbar.html.erb (3.6ms)
+Completed 200 OK in 162ms (Views: 159.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:18:01 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navbar.html.erb (3.2ms)
+Completed 200 OK in 157ms (Views: 155.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:18:27 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (3.4ms)
+Completed 200 OK in 162ms (Views: 160.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:18:36 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navbar.html.erb (2.8ms)
+Completed 200 OK in 160ms (Views: 157.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:19:24 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navbar.html.erb (2.6ms)
+Completed 200 OK in 162ms (Views: 159.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:22:50 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (7.8ms)
+  Rendered layouts/_navbar.html.erb (6.6ms)
+Completed 200 OK in 276ms (Views: 262.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:23:36 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navbar.html.erb (3.2ms)
+Completed 200 OK in 154ms (Views: 152.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:23:48 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navbar.html.erb (3.5ms)
+Completed 200 OK in 302ms (Views: 299.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:25:18 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navbar.html.erb (2.4ms)
+Completed 200 OK in 187ms (Views: 185.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:25:37 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navbar.html.erb (2.2ms)
+Completed 200 OK in 211ms (Views: 209.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:25:46 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navbar.html.erb (2.3ms)
+Completed 200 OK in 213ms (Views: 210.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:26:01 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navbar.html.erb (3.3ms)
+Completed 200 OK in 198ms (Views: 196.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:27:07 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navbar.html.erb (4.5ms)
+Completed 200 OK in 189ms (Views: 186.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:28:04 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_navbar.html.erb (5.0ms)
+Completed 200 OK in 200ms (Views: 196.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:28:10 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navbar.html.erb (2.5ms)
+Completed 200 OK in 174ms (Views: 171.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:29:01 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (3.7ms)
+Completed 200 OK in 184ms (Views: 182.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:29:18 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navbar.html.erb (4.5ms)
+Completed 200 OK in 193ms (Views: 191.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:29:31 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navbar.html.erb (2.5ms)
+Completed 200 OK in 146ms (Views: 143.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:29:52 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navbar.html.erb (3.7ms)
+Completed 200 OK in 4899ms (Views: 4897.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:30:50 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navbar.html.erb (4.2ms)
+Completed 200 OK in 181ms (Views: 179.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:31:41 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (4.2ms)
+Completed 200 OK in 191ms (Views: 189.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-04-09 08:32:04 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (38.5ms)
+  Rendered layouts/_navbar.html.erb (3.1ms)
+Completed 200 OK in 233ms (Views: 229.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:32:11 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (3.1ms)
+Completed 200 OK in 169ms (Views: 166.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-04-09 08:35:08 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (13.7ms)
+  Rendered layouts/_navbar.html.erb (4.1ms)
+Completed 200 OK in 275ms (Views: 273.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:36:39 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navbar.html.erb (3.7ms)
+Completed 200 OK in 164ms (Views: 161.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-04-09 08:36:48 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (13.4ms)
+  Rendered layouts/_navbar.html.erb (3.0ms)
+Completed 200 OK in 169ms (Views: 166.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-04-09 08:36:59 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"87Hxu4pl3ij7wQUQq/TiUkDZuQMd8ImqA29dZ7Tu/2meAkbBqxUdkKwV1LTSOrrtgYxN8d5lulBIRWj2rMg8Sw==", "user"=>{"email"=>"kleahey@commonapp.org", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "kleahey@commonapp.org"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.5ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", 2017-04-09 12:36:59 UTC], ["last_sign_in_at", 2017-04-09 11:37:01 UTC], ["sign_in_count", 10], ["updated_at", 2017-04-09 12:36:59 UTC], ["id", 2]]
+  [1m[35m (109.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/recipes
+Completed 302 Found in 279ms (ActiveRecord: 115.9ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-09 08:37:00 -0400
+Processing by RecipesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 2]]
+  Rendered recipes/index.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_navbar.html.erb (3.3ms)
+Completed 200 OK in 176ms (Views: 168.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/recipes/8" for ::1 at 2017-04-09 08:37:17 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_navbar.html.erb (2.8ms)
+Completed 200 OK in 171ms (Views: 155.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:37:24 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (5.6ms)
+Completed 200 OK in 148ms (Views: 144.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:37:38 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (4.7ms)
+Completed 200 OK in 154ms (Views: 151.4ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-04-09 08:37:54 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8PV0A/F+UNF6043NpwqNh3FjFP5PGqQtHkiu8QxR4H5W6GNqBfHElIrq/2GQXhdrHuk+2icrITdJKhYPiruj1g=="}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:37:54 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navbar.html.erb (3.6ms)
+Completed 200 OK in 165ms (Views: 162.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:38:01 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (2.2ms)
+Completed 200 OK in 176ms (Views: 172.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-04-09 08:47:49 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (31.6ms)
+  Rendered layouts/_navbar.html.erb (3.5ms)
+Completed 200 OK in 236ms (Views: 234.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:47:54 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navbar.html.erb (3.4ms)
+Completed 200 OK in 155ms (Views: 153.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:49:45 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navbar.html.erb (3.4ms)
+Completed 200 OK in 159ms (Views: 157.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-04-09 08:49:48 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (13.1ms)
+  Rendered layouts/_navbar.html.erb (4.3ms)
+Completed 200 OK in 162ms (Views: 160.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:49:49 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navbar.html.erb (3.5ms)
+Completed 200 OK in 166ms (Views: 164.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-04-09 08:49:51 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.2ms)
+  Rendered layouts/_navbar.html.erb (3.6ms)
+Completed 200 OK in 176ms (Views: 175.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-04-09 08:49:56 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"77JJJj5E6EsBv2NZ5/3Qy9uAkCR9jarRkc3SV/ujjwZQxSrDo4gzEwmcub6+/1DRqtOYucrHvsVLF/PC1fmGeQ==", "user"=>{"email"=>"kleahey@me.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "kleahey@me.com"], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", 2017-04-09 12:49:56 UTC], ["last_sign_in_at", 2017-04-09 10:29:28 UTC], ["sign_in_count", 10], ["updated_at", 2017-04-09 12:49:56 UTC], ["id", 1]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/recipes
+Completed 302 Found in 169ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-09 08:49:56 -0400
+Processing by RecipesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (2.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered recipes/index.html.erb within layouts/application (15.1ms)
+  Rendered layouts/_navbar.html.erb (2.6ms)
+Completed 200 OK in 188ms (Views: 178.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-04-09 08:49:59 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navbar.html.erb (3.4ms)
+Completed 200 OK in 208ms (Views: 200.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-09 08:50:03 -0400
+Processing by RecipesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered recipes/index.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_navbar.html.erb (3.4ms)
+Completed 200 OK in 193ms (Views: 187.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/recipes" for ::1 at 2017-04-09 08:50:06 -0400
+Processing by RecipesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered recipes/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_navbar.html.erb (3.1ms)
+Completed 200 OK in 168ms (Views: 162.7ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-04-09 08:50:07 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RAbouLNyJbhNB2LUAQhTzxrk0UI8knVPYVdYAPZi5oYR+g1UECsZOXxfTVJsTNZHH7mdyg7vlPlVm1TOxa9sEQ=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:50:07 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navbar.html.erb (4.0ms)
+Completed 200 OK in 185ms (Views: 183.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-09 08:50:09 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navbar.html.erb (4.2ms)
+Completed 200 OK in 191ms (Views: 188.4ms | ActiveRecord: 0.0ms)
+
+
