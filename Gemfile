@@ -76,6 +76,9 @@ gem 'font-awesome-rails'
 # Adobe Typekit
 gem 'typekit-rails'
 
+# Devise for User Authentication
+gem 'devise', git: "https://github.com/plataformatec/devise.git"
+
 # Tether for Bootstrap 4
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
