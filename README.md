@@ -4,18 +4,30 @@
 
 The Wiki is available as a guide for the entire build of the project.
 
-Some current features of **RecipeBox**:
+Features in the current version of **RecipeBox**:
+
+* User accounts keep your recipes private
 
 * Bootstrap 4 Integration
 
-* SimpleForm gem utilized for forms
+* Simple Form gem utilized for forms
 
-* PaperClip gem utilized for attaching images of Recipes
+* Paperclip gem utilized for attaching images of Recipes
+
+* WYSYWIG text entry with "Bootsy" for a Recipe's Ingredients and Directions
+
+* Amazon S3 file storage for storing photos of recipes
 
 Future features I plan to incorporate:
 
-* WYSYWIG text entry for a Recipe's Ingredients and Directions
+* User profiles
 
-* Amazon S3 file storage for storing
+* Add the ability to see your friends' recipes
+
+* Recipe tags and categories
+
+* Recipe ratings
+
+* Serving sizes, prep times, nutritional information, etc.
 
 * ...and more to come!
