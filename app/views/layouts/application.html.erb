@@ -12,8 +12,8 @@
   <body data-turbolinks='false'>
     <%= render "layouts/navbar" %>
     <div class="container" id="alerts">
-      <% flash.each do |key, value| %>
-        <div class="alert alert-dismissable alert-<%= key %> fade show"><%= value %></div>
+      <% flash.each do |name, msg| %>
+        <%= content_tag :div, msg, class: "alert alert-info alert-dismissable show fade" %>
       <% end %>
     </div>
     <%= yield %>

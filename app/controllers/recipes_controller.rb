@@ -1,6 +1,7 @@
 class RecipesController < ApplicationController
   before_action :set_recipe, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
+  before_action :owned_recipe, only: [:show, :edit, :update, :destroy]
 
   # GET /recipes
   # GET /recipes.json
@@ -29,11 +30,10 @@ class RecipesController < ApplicationController
 
     respond_to do |format|
       if @recipe.save
-        format.html { flash[:success] = "Your recipe was added successfully!" }
+        format.html { redirect_to @recipe, notice: "Your recipe was added successfully!" }
         format.json { render :show, status: :created, location: @recipe }
-        redirect_to @recipe
       else
-        format.html { flash[:alert] = "Your recipe could not be created. Please check the form and try again." }
+        format.html { redirect_to @recipe, notice: "Your recipe could not be created. Please check the form and try again." }
         format.json { render json: @recipe.errors, status: :unprocessable_entity }
         format.html { render :new }
       end
@@ -45,11 +45,10 @@ class RecipesController < ApplicationController
   def update
     respond_to do |format|
       if @recipe.update(recipe_params)
-        format.html { flash[:success] = "Your recipe was updated successfully!" }
+        format.html { redirect_to @recipe, notice: "Your recipe was updated successfully!" }
         format.json { render :show, status: :ok, location: @recipe }
-        redirect_to @recipe
       else
-        format.html { flash[:alert] = "Your recipe could not be updated. Please check the form and try again." }
+        format.html { redirect_to @recipe, notice: "Your recipe could not be updated. Please check the form and try again." }
         format.json { render json: @recipe.errors, status: :unprocessable_entity }
         format.html { render :edit }
       end
@@ -61,9 +60,8 @@ class RecipesController < ApplicationController
   def destroy
     @recipe.destroy
     respond_to do |format|
-      format.html { flash[:success] = "Your recipe was deleted successfully." }
+      format.html { redirect_to recipes_url, notice: "Your recipe was deleted successfully." }
       format.json { head :no_content }
-      redirect_to recipes_url
     end
   end
 
@@ -76,6 +74,13 @@ class RecipesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def recipe_params
       params.require(:recipe).permit(:title, :ingredients, :directions, :image)
+    end
+
+    def owned_recipe
+      unless @recipe.user_id == current_user.id
+        flash[:notice] = "That post doesn't belong to you!"
+        redirect_to recipes_path
+      end
     end
 
 end
