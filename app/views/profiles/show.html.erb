@@ -1,7 +1,24 @@
-<% if @user == current_user %>
-  <%= link_to "Edit Profile", edit_profile_path(@user.user_name) %>
-<% end %>
-
 <div class="container">
-  <h1>Profile</h1>
+  <div class="row">
+      <div class="col-md-4 col-sm-4">
+        <%= profile_avatar_select(@user) %>
+      </div>
+      <div class="col-md-4 col-sm-8">
+          <h3><%= @user.user_name %></h3>
+          <h6 style="margin-top:10px;"><%= @user.first_name %> <%= @user.last_name %></h6>
+          <p><%= pluralize @user.recipes.count, 'recipe' %></p>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <% if @user == current_user %>
+          <%= link_to 'Edit Profile', edit_profile_path(@user.user_name), class: 'btn edit-button' %>
+        <% end %>
+      </div>
+  </div>
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <p class="profile-bio"><%= @user.bio %></p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

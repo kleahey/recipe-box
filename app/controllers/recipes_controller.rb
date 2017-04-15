@@ -80,7 +80,7 @@ class RecipesController < ApplicationController
 
     def owned_recipe
       unless @recipe.user_id == current_user.id
-        flash[:notice] = "That post doesn't belong to you!"
+        flash[:notice] = "That recipe doesn't exist."
         redirect_to user_recipes_path(current_user.user_name)
       end
     end
