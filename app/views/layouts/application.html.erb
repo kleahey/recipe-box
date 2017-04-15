@@ -10,12 +10,23 @@
   </head>
 
   <body data-turbolinks='false'>
+
     <%= render "layouts/navbar" %>
-    <div class="container" id="alerts">
-      <% flash.each do |key, value| %>
-        <div class="alert alert-dismissable alert-<%= key %> fade show"><%= value %></div>
-      <% end %>
-    </div>
+
+    <% if flash[:notice] %>
+      <div class="container" id="alerts">
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+              <% flash.each do |name, msg| %>
+                <%= content_tag :div, msg %>
+              <% end %>
+        </div>
+      </div>
+    <% end %>
+
     <%= yield %>
+
   </body>
 </html>

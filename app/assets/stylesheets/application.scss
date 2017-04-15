@@ -23,6 +23,7 @@
 @import "masonry/transitions";
 @import "font-awesome";
 @import "bootsy";
+@import "profiles";
 
 #background-home {
   position: fixed;
@@ -44,6 +45,10 @@
 }
 
 #alerts {
+  margin-top: 30px;
+}
+
+#sub-navigation {
   margin-top: 30px;
 }
 

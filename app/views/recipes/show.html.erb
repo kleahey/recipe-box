@@ -1,3 +1,5 @@
+<%= render "recipenav", partial: true %>
+
 <div class="container" id="title-div">
   <div class="row">
     <div class="col text-center">
@@ -50,8 +52,10 @@
   <div class="row">
     <div class="col">
       <div class="recipe-footer text-center">
-        <%= link_to 'Edit', edit_recipe_path(@recipe) %> |
-        <%= link_to 'Back', recipes_path %>
+        <% if @recipe.user_id == current_user.id %>
+          <%= link_to 'Edit', edit_user_recipe_path(current_user.user_name, @recipe.id) %> |
+        <% end %>
+        <%= link_to 'Back', user_recipes_path %>
       </div>
     </div>
   </div>
