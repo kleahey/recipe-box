@@ -1,5 +1,5 @@
 <div class="container">
-  <%= form_for @user, url: {action: "update"}, html: { multipart: true } do |f| %>
+  <%= simple_form_for @user, url: {action: "update"}, html: { multipart: true } do |f| %>
     <div class="row">
       <div class="col-md-12 col-sm-12">
          <div class="form-group text-center">
@@ -12,10 +12,10 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12 col-sm-12">
+      <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-12">
         <div class="form-group text-center">
           <h4>Update your bio:</h4>
-          <%= f.text_area :bio, label: false, rows: 4 %>
+          <%= f.input :bio, as: :bootsy, label: false, input_html: { rows: 5, cols: 80 }, placeholder: "Enter a Short Bio Here" %>
         </div>
       </div>
     </div>

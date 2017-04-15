@@ -34132,3 +34132,777 @@ Processing by RecipesController#index as HTML
 Completed 200 OK in 196ms (Views: 182.7ms | ActiveRecord: 5.4ms)
 
 
+Started GET "/kleahey" for ::1 at 2017-04-15 14:30:02 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (6.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered profiles/show.html.erb within layouts/application (44.8ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (6.3ms)
+Completed 200 OK in 11042ms (Views: 10981.0ms | ActiveRecord: 13.4ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 14:30:46 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered profiles/show.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_navbar.html.erb (3.4ms)
+Completed 200 OK in 177ms (Views: 170.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 14:31:53 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered profiles/show.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_navbar.html.erb (2.5ms)
+Completed 200 OK in 4864ms (Views: 4853.6ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 14:32:22 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered profiles/show.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_navbar.html.erb (3.6ms)
+Completed 200 OK in 4515ms (Views: 4510.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 14:32:39 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered profiles/show.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_navbar.html.erb (3.2ms)
+Completed 200 OK in 129ms (Views: 124.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 14:33:33 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered profiles/show.html.erb within layouts/application (9.6ms)
+  Rendered layouts/_navbar.html.erb (3.3ms)
+Completed 200 OK in 151ms (Views: 145.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 14:35:31 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered profiles/show.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_navbar.html.erb (2.8ms)
+Completed 200 OK in 4829ms (Views: 4823.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 14:36:02 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered profiles/show.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_navbar.html.erb (2.8ms)
+Completed 200 OK in 144ms (Views: 139.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 14:36:45 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered profiles/show.html.erb within layouts/application (11.7ms)
+  Rendered layouts/_navbar.html.erb (3.2ms)
+Completed 200 OK in 153ms (Views: 148.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 14:37:31 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered profiles/show.html.erb within layouts/application (9.6ms)
+  Rendered layouts/_navbar.html.erb (3.1ms)
+Completed 200 OK in 155ms (Views: 149.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 14:37:39 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered profiles/show.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_navbar.html.erb (3.2ms)
+Completed 200 OK in 152ms (Views: 145.0ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 14:39:25 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered profiles/show.html.erb within layouts/application (8.3ms)
+  Rendered layouts/_navbar.html.erb (3.4ms)
+Completed 200 OK in 132ms (Views: 127.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 14:40:54 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered profiles/show.html.erb within layouts/application (9.9ms)
+  Rendered layouts/_navbar.html.erb (2.2ms)
+Completed 200 OK in 144ms (Views: 139.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 14:41:13 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered profiles/show.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_navbar.html.erb (3.8ms)
+Completed 200 OK in 158ms (Views: 153.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 14:41:25 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered profiles/show.html.erb within layouts/application (9.4ms)
+  Rendered layouts/_navbar.html.erb (3.5ms)
+Completed 200 OK in 257ms (Views: 252.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 14:42:53 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered profiles/show.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_navbar.html.erb (2.3ms)
+Completed 200 OK in 163ms (Views: 158.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 14:43:11 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered profiles/show.html.erb within layouts/application (9.6ms)
+  Rendered layouts/_navbar.html.erb (3.4ms)
+Completed 200 OK in 144ms (Views: 139.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-15 14:43:49 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (4.6ms)
+Completed 200 OK in 307ms (Views: 303.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 14:46:18 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered profiles/show.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_navbar.html.erb (3.7ms)
+Completed 200 OK in 4646ms (Views: 4639.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 14:46:25 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered profiles/show.html.erb within layouts/application (9.5ms)
+  Rendered layouts/_navbar.html.erb (1.6ms)
+Completed 200 OK in 346ms (Views: 341.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 14:47:23 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered profiles/show.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_navbar.html.erb (2.7ms)
+Completed 200 OK in 146ms (Views: 140.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/kleahey/edit" for ::1 at 2017-04-15 14:47:51 -0400
+Processing by ProfilesController#edit as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/edit.html.erb within layouts/application
+  Rendered profiles/edit.html.erb within layouts/application (58.5ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (6.1ms)
+Completed 200 OK in 253ms (Views: 248.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-15 14:48:15 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (5.8ms)
+Completed 200 OK in 144ms (Views: 141.0ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/kleahey/edit" for ::1 at 2017-04-15 14:48:42 -0400
+Processing by ProfilesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xkS20f8B/Y1lkecneKi0pFHGDyr9InGH4LGcs0vZyp2WaDCY1CB1QxvXtsl99e1FbDmEqJqVcMxemXiI7lS/1w==", "user"=>{"bio"=>"This is my profile. I like to cook. Look at my recipes. \r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}, "commit"=>"Update Profile", "user_name"=>"kleahey"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (13.8ms)[0m  [1m[33mUPDATE "users" SET "bio" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["bio", "This is my profile. I like to cook. Look at my recipes. \r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["updated_at", 2017-04-15 18:48:42 UTC], ["id", 1]]
+  [1m[35m (186.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/kleahey
+Completed 302 Found in 210ms (ActiveRecord: 200.3ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 14:48:42 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered profiles/show.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_navbar.html.erb (3.0ms)
+Completed 200 OK in 161ms (Views: 156.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/kleahey/edit" for ::1 at 2017-04-15 14:49:33 -0400
+Processing by ProfilesController#edit as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/edit.html.erb within layouts/application
+  Rendered profiles/edit.html.erb within layouts/application (15.5ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1..2)):
+    15:       <div class="col-md-12 col-sm-12">
+    16:         <div class="form-group text-center">
+    17:           <h4>Update your bio:</h4>
+    18:           <%= f.text_area.html_safe :bio, label: false, rows: 4 %>
+    19:         </div>
+    20:       </div>
+    21:     </div>
+  
+app/views/profiles/edit.html.erb:18:in `block in _app_views_profiles_edit_html_erb___306921336413730601_70108947604260'
+app/views/profiles/edit.html.erb:2:in `_app_views_profiles_edit_html_erb___306921336413730601_70108947604260'
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.7ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendering /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/kleahey/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (113.3ms)
+Started GET "/kleahey/edit" for ::1 at 2017-04-15 14:54:48 -0400
+Processing by ProfilesController#edit as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/edit.html.erb within layouts/application
+  Rendered profiles/edit.html.erb within layouts/application (20.2ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (9.2ms)
+Completed 200 OK in 333ms (Views: 308.9ms | ActiveRecord: 2.1ms)
+
+
+Started PATCH "/kleahey/edit" for ::1 at 2017-04-15 14:54:56 -0400
+Processing by ProfilesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sXCcZCskQhuv+130jMof5BkARCC1guF0TSsGW1ij9jThXBotAAXK1dG9DBqJl0YFJP/PotI14D/zA+Jg/S6Dfg==", "user"=>{"bio"=>"This is my profile. I like to cook. Look at my recipes.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}, "commit"=>"Update Profile", "user_name"=>"kleahey"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (6.6ms)[0m  [1m[33mUPDATE "users" SET "bio" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["bio", "This is my profile. I like to cook. Look at my recipes.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["updated_at", 2017-04-15 18:54:56 UTC], ["id", 1]]
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/kleahey
+Completed 302 Found in 24ms (ActiveRecord: 13.2ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 14:54:56 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered profiles/show.html.erb within layouts/application (10.7ms)
+  Rendered layouts/_navbar.html.erb (3.6ms)
+Completed 200 OK in 237ms (Views: 229.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/kleahey/edit" for ::1 at 2017-04-15 14:57:22 -0400
+Processing by ProfilesController#edit as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/edit.html.erb within layouts/application
+  Rendered profiles/edit.html.erb within layouts/application (105.6ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (7.2ms)
+Completed 200 OK in 313ms (Views: 308.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/kleahey/edit" for ::1 at 2017-04-15 14:57:56 -0400
+Processing by ProfilesController#edit as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/edit.html.erb within layouts/application
+  Rendered profiles/edit.html.erb within layouts/application (3.5ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (5.8ms)
+Completed 200 OK in 183ms (Views: 176.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/kleahey/edit" for ::1 at 2017-04-15 14:58:36 -0400
+Processing by ProfilesController#edit as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/edit.html.erb within layouts/application
+  Rendered profiles/edit.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (5.6ms)
+Completed 200 OK in 171ms (Views: 166.6ms | ActiveRecord: 1.2ms)
+
+
+Started PATCH "/kleahey/edit" for ::1 at 2017-04-15 14:59:24 -0400
+Processing by ProfilesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XVWnsCsU0nXTem5i0/lLDgEHjTCklmzPCLrbU8X0AKgNeSH5ADVau608P4zWpBLvPPgGssMhbYS2kj9oYHl14g==", "user"=>{"bio"=>"This is my profile. I like to cook with <span class=\"wysiwyg-color-red\"><b>fire</b></span>. Look at my recipes.\r\n\r\n<br><i><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem</i><i></i><i>por inci</i>didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <u>exercitation ullamco laboris </u>nisi ut aliquip ex ea commodo consequat. <br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}, "_wysihtml5_mode"=>"1", "commit"=>"Update Profile", "user_name"=>"kleahey"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (12.5ms)[0m  [1m[33mUPDATE "users" SET "bio" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["bio", "This is my profile. I like to cook with <span class=\"wysiwyg-color-red\"><b>fire</b></span>. Look at my recipes.\r\n\r\n<br><i><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem</i><i></i><i>por inci</i>didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <u>exercitation ullamco laboris </u>nisi ut aliquip ex ea commodo consequat. <br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["updated_at", 2017-04-15 18:59:24 UTC], ["id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/kleahey
+Completed 302 Found in 21ms (ActiveRecord: 13.5ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 14:59:24 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered profiles/show.html.erb within layouts/application (11.4ms)
+  Rendered layouts/_navbar.html.erb (3.9ms)
+Completed 200 OK in 188ms (Views: 179.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 15:00:03 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered profiles/show.html.erb within layouts/application (7.8ms)
+  Rendered layouts/_navbar.html.erb (3.1ms)
+Completed 200 OK in 129ms (Views: 123.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 15:00:06 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered profiles/show.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_navbar.html.erb (3.4ms)
+Completed 200 OK in 145ms (Views: 140.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/kleahey/recipes" for ::1 at 2017-04-15 15:00:56 -0400
+Processing by RecipesController#index as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/_recipenav.html.erb (0.8ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered recipes/index.html.erb within layouts/application (56.2ms)
+  Rendered layouts/_navbar.html.erb (2.4ms)
+Completed 200 OK in 221ms (Views: 202.7ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 15:00:58 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered profiles/show.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_navbar.html.erb (2.4ms)
+Completed 200 OK in 146ms (Views: 141.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/kleahey/recipes" for ::1 at 2017-04-15 15:01:14 -0400
+Processing by RecipesController#index as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/_recipenav.html.erb (0.7ms)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered recipes/index.html.erb within layouts/application (11.4ms)
+  Rendered layouts/_navbar.html.erb (3.1ms)
+Completed 200 OK in 155ms (Views: 149.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/kleahey/recipes/10" for ::1 at 2017-04-15 15:01:20 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"user_name"=>"kleahey", "id"=>"10"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/_recipenav.html.erb (0.8ms)
+  Rendered recipes/show.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_navbar.html.erb (3.5ms)
+Completed 200 OK in 147ms (Views: 139.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/kleahey/recipes" for ::1 at 2017-04-15 15:01:59 -0400
+Processing by RecipesController#index as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/_recipenav.html.erb (0.7ms)
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered recipes/index.html.erb within layouts/application (10.2ms)
+  Rendered layouts/_navbar.html.erb (3.7ms)
+Completed 200 OK in 146ms (Views: 139.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 15:02:08 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered profiles/show.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_navbar.html.erb (2.6ms)
+Completed 200 OK in 138ms (Views: 133.6ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-04-15 15:02:10 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RcAGZrp9G2h2JgffEolqLljlnKk3jLRzcZto6DK4b5cV7IAvkVyTpghgVjEX1DPPZRoXK1A7tTjPs4zTlzUa3Q=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-04-15 15:02:10 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navbar.html.erb (7.4ms)
+Completed 200 OK in 140ms (Views: 137.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-15 15:02:42 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navbar.html.erb (4.4ms)
+Completed 200 OK in 199ms (Views: 197.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-04-15 15:02:45 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (35.7ms)
+  Rendered layouts/_navbar.html.erb (4.1ms)
+Completed 200 OK in 255ms (Views: 250.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-04-15 15:02:50 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"idf24U49bQXcH18F0Cmu0u2Pr39f1dLNFxJvv+4bioMqZM8wpA5x7pxS1NuVbfykxs3fro/MxD+XERMqy0Xe/g==", "user"=>{"email"=>"kleahey@me.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "kleahey@me.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", 2017-04-15 19:02:50 UTC], ["last_sign_in_at", 2017-04-15 13:09:49 UTC], ["sign_in_count", 44], ["updated_at", 2017-04-15 19:02:50 UTC], ["id", 1]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/kleahey/recipes
+Completed 302 Found in 180ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/kleahey/recipes" for ::1 at 2017-04-15 15:02:50 -0400
+Processing by RecipesController#index as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/_recipenav.html.erb (0.7ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered recipes/index.html.erb within layouts/application (13.7ms)
+  Rendered layouts/_navbar.html.erb (2.4ms)
+Completed 200 OK in 173ms (Views: 166.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/kleahey/recipes/7" for ::1 at 2017-04-15 15:02:58 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"user_name"=>"kleahey", "id"=>"7"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/_recipenav.html.erb (0.8ms)
+  Rendered recipes/show.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_navbar.html.erb (4.2ms)
+Completed 200 OK in 160ms (Views: 154.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/kleahey/recipes/new" for ::1 at 2017-04-15 15:03:04 -0400
+Processing by RecipesController#new as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_recipenav.html.erb (0.8ms)
+  Rendered recipes/_form.html.erb (9.7ms)
+  Rendered recipes/new.html.erb within layouts/application (14.6ms)
+  Rendered layouts/_navbar.html.erb (2.8ms)
+Completed 200 OK in 170ms (Views: 162.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 15:03:20 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered profiles/show.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_navbar.html.erb (3.7ms)
+Completed 200 OK in 144ms (Views: 138.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/kleahey/recipes" for ::1 at 2017-04-15 15:05:01 -0400
+Processing by RecipesController#index as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/_recipenav.html.erb (0.7ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered recipes/index.html.erb within layouts/application (9.5ms)
+  Rendered layouts/_navbar.html.erb (2.7ms)
+Completed 200 OK in 127ms (Views: 118.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 15:05:14 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered profiles/show.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_navbar.html.erb (3.1ms)
+Completed 200 OK in 141ms (Views: 136.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 15:05:18 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered profiles/show.html.erb within layouts/application (10.3ms)
+  Rendered layouts/_navbar.html.erb (3.8ms)
+Completed 200 OK in 143ms (Views: 137.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 15:05:22 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered profiles/show.html.erb within layouts/application (9.5ms)
+  Rendered layouts/_navbar.html.erb (4.0ms)
+Completed 200 OK in 167ms (Views: 160.7ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 15:05:27 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered profiles/show.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_navbar.html.erb (4.0ms)
+Completed 200 OK in 141ms (Views: 136.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/kleahey/recipes" for ::1 at 2017-04-15 15:05:30 -0400
+Processing by RecipesController#index as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/_recipenav.html.erb (0.8ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered recipes/index.html.erb within layouts/application (9.0ms)
+  Rendered layouts/_navbar.html.erb (4.2ms)
+Completed 200 OK in 158ms (Views: 150.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/kleahey/recipes/33" for ::1 at 2017-04-15 15:05:33 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"user_name"=>"kleahey", "id"=>"33"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/_recipenav.html.erb (0.9ms)
+  Rendered recipes/show.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_navbar.html.erb (2.2ms)
+Completed 200 OK in 160ms (Views: 152.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/kleahey/recipes" for ::1 at 2017-04-15 15:05:37 -0400
+Processing by RecipesController#index as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/_recipenav.html.erb (0.9ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered recipes/index.html.erb within layouts/application (10.9ms)
+  Rendered layouts/_navbar.html.erb (4.1ms)
+Completed 200 OK in 151ms (Views: 145.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 15:05:42 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered profiles/show.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_navbar.html.erb (3.9ms)
+Completed 200 OK in 142ms (Views: 135.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/kleahey/edit" for ::1 at 2017-04-15 15:05:44 -0400
+Processing by ProfilesController#edit as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/edit.html.erb within layouts/application
+  Rendered profiles/edit.html.erb within layouts/application (5.8ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (5.3ms)
+Completed 200 OK in 178ms (Views: 172.8ms | ActiveRecord: 1.1ms)
+
+
+Started PATCH "/kleahey/edit" for ::1 at 2017-04-15 15:05:48 -0400
+Processing by ProfilesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MOBNMr9OOChNqoftc+2zMb+puE8uiFylw4AgA85t/bYBFig07rpqyTKgsSTIyfJuJtGWLRmUzUvn1ETVu6vKoA==", "user"=>{"bio"=>"This is my profile. I like to cook with <span class=\"wysiwyg-color-red\"><b>fire</b></span>. Look at my recipes.\r\n\r\n<br><i><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem</i><i></i><i>por inci</i>didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <u>exercitation ullamco laboris </u>nisi ut aliquip ex ea commodo consequat. <br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}, "_wysihtml5_mode"=>"1", "commit"=>"Update Profile", "user_name"=>"kleahey"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/kleahey
+Completed 302 Found in 9ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 15:05:48 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered profiles/show.html.erb within layouts/application (10.8ms)
+  Rendered layouts/_navbar.html.erb (2.4ms)
+Completed 200 OK in 167ms (Views: 156.6ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/kleahey/recipes" for ::1 at 2017-04-15 15:05:54 -0400
+Processing by RecipesController#index as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/_recipenav.html.erb (0.9ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered recipes/index.html.erb within layouts/application (9.9ms)
+  Rendered layouts/_navbar.html.erb (3.8ms)
+Completed 200 OK in 157ms (Views: 150.8ms | ActiveRecord: 1.5ms)
+
+
