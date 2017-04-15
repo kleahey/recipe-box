@@ -17,7 +17,7 @@
                     <div class="desc"><%= pluralize @user.recipes.count, 'recipe' %></div>
                 </div>
                 <div class="bottom">
-                    <p class="profile-bio"><%= @user.bio.html_safe %></p>
+                    <p class="profile-bio"><%= @user.bio.html_safe if @user.bio %></p>
                 </div>
             </div>
 

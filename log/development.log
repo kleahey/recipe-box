@@ -35111,3 +35111,178 @@ Processing by RecipesController#index as HTML
 Completed 200 OK in 130ms (Views: 123.3ms | ActiveRecord: 1.4ms)
 
 
+Started GET "/" for ::1 at 2017-04-15 15:42:47 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: skip_before_filter is deprecated and will be removed in Rails 5.1. Use skip_before_action instead. (called from <class:ApplicationController> at /Users/kleahey/Git/recipe-box/app/controllers/application_controller.rb:4)
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (12.9ms)
+Started GET "/" for ::1 at 2017-04-15 15:42:49 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (76.8ms)
+  [1m[36mUser Load (20.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 14524ms (Views: 14451.4ms | ActiveRecord: 52.6ms)
+
+
+  Rendered layouts/_navbar.html.erb (33.6ms)
+Completed 200 OK in 12403ms (Views: 12374.6ms | ActiveRecord: 26.3ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-04-15 15:43:04 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cbJwccrn9dGGuJ1YZn4uSzMntvMofC/QmaooDE3tHipARBV3mxOnMPmyq5HdWm8Uql+YkR9gvj69/kzaOCspPA=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 27ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-15 15:43:04 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navbar.html.erb (6.6ms)
+Completed 200 OK in 167ms (Views: 164.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-04-15 15:43:15 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (87.8ms)
+  Rendered layouts/_navbar.html.erb (3.2ms)
+Completed 200 OK in 252ms (Views: 246.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-04-15 15:43:20 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VbLuklPtIhco8p8OZwz0XOJ39Xv+OpnOsJHsWkRxUVTU3fW3LPrLmknPi1ySOoRgvOs1seu7jfgOQmFgH9XxVg==", "user"=>{"email"=>"kleahey@me.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "kleahey@me.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", 2017-04-15 19:43:20 UTC], ["last_sign_in_at", 2017-04-15 19:02:50 UTC], ["sign_in_count", 45], ["updated_at", 2017-04-15 19:43:20 UTC], ["id", 1]]
+  [1m[35m (127.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/kleahey/recipes
+Completed 302 Found in 318ms (ActiveRecord: 132.4ms)
+
+
+Started GET "/kleahey/recipes" for ::1 at 2017-04-15 15:43:20 -0400
+Processing by RecipesController#index as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/_recipenav.html.erb (0.6ms)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered recipes/index.html.erb within layouts/application (22.5ms)
+  Rendered layouts/_navbar.html.erb (1.9ms)
+Completed 200 OK in 197ms (Views: 152.6ms | ActiveRecord: 6.8ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-04-15 15:43:22 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Wsmzss+5yeuj2VC0bEeUkH9WyLThzsv+5HIf8DWyNU5EIkdK/+CwnvzkTjJUDOtQT5J4nQf4Bbym+YXafdcGZg=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-04-15 15:43:22 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navbar.html.erb (3.4ms)
+Completed 200 OK in 129ms (Views: 125.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kleahey/recipes/6" for ::1 at 2017-04-15 15:43:35 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"user_name"=>"kleahey", "id"=>"6"}
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-04-15 15:43:35 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (13.7ms)
+  Rendered layouts/_navbar.html.erb (3.2ms)
+Completed 200 OK in 149ms (Views: 147.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-04-15 15:45:35 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u3VqTl+nnU24DqJo90YwEhHkvOd/3QQmTryS/28egvEEE+VrC4r2vhykaoVtSs9L7a2VtYYLvmN4/0Qm2QrB2g==", "user"=>{"email"=>"kleahey@me.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "kleahey@me.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.2ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", 2017-04-15 19:45:35 UTC], ["last_sign_in_at", 2017-04-15 19:43:20 UTC], ["sign_in_count", 46], ["updated_at", 2017-04-15 19:45:35 UTC], ["id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/kleahey/recipes
+Completed 302 Found in 159ms (ActiveRecord: 5.5ms)
+
+
+Started GET "/kleahey/recipes" for ::1 at 2017-04-15 15:45:35 -0400
+Processing by RecipesController#index as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/_recipenav.html.erb (1.1ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered recipes/index.html.erb within layouts/application (11.2ms)
+  Rendered layouts/_navbar.html.erb (2.6ms)
+Completed 200 OK in 166ms (Views: 160.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 15:45:36 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered profiles/show.html.erb within layouts/application (10.5ms)
+  Rendered layouts/_navbar.html.erb (3.6ms)
+Completed 200 OK in 231ms (Views: 219.5ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/kleahey/edit" for ::1 at 2017-04-15 15:45:40 -0400
+Processing by ProfilesController#edit as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/edit.html.erb within layouts/application
+  Rendered profiles/edit.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_navbar.html.erb (3.1ms)
+Completed 200 OK in 177ms (Views: 169.9ms | ActiveRecord: 1.1ms)
+
+
+Started PATCH "/kleahey/edit" for ::1 at 2017-04-15 15:45:43 -0400
+Processing by ProfilesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xM3d9KraqEb1HjSbUi7gsZVryBEnahuP90uGeqE0eHIIihLQkrQZSmoWjUcwtIrO0WZqADhGmQ0gT8vgYV4mHg==", "user"=>{"bio"=>"This is my profile. I like to cook with <span class=\"wysiwyg-color-red\"><b>fire</b></span>. Look at my recipes.\r\n\r\n<br><i><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem</i><i></i><i>por inci</i>didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <u>exercitation ullamco laboris </u>nisi ut aliquip ex ea commodo consequat. <br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}, "_wysihtml5_mode"=>"1", "commit"=>"Update Profile", "user_name"=>"kleahey"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/kleahey
+Completed 302 Found in 12ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/kleahey" for ::1 at 2017-04-15 15:45:43 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"user_name"=>"kleahey"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "kleahey"], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered profiles/show.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_navbar.html.erb (2.2ms)
+Completed 200 OK in 158ms (Views: 151.7ms | ActiveRecord: 1.7ms)
+
+
