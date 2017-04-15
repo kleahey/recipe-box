@@ -1,3 +1,5 @@
+<%= render "recipenav", partial: true %>
+
 <div class="container-fluid">
   <div id="recipe" class="transitions-enabled centered clearfix masonry">
   <% if @recipes.count == 0  %>
@@ -9,11 +11,11 @@
   <% else %>
     <% @recipes.each do |recipe| %>
       <div class="box col4">
-        <%= link_to (image_tag recipe.image.url(:thumb)), recipe, class: "card-img-top" %>
+        <%= link_to (image_tag recipe.image.url(:thumb)), user_recipe_path(current_user.user_name, recipe.id), class: "card-img-top" %>
           <div class="card-block">
             <h4 class="card-title"><%= recipe.title %></h4>
             <% if recipe.user_id == current_user.id %>
-            <p class="card-text"><%= link_to 'Edit', edit_recipe_path(recipe) %> | <%= link_to 'Delete', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+            <p class="card-text"><%= link_to 'Edit', edit_user_recipe_path(current_user.user_name, recipe.id) %> | <%= link_to 'Delete', user_recipe_path(current_user.user_name, recipe.id), method: :delete, data: { confirm: 'Are you sure?' } %></p>
             <% end %>
           </div>
         </div>
