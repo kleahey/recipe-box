@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
+
   get 'profile/show'
 
   devise_for :users, :controllers => { registrations: 'registrations' }
   mount Bootsy::Engine => '/bootsy', as: 'bootsy'
+
+  resources :categories
 
   scope ":user_name" do
     resources :recipes, as: 'user_recipes'

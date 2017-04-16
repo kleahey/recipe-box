@@ -1,0 +1,17 @@
+<div class="card" style="width: 44rem;">
+    <div class="card-block">
+      <h4 class="card-title">New Category Entry</h4>
+      <p class="card-text">
+        <%= simple_form_for [@category] do |form| %>
+        <div class="form-group">
+          <%= form.input :name, label: false, placeholder: "Category Title", input_html: { size: 81 } %></br>
+          <div class="row">
+            <%= form.button :submit, class: "btn btn-primary" %>
+            <%= link_to "Cancel", categories_path , class: "btn" %>
+          </div>
+        </div>
+        <% end %>
+      </p>
+    </div>
+  </div>
+</div>

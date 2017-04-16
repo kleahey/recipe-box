@@ -2,6 +2,7 @@ class RecipesController < ApplicationController
   before_action :set_recipe, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
   before_action :owned_recipe, only: [:show, :edit, :update, :destroy]
+  before_filter :prepare_categories
 
   # GET /recipes
   # GET /recipes.json
@@ -22,7 +23,7 @@ class RecipesController < ApplicationController
 
   # GET /recipes/1/edit
   def edit
-     @user = User.find_by(user_name: params[:user_name])
+    @user = User.find_by(user_name: params[:user_name])
   end
 
   # POST /recipes
@@ -75,7 +76,7 @@ class RecipesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def recipe_params
-      params.require(:recipe).permit(:id, :title, :ingredients, :directions, :image, :user_name)
+      params.require(:recipe).permit(:id, :title, :ingredients, :directions, :image, :user_name, :category_id)
     end
 
     def owned_recipe
@@ -83,6 +84,10 @@ class RecipesController < ApplicationController
         flash[:notice] = "That recipe doesn't exist."
         redirect_to user_recipes_path(current_user.user_name)
       end
+    end
+
+    def prepare_categories
+      @categories = Category.all
     end
 
 end
