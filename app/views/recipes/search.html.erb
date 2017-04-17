@@ -4,14 +4,14 @@
 
 <div class="container-fluid">
   <div id="recipe" class="transitions-enabled centered clearfix masonry">
-  <% if @recipes.count == 0  %>
+  <% if @filteredRecipes.count == 0  %>
     <div class="box col4">
       <div class="card-block">
-        <h4 class="card-title">You have no recipes!</h4>
+        <h4 class="card-title text-center">Your search returned no results!</h4>
       </div>
     </div>
   <% else %>
-    <% @recipes.each do |recipe| %>
+    <% @filteredRecipes.each do |recipe| %>
       <div class="box col4">
         <%= link_to (image_tag recipe.image.url(:thumb)), user_recipe_path(current_user.user_name, recipe.id), class: "card-img-top" %>
           <div class="card-block">

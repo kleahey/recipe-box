@@ -235,7 +235,7 @@ DEPENDENCIES
   devise!
   font-awesome-rails
   jbuilder (~> 2.5)
-  jquery-rails
+  jquery-rails (>= 0.2.5)
   listen (~> 3.0.5)
   masonry-rails
   paperclip!

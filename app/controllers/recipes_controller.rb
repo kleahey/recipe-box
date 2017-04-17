@@ -68,6 +68,10 @@ class RecipesController < ApplicationController
     end
   end
 
+  def search
+    @filteredRecipes = Recipe.search(params)
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_recipe
@@ -87,7 +91,7 @@ class RecipesController < ApplicationController
     end
 
     def prepare_categories
-      @categories = Category.all
+      @categories = Category.all.order(name: :asc)
     end
 
 end

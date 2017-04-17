@@ -7,4 +7,9 @@ class Recipe < ApplicationRecord
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
 
   validates :user_id, presence: true
+
+  def self.search params
+    recipes = Recipe.where(category_id: params[:category].to_i) unless params[:category].blank?
+    recipes
+  end
 end

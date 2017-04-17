@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   get 'profile/show'
+  get 'recipes/search'
 
   devise_for :users, :controllers => { registrations: 'registrations' }
   mount Bootsy::Engine => '/bootsy', as: 'bootsy'

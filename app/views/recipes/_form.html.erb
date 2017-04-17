@@ -1,14 +1,14 @@
 <div class="card" style="width: 44rem;">
     <div class="card-block">
-      <h4 class="card-title">New Recipe Entry</h4>
+      <h4 class="card-title">Recipe Entry</h4>
       <p class="card-text">
         <%= simple_form_for [:user, @recipe] do |form| %>
         <div class="form-group">
-          <%= form.input :title, label: false, placeholder: "Recipe Title", input_html: { size: 81 } %></br>
-          <%= form.collection_select(:category_id, @categories, :id, :name, include_blank: "Please select") %></br></br>
+          <%= form.input :title, label: false, placeholder: "Recipe Title", input_html: { size: 81 }, class: "form-control" %></br>
+          <%= form.collection_select(:category_id, @categories, :id, :name, include_blank: "Recipe Category") %></br></br>
           <%= form.input :ingredients, as: :bootsy, label: false, editor_options: { image: false }, input_html: { rows: 10, cols: 80 }, placeholder: "List Ingredients Here" %>
           <%= form.input :directions, as: :bootsy, label: false, editor_options: { image: false }, input_html: { rows: 10, cols: 80 }, placeholder: "List Directions Here" %>
-          <%= form.input :image, as: :file %></br>
+          <%= form.input :image, as: :file, class: "form-control" %></br>
           <div class="row">
             <%= form.button :submit, class: "btn btn-primary" %>
             <%= link_to "Cancel", user_recipes_path , class: "btn" %>
