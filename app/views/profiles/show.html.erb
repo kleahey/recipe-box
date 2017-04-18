@@ -1,7 +1,6 @@
 <div class="container">
 	<div class="row">
 		<div class="col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-xs-10 offset-xs-1">
-
             <div class="card hovercard">
                 <div class="cardheader">
 
@@ -19,19 +18,19 @@
                 <div class="bottom">
                     <p class="profile-bio"><%= @user.bio.html_safe if @user.bio %></p>
                 </div>
-            </div>
 
+					</div>
         </div>
 
 	</div>
   <div class="row">
 
     <div class="col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-xs-10 offset-xs-1">
-
+			<div class="d-flex justify-content-center">
       <% if @user == current_user %>
         <%= link_to 'Edit Profile', edit_profile_path(@user.user_name), class: 'btn btn-primary' %>
       <% end %>
-
+		  </div>
     </div>
 
   </div>

@@ -1,10 +1,12 @@
 <div class="container">
-  <%= form_tag recipes_search_path, method: :get, role: 'form' do |f| %>
-  <div class="recipe-search">
-    <div class="form-group row form-inline">
-    <%= select_tag 'category', options_for_select(Category.all.map{|el| [el.name, el.id]}), prompt: "Filter by Category:", class: 'form-control' %>
-    <%= submit_tag 'Search', class: 'btn btn-primary' %>
+  <div class="d-flex justify-content-center">
+    <%= form_tag recipes_search_path, method: :get, role: 'form' do |f| %>
+    <div class="recipe-search">
+      <div class="form-group row form-inline">
+      <%= select_tag 'category', options_for_select(Category.all.map{|el| [el.name, el.id]}), prompt: "Filter by Category:", class: 'form-control' %>
+      <%= submit_tag 'Search', class: 'btn btn-primary' %>
+      </div>
     </div>
+    <% end %>
   </div>
-  <% end %>
 </div>
